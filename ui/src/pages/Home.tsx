@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { api, type Area } from '../lib/api'
+import heroBanner from '../assets/hero_banner.jpg'
 
 const PROFILES = ['General', 'Student', 'Professional', 'Family', 'Senior']
 const TRANSPORT = [
@@ -30,13 +31,17 @@ const DESC: Record<string, string> = {
 
 const HERO_BG = {
   backgroundImage:
-    "linear-gradient(90deg, rgba(40,20,15,0.86) 0%, rgba(40,20,15,0.5) 55%, rgba(40,20,15,0.25) 100%), url('/hero.jpg'), linear-gradient(115deg, #2a1610 0%, #8f3018 48%, #E98300 100%)",
-  backgroundSize: 'cover, cover, cover',
-  backgroundPosition: 'center, center, center',
+    `linear-gradient(to bottom, rgba(245,244,242,0) 60%, rgba(245,244,242,0.55) 84%, #F5F4F2 100%), ` +
+    `linear-gradient(90deg, rgba(40,20,15,0.82) 0%, rgba(40,20,15,0.42) 52%, rgba(40,20,15,0.12) 100%), ` +
+    `url(${heroBanner}), ` +
+    `linear-gradient(115deg, #2a1610 0%, #8f3018 48%, #E98300 100%)`,
+  backgroundSize: 'cover, cover, cover, cover',
+  backgroundPosition: 'center, center, top center, center',
 }
 
+const TRANSPORT_COST: Record<string, number> = { walk: 0, bike: 0, tram: 58, car: 300 }
 const cold = (a: Area) => Math.round((a.rent_eur_sqm ?? 0) * 50)
-const totalCost = (a: Area) => cold(a) + 125 + 58 // utilities (2.5 €/m²·50) + Deutschlandticket
+const totalCost = (a: Area, transport: string) => cold(a) + 125 + (TRANSPORT_COST[transport] ?? 0) // rent + utilities + commute
 
 function personal(a: Area, picks: string[]) {
   const base = a.match_score ?? a.life_value_score ?? 0
@@ -45,18 +50,27 @@ function personal(a: Area, picks: string[]) {
   return Math.round(Math.max(0, Math.min(100, base + bonus)))
 }
 
-function insights(a: Area, budget: number) {
+function insights(a: Area, budget: number, transport: string) {
   const out: { icon: string; text: string }[] = []
   out.push(
-    totalCost(a) <= budget
+    totalCost(a, transport) <= budget
       ? { icon: 'check_circle', text: 'Perfectly within your budget' }
       : { icon: 'account_balance_wallet', text: 'Slightly above your budget' },
   )
-  out.push(
-    (a.transit_score ?? 0) >= 65
-      ? { icon: 'signal_cellular_alt', text: 'Excellent tram network coverage' }
-      : { icon: 'directions_bus', text: 'Modest transit coverage' },
-  )
+  // commute insight reflects the chosen transport mode
+  if (transport === 'car') out.push({ icon: 'directions_car', text: 'Easy road & parking access' })
+  else if (transport === 'walk' || transport === 'bike')
+    out.push(
+      (a.fifteen_min_score ?? 0) >= 60
+        ? { icon: 'directions_walk', text: 'Highly walkable & bike-friendly' }
+        : { icon: 'directions_walk', text: 'Some walking distances' },
+    )
+  else
+    out.push(
+      (a.transit_score ?? 0) >= 65
+        ? { icon: 'tram', text: 'Excellent tram network coverage' }
+        : { icon: 'directions_bus', text: 'Modest transit coverage' },
+    )
   out.push(
     (a.green_score ?? 0) >= 55
       ? { icon: 'park', text: 'High density of green spaces' }
@@ -100,10 +114,10 @@ export default function Home() {
     () =>
       areas
         .filter((a) => a.rent_eur_sqm != null && a.life_value_score != null)
-        .filter((a) => cold(a) <= budget)
+        .filter((a) => totalCost(a, transport) <= budget)
         .map((a) => ({ a, score: personal(a, picks) }))
         .sort((p, q) => q.score - p.score),
-    [areas, budget, picks],
+    [areas, budget, picks, transport],
   )
   const top = ranked[0]
   const alts = ranked.slice(1, 4)
@@ -229,13 +243,13 @@ export default function Home() {
 
                   <div className="grid grid-cols-3 gap-3 mt-5">
                     <Tile label="Estimated Rent" value={`€${cold(top.a)}`} unit="/mo" />
-                    <Tile label="Total Cost of Life" value={`€${totalCost(top.a)}`} unit="/mo" />
+                    <Tile label="Total Cost of Life" value={`€${totalCost(top.a, transport)}`} unit="/mo" />
                     <Tile label="Transit Score" value={`${top.a.transit_score ?? '—'}`} unit="/100" accent />
                   </div>
 
                   <div className="text-[11px] font-bold text-muted uppercase tracking-wider mt-6 mb-2">Key Insights</div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-                    {insights(top.a, budget).map((ins, i) => (
+                    {insights(top.a, budget, transport).map((ins, i) => (
                       <div key={i} className="flex items-center gap-2 text-sm text-body">
                         <span className="material-symbols-outlined text-petrol text-base">{ins.icon}</span>
                         {ins.text}

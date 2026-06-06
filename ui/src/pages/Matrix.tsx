@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import type { Area } from '../lib/api'
 import { useAreas, Loading } from '../lib/ui'
 
-const M = { l: 54, r: 24, t: 28, b: 46 }
+const M = { l: 40, r: 22, t: 24, b: 40 }
 const H = 470
 
 const TIER = {
@@ -30,17 +30,32 @@ function useWidth() {
   const ref = useRef<HTMLDivElement>(null)
   const [w, setW] = useState(760)
   useEffect(() => {
-    if (!ref.current) return
-    const ro = new ResizeObserver((es) => {
-      for (const e of es) setW(e.contentRect.width)
-    })
-    ro.observe(ref.current)
-    return () => ro.disconnect()
+    const el = ref.current
+    if (!el) return
+    const measure = () => setW(el.clientWidth)
+    measure() // capture the real container width immediately
+    const ro = new ResizeObserver(measure)
+    ro.observe(el)
+    window.addEventListener('resize', measure)
+    return () => {
+      ro.disconnect()
+      window.removeEventListener('resize', measure)
+    }
   }, [])
   return [ref, w] as const
 }
 
-type Pt = { a: Area; cost: number; life: number; value: number; vScore: number; tier: Tier; color: string }
+type Pt = { a: Area; cost: number; life: number; value: number; vScore: number; tier: Tier; color: string; w: number }
+
+// bubble size metric: total local amenities (a proxy for demand / centrality)
+function weightOf(a: Area): number {
+  const am = a.amenities
+  if (am) {
+    const t = Object.values(am).reduce((s, v: any) => s + (v?.count || 0), 0)
+    if (t > 0) return t
+  }
+  return (a.area_km2 || 1) * 5
+}
 
 export default function Matrix() {
   const nav = useNavigate()
@@ -66,8 +81,9 @@ export default function Matrix() {
       const life = a.life_value_score as number
       const value = norm(life, lMin, lMax) - norm(cost, cMin, cMax)
       const tier: Tier = value > 0.1 ? 'high' : value < -0.1 ? 'overpriced' : 'balanced'
-      return { a, cost, life, value, vScore: Math.round(Math.max(0, Math.min(100, 50 + 62 * value))), tier, color: TIER[tier].c }
+      return { a, cost, life, value, vScore: Math.round(Math.max(0, Math.min(100, 50 + 62 * value))), tier, color: TIER[tier].c, w: weightOf(a) }
     })
+    const ws = pts.map((p) => p.w)
     const cPad = (cMax - cMin) * 0.14 || 40
     const lPad = (lMax - lMin) * 0.12 || 6
     return {
@@ -75,6 +91,7 @@ export default function Matrix() {
       xMin: cMin - cPad, xMax: cMax + cPad,
       yMin: Math.max(0, lMin - lPad), yMax: Math.min(100, lMax + lPad),
       xMed: median(costs), yMed: median(lifes),
+      wMin: Math.min(...ws), wMax: Math.max(...ws),
     }
   }, [areas])
 
@@ -94,6 +111,7 @@ export default function Matrix() {
   const innerH = H - M.t - M.b
   const xS = (c: number) => M.l + ((c - model.xMin) / (model.xMax - model.xMin)) * innerW
   const yS = (v: number) => M.t + (1 - (v - model.yMin) / (model.yMax - model.yMin)) * innerH
+  const rOf = (pw: number) => 6 + ((pw - model.wMin) / (model.wMax - model.wMin || 1)) * 12
 
   const byId = Object.fromEntries(model.pts.map((p) => [p.a.area_id, p]))
   const visible = model.pts.filter((p) => cats[p.tier])
@@ -118,6 +136,7 @@ export default function Matrix() {
               <Dot c="#006080" t="High Value" />
               <Dot c="#E98300" t="Balanced" />
               <Dot c="#D6492A" t="Overpriced" />
+              <span className="text-muted hidden sm:inline">· bubble = amenity density</span>
             </div>
           </div>
 
@@ -155,7 +174,7 @@ export default function Matrix() {
                     key={p.a.area_id}
                     cx={cx}
                     cy={cy}
-                    r={7}
+                    r={rOf(p.w)}
                     fill={p.color}
                     stroke="#fff"
                     strokeWidth={1.5}
@@ -171,9 +190,9 @@ export default function Matrix() {
               {/* selection ring + connector + label */}
               {active && cats[active.tier] && (
                 <g pointerEvents="none">
-                  <circle cx={xS(active.cost)} cy={yS(active.life)} r={11} fill="none" stroke="#542D24" strokeWidth={2} />
-                  <line x1={xS(active.cost)} y1={yS(active.life) - 11} x2={xS(active.cost)} y2={yS(active.life) - 22} stroke="#542D24" strokeWidth={1.5} />
-                  <text x={xS(active.cost)} y={yS(active.life) + 24} fontSize={10} fontWeight={700} fill="#54453D" textAnchor="middle">{active.a.area_name}</text>
+                  <circle cx={xS(active.cost)} cy={yS(active.life)} r={rOf(active.w) + 4} fill="none" stroke="#542D24" strokeWidth={2} />
+                  <line x1={xS(active.cost)} y1={yS(active.life) - rOf(active.w) - 4} x2={xS(active.cost)} y2={yS(active.life) - rOf(active.w) - 15} stroke="#542D24" strokeWidth={1.5} />
+                  <text x={xS(active.cost)} y={yS(active.life) + rOf(active.w) + 14} fontSize={10} fontWeight={700} fill="#54453D" textAnchor="middle">{active.a.area_name}</text>
                 </g>
               )}
             </svg>
@@ -182,7 +201,7 @@ export default function Matrix() {
             {active && cats[active.tier] && (
               <div
                 className="absolute pointer-events-none bg-ink text-white rounded-lg px-4 py-3 shadow-lg"
-                style={{ left: xS(active.cost), top: yS(active.life) - 22, transform: 'translate(-50%, -100%)', whiteSpace: 'nowrap' }}
+                style={{ left: xS(active.cost), top: yS(active.life) - rOf(active.w) - 15, transform: 'translate(-50%, -100%)', whiteSpace: 'nowrap' }}
               >
                 <div className="font-headline font-bold text-sm mb-1.5">{active.a.area_name}</div>
                 <div className="flex gap-5 text-xs">
@@ -255,6 +274,104 @@ export default function Matrix() {
             </button>
           </div>
         </div>
+      </div>
+
+      {/* Behind the score — Münster-style explainer cards */}
+      <div>
+        <div className="flex items-center gap-2 mb-3">
+          <span className="w-9 h-9 rounded-full border-2 border-sun/50 grid place-items-center text-sun">
+            <span className="material-symbols-outlined text-base">insights</span>
+          </span>
+          <span className="text-petrol font-medium">behind the score</span>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <InfoCard watermark="dataset" big="40" bigUnit=" districts" source="Mietspiegel 2024 · OpenStreetMap · KISS-MD"
+            details="Rent is the qualified Mietspiegel net cold rent per Stadtteil (2012–2026). Amenities, transit stops and green space are counted from OpenStreetMap within each district. District boundaries come from the city's open geodata.">
+            Every district is scored from <b className="text-sun">open data</b> — net cold rent from the{' '}
+            <b className="text-sun">Mietspiegel 2024</b>, ~2,000 <b className="text-sun">amenities &amp; transit stops</b> from
+            OpenStreetMap, and green space from the city tree cadastre.
+          </InfoCard>
+
+          <InfoCard watermark="calculate" source="Transparent weighted index — no black-box ML"
+            details="Each district's six sub-scores are min-max normalized to 0–100 across all districts, then combined with the weights above into a Life Value Score. A district's color on the chart is its value: livability percentile minus cost percentile — above the fair-value line is good value (petrol), below is overpriced (red).">
+            <div className="text-4xl font-headline font-black text-sun mb-2">Life Value Score</div>
+            Six sub-scores are normalized <b className="text-sun">0–100</b> and combined by weight. On the chart, color is{' '}
+            <b className="text-sun">value</b> — how far a district sits above or below the <b className="text-sun">fair-value line</b>.
+            <WeightBar />
+          </InfoCard>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const WEIGHTS = [
+  { k: 'Affordability', w: 25, c: '#006080' },
+  { k: 'Transit', w: 20, c: '#2D8BBF' },
+  { k: '15-Min City', w: 20, c: '#E98300' },
+  { k: 'Future', w: 15, c: '#C44D36' },
+  { k: 'Green', w: 10, c: '#7A9E3B' },
+  { k: 'Healthcare', w: 10, c: '#D6492A' },
+]
+
+function WeightBar() {
+  return (
+    <div className="mt-4">
+      <div className="flex h-3 rounded-full overflow-hidden">
+        {WEIGHTS.map((w) => (
+          <div key={w.k} style={{ width: `${w.w}%`, background: w.c }} title={`${w.k} ${w.w}%`} />
+        ))}
+      </div>
+      <div className="flex flex-wrap gap-x-3 gap-y-1 mt-2">
+        {WEIGHTS.map((w) => (
+          <span key={w.k} className="flex items-center gap-1 text-[11px] text-muted">
+            <span className="w-2 h-2 rounded-full" style={{ background: w.c }} />
+            {w.k} {w.w}%
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function InfoCard({
+  watermark,
+  big,
+  bigUnit,
+  children,
+  source,
+  details,
+}: {
+  watermark: string
+  big?: string
+  bigUnit?: string
+  children: React.ReactNode
+  source: string
+  details: string
+}) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="rounded-2xl p-6 relative overflow-hidden" style={{ background: '#FCEFE6' }}>
+      <span className="material-symbols-outlined absolute right-5 top-5 text-sun/30" style={{ fontSize: 44 }}>{watermark}</span>
+      {big && (
+        <div className="text-5xl font-headline font-black text-sun mb-3">
+          {big}
+          <span className="text-2xl">{bigUnit}</span>
+        </div>
+      )}
+      <div className="text-body text-sm leading-relaxed">{children}</div>
+      {open && <div className="text-sm text-muted leading-relaxed mt-3 pt-3 border-t border-sun/20">{details}</div>}
+      <div className="text-petrol text-xs mt-4">Source: {source}</div>
+      <div className="flex items-center justify-between mt-4">
+        <div className="flex gap-3 text-petrol/70">
+          <span className="material-symbols-outlined text-lg">dataset</span>
+          <span className="material-symbols-outlined text-lg">share</span>
+          <span className="material-symbols-outlined text-lg">download</span>
+        </div>
+        <button onClick={() => setOpen((o) => !o)} className="flex items-center gap-1 text-petrol font-medium text-sm hover:underline">
+          <span className="material-symbols-outlined text-base">info</span>
+          {open ? 'Less' : 'More details'}
+        </button>
       </div>
     </div>
   )

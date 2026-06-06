@@ -3,6 +3,32 @@ import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet'
 import { useNavigate } from 'react-router-dom'
 import 'leaflet/dist/leaflet.css'
 import { api, type Area } from '../lib/api'
+import scene1 from '../assets/scene1.jpg'
+import scene2 from '../assets/scene2.jpg'
+import scene3 from '../assets/scene3.jpg'
+import scene4 from '../assets/scene4.jpg'
+import scene5 from '../assets/scene5.jpg'
+import scene6 from '../assets/scene6.jpg'
+import scene7 from '../assets/scene7.jpg'
+
+// district -> photo (we only have 7 images; others fall back to a gradient banner)
+const DISTRICT_IMG: Record<string, string> = {
+  Buckau: scene1,
+  'Stadtfeld Ost': scene2,
+  Altstadt: scene3,
+  Sudenburg: scene4,
+  Cracau: scene5,
+  Herrenkrug: scene6,
+  Werder: scene7,
+}
+const SCENES = [scene1, scene2, scene3, scene4, scene5, scene6, scene7]
+// every district gets a photo: named ones above, the rest reuse a scene (stable per district)
+function imgFor(name: string): string {
+  if (DISTRICT_IMG[name]) return DISTRICT_IMG[name]
+  let h = 0
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0
+  return SCENES[h % SCENES.length]
+}
 
 function colorFor(score: number | null) {
   if (score == null) return '#cccccc'
@@ -280,10 +306,14 @@ function Detail({
   const desc =
     DESCRIPTIONS[sel.area_name] ||
     'An established Magdeburg district with its own everyday character and access across the city.'
+  const img = imgFor(sel.area_name)
   return (
     <div className="flex flex-col min-h-full">
-      <div className="relative h-40 bg-gradient-to-br from-ink via-terracotta to-brick flex items-end p-5">
-        <div className="absolute inset-0 opacity-25" style={{ backgroundImage: 'radial-gradient(circle at 25% 15%, #ffffff66, transparent 45%)' }} />
+      <div
+        className={`relative h-40 flex items-end p-5 ${img ? '' : 'bg-gradient-to-br from-ink via-terracotta to-brick'}`}
+        style={img ? { backgroundImage: `linear-gradient(to top, rgba(40,20,15,0.9), rgba(40,20,15,0.2)), url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}
+      >
+        {!img && <div className="absolute inset-0 opacity-25" style={{ backgroundImage: 'radial-gradient(circle at 25% 15%, #ffffff66, transparent 45%)' }} />}
         <button onClick={onClose} className="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/30 text-white grid place-items-center hover:bg-black/50">
           <span className="material-symbols-outlined text-base">close</span>
         </button>

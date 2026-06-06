@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useAreas, Loading } from '../lib/ui'
+import { BehindCards, InfoCard } from '../components/InfoCards'
 
 const UTIL_PER_SQM = 2.5
 const TICKET: Record<string, number> = { walk: 0, bike: 0, tram: 58, car: 300 }
@@ -174,6 +175,30 @@ export default function Hidden() {
             : 'is an easy win: a low total cost without giving up everyday access.'}
         </p>
       </div>
+
+      <BehindCards label="behind the cost" icon="payments">
+        <InfoCard
+          watermark="dataset"
+          big="3"
+          bigUnit=" cost layers"
+          source="Mietspiegel 2024 · Deutschlandticket"
+          details="Transport: tram = €58 (Deutschlandticket), car = €300 placeholder, walk/bike = €0. Utilities use a 2.5 €/m² Nebenkosten assumption; rent is the qualified Mietspiegel net cold rent for the selected district (a district average, not a live listing)."
+        >
+          True cost stacks three layers: <b className="text-sun">rent</b> (Mietspiegel 2024 net cold rent × size),{' '}
+          <b className="text-sun">utilities</b> (a flat 2.5 €/m²), and <b className="text-sun">transport</b> for your
+          commute mode.
+        </InfoCard>
+        <InfoCard
+          watermark="calculate"
+          source="Own calculation, transparent assumptions"
+          details="Estimates are deliberately modest — a €30–40 difference is acceptable if access improves. Rent is a district average from the Mietspiegel, not an individual listing."
+        >
+          <div className="text-4xl font-headline font-black text-sun mb-2">Total Cost of Life</div>
+          <b className="text-sun">Total = rent + utilities + transport</b>. We compare it to the{' '}
+          <b className="text-sun">city average</b> for the same flat size and commute, so the badge shows whether you're
+          above or below typical.
+        </InfoCard>
+      </BehindCards>
     </div>
   )
 }

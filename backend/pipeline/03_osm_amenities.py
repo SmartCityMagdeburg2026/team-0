@@ -107,27 +107,36 @@ def main():
     cat_geoms = {c: pois_m[pois_m["cat"] == c].geometry for c in CATEGORIES}
 
     out = {}
-    for _, d in dist_m.iterrows():
-        name = d["name"]
-        centroid = d.geometry.centroid
+    points = {}
+    for _, row in dist_m.iterrows():
+        name = row["name"]
+        centroid = row.geometry.centroid
         per = {}
+        pts = []
         for c in CATEGORIES:
             g = cat_geoms[c]
             if len(g):
-                d = g.distance(centroid)
-                nearest = round(float(d.min()))
-                r5, r10, r15 = int((d <= 400).sum()), int((d <= 800).sum()), int((d <= 1200).sum())
-                p4326 = pois.geometry.loc[d.idxmin()]   # real nearest POI (lon, lat)
+                dd = g.distance(centroid)
+                nearest = round(float(dd.min()))
+                r5, r10, r15 = int((dd <= 400).sum()), int((dd <= 800).sum()), int((dd <= 1200).sum())
+                p4326 = pois.geometry.loc[dd.idxmin()]   # real nearest POI (lon, lat)
                 nearest_ll = [round(p4326.x, 5), round(p4326.y, 5)]
+                for idx, dist in dd[dd <= 1200].items():  # every amenity within the 15-min walk
+                    p = pois.geometry.loc[idx]
+                    pts.append([c, round(p.x, 5), round(p.y, 5), round(float(dist))])
             else:
                 nearest, r5, r10, r15, nearest_ll = None, 0, 0, 0, None
             per[c] = {"count": int(counts.get((name, c), 0)), "nearest_m": nearest,
                       "r5": r5, "r10": r10, "r15": r15, "nearest_lonlat": nearest_ll}
         out[name] = per
+        points[name] = pts
 
     with open(os.path.join(PROC, "amenities.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
-    print(f"wrote amenities for {len(out)} districts ({len(pois)} POIs) -> amenities.json")
+    with open(os.path.join(PROC, "amenity_points.json"), "w", encoding="utf-8") as f:
+        json.dump(points, f, ensure_ascii=False)
+    npts = sum(len(v) for v in points.values())
+    print(f"wrote amenities for {len(out)} districts ({len(pois)} POIs, {npts} within-1200m points)")
 
 
 if __name__ == "__main__":

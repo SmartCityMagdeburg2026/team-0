@@ -4,21 +4,22 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { api, type Area } from '../lib/api'
 import { useAreas, Loading, DistrictSelect } from '../lib/ui'
+import { BehindCards, InfoCard } from '../components/InfoCards'
 
-type Band = { count: number; nearest_m: number | null; r5?: number; r10?: number; r15?: number; nearest_lonlat?: [number, number] | null }
+type Band = { count: number; nearest_m: number | null; r5?: number; r10?: number; r15?: number }
 const amOf = (a: Area, cat: string): Band => (a.amenities?.[cat] as Band) || { count: 0, nearest_m: null }
 
-const PINS: { cat: string; icon: string; angle: number }[] = [
-  { cat: 'grocery', icon: 'shopping_cart', angle: 25 },
-  { cat: 'transit', icon: 'tram', angle: 70 },
-  { cat: 'healthcare', icon: 'local_hospital', angle: 115 },
-  { cat: 'cafe', icon: 'storefront', angle: 160 },
-  { cat: 'school', icon: 'school', angle: 205 },
-  { cat: 'park', icon: 'park', angle: 250 },
-  { cat: 'gym', icon: 'fitness_center', angle: 295 },
-  { cat: 'pharmacy', icon: 'local_pharmacy', angle: 340 },
-  { cat: 'university', icon: 'account_balance', angle: 0 },
-]
+const CAT_ICON: Record<string, string> = {
+  grocery: 'shopping_cart',
+  transit: 'tram',
+  healthcare: 'local_hospital',
+  school: 'school',
+  university: 'account_balance',
+  park: 'park',
+  gym: 'fitness_center',
+  cafe: 'storefront',
+  pharmacy: 'local_pharmacy',
+}
 
 function bandColor(m: number | null) {
   if (m == null) return '#9ca3af'
@@ -26,17 +27,6 @@ function bandColor(m: number | null) {
   if (m <= 800) return '#E98300'
   if (m <= 1200) return '#006080'
   return '#b0a89f'
-}
-// fallback only: haversine destination point
-function offset(lat: number, lon: number, distM: number, angleDeg: number): [number, number] {
-  const R = 6378137
-  const brng = (angleDeg * Math.PI) / 180
-  const dR = distM / R
-  const lat1 = (lat * Math.PI) / 180
-  const lon1 = (lon * Math.PI) / 180
-  const lat2 = Math.asin(Math.sin(lat1) * Math.cos(dR) + Math.cos(lat1) * Math.sin(dR) * Math.cos(brng))
-  const lon2 = lon1 + Math.atan2(Math.sin(brng) * Math.sin(dR) * Math.cos(lat1), Math.cos(dR) - Math.sin(lat1) * Math.sin(lat2))
-  return [(lat2 * 180) / Math.PI, (lon2 * 180) / Math.PI]
 }
 
 const centerIcon = L.divIcon({
@@ -48,9 +38,9 @@ const centerIcon = L.divIcon({
 function pinIcon(color: string, icon: string, label: string) {
   return L.divIcon({
     className: '',
-    html: `<div title="${label}" style="width:28px;height:28px;border-radius:50%;background:${color};border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;color:#fff"><span class="material-symbols-outlined" style="font-size:16px">${icon}</span></div>`,
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
+    html: `<div title="${label}" style="width:22px;height:22px;border-radius:50%;background:${color};border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;color:#fff"><span class="material-symbols-outlined" style="font-size:13px">${icon}</span></div>`,
+    iconSize: [22, 22],
+    iconAnchor: [11, 11],
   })
 }
 
@@ -102,13 +92,20 @@ function Recenter({ lat, lon }: { lat: number; lon: number }) {
   return null
 }
 
+type Pt = [string, number, number, number] // [cat, lon, lat, dist_m]
+
 export default function Fifteen() {
   const { areas, loading, error } = useAreas()
   const [id, setId] = useState('sudenburg')
   const [geo, setGeo] = useState<any>(null)
+  const [points, setPoints] = useState<Pt[]>([])
+
   useEffect(() => {
     api.geojson().then(setGeo).catch(() => {})
   }, [])
+  useEffect(() => {
+    api.amenityPoints(id).then(setPoints).catch(() => setPoints([]))
+  }, [id])
 
   if (loading || error)
     return (
@@ -154,7 +151,7 @@ export default function Fifteen() {
         {/* Map */}
         <div className="lg:col-span-2 bg-white rounded-2xl border border-line shadow-sm flex flex-col overflow-hidden lg:h-full">
           <div className="p-4 border-b border-line flex justify-between items-center">
-            <h3 className="font-headline font-bold text-ink">Accessibility Map</h3>
+            <h3 className="font-headline font-bold text-ink">Accessibility Map <span className="text-muted font-normal text-sm">· {points.length} amenities</span></h3>
             <div className="flex gap-4 text-xs font-medium text-muted">
               <Legend c="#D6492A" t="5 Min" />
               <Legend c="#E98300" t="10 Min" />
@@ -174,16 +171,12 @@ export default function Fifteen() {
               <Circle center={[lat, lon]} radius={1200} pathOptions={{ color: '#006080', weight: 1.5, dashArray: '6 6', fill: false }} />
               <Circle center={[lat, lon]} radius={800} pathOptions={{ color: '#E98300', weight: 1.5, dashArray: '6 6', fill: false }} />
               <Circle center={[lat, lon]} radius={400} pathOptions={{ color: '#D6492A', weight: 1.5, dashArray: '6 6', fill: false }} />
-              <Marker position={[lat, lon]} icon={centerIcon} />
-              {PINS.map((p) => {
-                const band = amOf(a, p.cat)
-                const m = band.nearest_m
-                if (m == null) return null
-                const ll = band.nearest_lonlat
-                const pos: [number, number] = ll ? [ll[1], ll[0]] : offset(lat, lon, Math.min(m, 1200), p.angle)
+              {points.map((pt, i) => {
+                const [cat, plon, plat, m] = pt
                 const dist = m < 1000 ? `${m} m` : `${(m / 1000).toFixed(1)} km`
-                return <Marker key={p.cat} position={pos} icon={pinIcon(bandColor(m), p.icon, `${p.cat} · nearest ${dist}`)} />
+                return <Marker key={i} position={[plat, plon]} icon={pinIcon(bandColor(m), CAT_ICON[cat] || 'place', `${cat} · ${dist}`)} />
               })}
+              <Marker position={[lat, lon]} icon={centerIcon} />
               <Recenter lat={lat} lon={lon} />
             </MapContainer>
           </div>
@@ -223,8 +216,32 @@ export default function Fifteen() {
 
       <p className="text-xs text-muted flex items-center gap-1.5">
         <span className="material-symbols-outlined text-sm">info</span>
-        Walk radii: 5 min ≈ 400 m · 10 min ≈ 800 m · 15 min ≈ 1200 m · pins are the nearest real amenity of each type (OpenStreetMap).
+        Every amenity within the 15-min radius is plotted at its real OpenStreetMap location; pin color = walk band (5 / 10 / 15 min).
       </p>
+
+      <BehindCards label="behind the walk score" icon="directions_walk">
+        <InfoCard
+          watermark="dataset"
+          big="2,059"
+          bigUnit=" amenities"
+          source="OpenStreetMap (Overpass) · district centroids"
+          details="Walking speed ≈ 5 km/h, so 5 min ≈ 400 m, 10 min ≈ 800 m, 15 min ≈ 1200 m. Each POI's straight-line distance from the district centre is binned into those rings; the pins on the map are the real OSM coordinates."
+        >
+          Walkability comes from ~2,000 <b className="text-sun">amenities &amp; transit stops</b> mapped in{' '}
+          <b className="text-sun">OpenStreetMap</b>, counted inside 400 / 800 / 1200 m walk rings around each district
+          centre.
+        </InfoCard>
+        <InfoCard
+          watermark="calculate"
+          source="Min-max normalized access index"
+          details="A district scoring high has many amenities close to its centre relative to the other districts. The radar shows the seven dimensions; the band cards count amenities reachable within each walk ring."
+        >
+          <div className="text-4xl font-headline font-black text-sun mb-2">Walk Score</div>
+          The <b className="text-sun">Overall Walk Score</b> averages seven access dimensions — grocery, pharmacy,
+          healthcare, parks, schools, transit and cafés — each <b className="text-sun">normalized 0–100</b> across all
+          districts.
+        </InfoCard>
+      </BehindCards>
     </div>
   )
 }

@@ -56,6 +56,7 @@ export const api = {
       b,
     ),
   geojson: () => getJSON<any>('/api/geojson'),
+  amenityPoints: (id: string) => getJSON<[string, number, number, number][]>(`/api/amenities/${id}`),
   compare: (a: string, b: string) =>
     getJSON<{ area1: Area; area2: Area }>(`/api/compare?area1=${a}&area2=${b}`),
   chat: (message: string) =>

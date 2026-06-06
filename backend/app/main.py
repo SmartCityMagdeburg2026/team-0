@@ -16,8 +16,9 @@ from pydantic import BaseModel
 HERE = os.path.dirname(__file__)
 DATA = os.path.join(HERE, "..", "data", "final", "neighborhood_scores.json")
 GEO_PATH = os.path.join(HERE, "..", "data", "processed", "districts.geojson")
+POINTS_PATH = os.path.join(HERE, "..", "data", "processed", "amenity_points.json")
 
-_cache = {"mt": None, "areas": [], "by_id": {}, "geo": None}
+_cache = {"mt": None, "areas": [], "by_id": {}, "geo": None, "points": {}}
 
 
 def store():
@@ -35,7 +36,8 @@ def store():
             if a:
                 f["properties"]["area_name"] = a["area_name"]
                 f["properties"]["life_value_score"] = a.get("life_value_score")
-        _cache.update(mt=mt, areas=areas, by_id=by_id, geo=geo)
+        points = json.load(open(POINTS_PATH, encoding="utf-8")) if os.path.exists(POINTS_PATH) else {}
+        _cache.update(mt=mt, areas=areas, by_id=by_id, geo=geo, points=points)
     return _cache
 
 
@@ -80,6 +82,15 @@ def health():
 @app.get("/api/geojson")
 def geojson():
     return store()["geo"]
+
+
+@app.get("/api/amenities/{area_id}")
+def amenity_points(area_id: str):
+    s = store()
+    a = s["by_id"].get(area_id)
+    if not a:
+        raise HTTPException(404, "unknown area")
+    return s["points"].get(a["area_name"], [])
 
 
 @app.get("/api/areas")

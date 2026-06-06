@@ -3,6 +3,7 @@ import { ComposedChart, Area as AreaShape, Line, XAxis, YAxis, Tooltip, Cartesia
 import { useNavigate } from 'react-router-dom'
 import type { Area } from '../lib/api'
 import { useAreas, Loading } from '../lib/ui'
+import { BehindCards, InfoCard } from '../components/InfoCards'
 
 const STAT = {
   stable: { t: 'Stable', icon: 'check_circle', cls: 'bg-petrol/10 text-petrol' },
@@ -200,6 +201,30 @@ export default function Future() {
         <span className="material-symbols-outlined text-sm">info</span>
         Estimated trend based on available open data — not exact prediction. Magdeburg Open Data Portal.
       </p>
+
+      <BehindCards label="behind the forecast" icon="trending_up">
+        <InfoCard
+          watermark="dataset"
+          big="15"
+          bigUnit=" years"
+          source="Mietspiegel 2024, Stadt Magdeburg"
+          details="The qualified Mietspiegel publishes forward values for 2025–26; we plot the historical segment solid and the projection dashed. Construction permits/completions (KISS-MD) inform the momentum tags."
+        >
+          The trendline is the <b className="text-sun">Mietspiegel</b> net cold rent per district, year by year —{' '}
+          <b className="text-sun">2012–2024 observed</b> and <b className="text-sun">2025–2026 projected</b> by the index
+          itself.
+        </InfoCard>
+        <InfoCard
+          watermark="calculate"
+          source="Estimated from open data — not exact prediction"
+          details="High growth + still-affordable = ‘move early'; expensive = ‘premium'; cheap & slow = ‘budget'; very fast = ‘watch rent'. Trends are indicative, not forecasts."
+        >
+          <div className="text-4xl font-headline font-black text-sun mb-2">Growth &amp; risk</div>
+          <b className="text-sun">Growth</b> is the rent change since 2012. The <b className="text-sun">rent-increase
+          risk</b> and the move-early / premium / budget tags come from each district's growth versus the{' '}
+          <b className="text-sun">city median</b> rent.
+        </InfoCard>
+      </BehindCards>
     </div>
   )
 }
