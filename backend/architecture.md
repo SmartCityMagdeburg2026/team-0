@@ -1,4 +1,4 @@
-# Backend Architecture — Magdeburg Smart Living Navigator
+# Backend Architecture — KiezKompass MD
 
 Deliberately simple. **No database** (40 districts = tiny). A one-time **pipeline**
 turns open data into a single scored JSON; a thin **FastAPI** app serves it. The UI

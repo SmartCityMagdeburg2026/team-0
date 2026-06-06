@@ -1,4 +1,4 @@
-# Magdeburg Smart Living Navigator — backend (FastAPI + data pipeline)
+# KiezKompass MD — backend (FastAPI + data pipeline)
 # Python 3.11+    ·    install:  pip install -r backend/requirements.txt
 
 # --- API ---
@@ -23,7 +23,9 @@ pyproj>=3.6             # CRS transforms for the 100 m census grids
 # --- Scoring / ML ---
 scikit-learn>=1.5       # 0–100 normalization + k-means "neighbourhood personas"
 
-# --- AI assistant (optional) ---
-anthropic>=0.40         # Claude: natural language -> structured filters + RAG answers
+# --- AI assistant ---
+openai>=1.40            # DeepSeek (OpenAI-compatible) chat + function-calling
+rank-bm25>=0.2.2        # lightweight lexical retrieval for the knowledge base
+anthropic>=0.40         # optional: alternative LLM
 # gtfs-realtime-bindings>=1.0   # optional: decode live GTFS-RT delays
 # protobuf>=5.0                 #   (paired with the above)
