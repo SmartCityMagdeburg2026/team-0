@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #f5f4f2;
+  color: #383838;
+  font-family: 'Public Sans', system-ui, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+  user-select: none;
+}
+
+/* Leaflet — permanent district labels with no bubble */
+.leaflet-container {
+  font-family: 'Public Sans', system-ui, sans-serif;
+}
+.district-label {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  padding: 0;
+}
+.district-label::before {
+  display: none;
+}

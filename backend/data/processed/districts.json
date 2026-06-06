@@ -1,0 +1,362 @@
+[
+  {
+    "area_id": "alt-olvenstedt",
+    "area_name": "Alt Olvenstedt",
+    "centroid": [
+      11.56691,
+      52.15437
+    ],
+    "area_km2": 3.13
+  },
+  {
+    "area_id": "alte-neustadt",
+    "area_name": "Alte Neustadt",
+    "centroid": [
+      11.64971,
+      52.14485
+    ],
+    "area_km2": 2.57
+  },
+  {
+    "area_id": "altstadt",
+    "area_name": "Altstadt",
+    "centroid": [
+      11.63303,
+      52.12821
+    ],
+    "area_km2": 3.76
+  },
+  {
+    "area_id": "barleber-see",
+    "area_name": "Barleber See",
+    "centroid": [
+      11.65556,
+      52.21778
+    ],
+    "area_km2": 5.39
+  },
+  {
+    "area_id": "berliner-chaussee",
+    "area_name": "Berliner Chaussee",
+    "centroid": [
+      11.70134,
+      52.12899
+    ],
+    "area_km2": 5.04
+  },
+  {
+    "area_id": "beyendorf-sohlen",
+    "area_name": "Beyendorf-Sohlen",
+    "centroid": [
+      11.63209,
+      52.04978
+    ],
+    "area_km2": 8.13
+  },
+  {
+    "area_id": "beyendorfer-grund",
+    "area_name": "Beyendorfer Grund",
+    "centroid": [
+      11.60579,
+      52.07397
+    ],
+    "area_km2": 6.01
+  },
+  {
+    "area_id": "bruckfeld",
+    "area_name": "Brückfeld",
+    "centroid": [
+      11.66833,
+      52.12914
+    ],
+    "area_km2": 1.51
+  },
+  {
+    "area_id": "buckau",
+    "area_name": "Buckau",
+    "centroid": [
+      11.64143,
+      52.10605
+    ],
+    "area_km2": 2.22
+  },
+  {
+    "area_id": "cracau",
+    "area_name": "Cracau",
+    "centroid": [
+      11.66643,
+      52.11936
+    ],
+    "area_km2": 2.61
+  },
+  {
+    "area_id": "diesdorf",
+    "area_name": "Diesdorf",
+    "centroid": [
+      11.55679,
+      52.12116
+    ],
+    "area_km2": 10.22
+  },
+  {
+    "area_id": "fermersleben",
+    "area_name": "Fermersleben",
+    "centroid": [
+      11.66068,
+      52.09471
+    ],
+    "area_km2": 3.34
+  },
+  {
+    "area_id": "gewerbegebiet-nord",
+    "area_name": "Gewerbegebiet Nord",
+    "centroid": [
+      11.67206,
+      52.19677
+    ],
+    "area_km2": 9.33
+  },
+  {
+    "area_id": "groer-silberberg",
+    "area_name": "Großer Silberberg",
+    "centroid": [
+      11.58854,
+      52.16678
+    ],
+    "area_km2": 3.86
+  },
+  {
+    "area_id": "herrenkrug",
+    "area_name": "Herrenkrug",
+    "centroid": [
+      11.69016,
+      52.15328
+    ],
+    "area_km2": 11.94
+  },
+  {
+    "area_id": "hopfengarten",
+    "area_name": "Hopfengarten",
+    "centroid": [
+      11.63271,
+      52.08643
+    ],
+    "area_km2": 2.81
+  },
+  {
+    "area_id": "industriehafen",
+    "area_name": "Industriehafen",
+    "centroid": [
+      11.67045,
+      52.16461
+    ],
+    "area_km2": 3.71
+  },
+  {
+    "area_id": "kannenstieg",
+    "area_name": "Kannenstieg",
+    "centroid": [
+      11.62194,
+      52.17202
+    ],
+    "area_km2": 1.14
+  },
+  {
+    "area_id": "kreuzhorst",
+    "area_name": "Kreuzhorst",
+    "centroid": [
+      11.69757,
+      52.08081
+    ],
+    "area_km2": 4.72
+  },
+  {
+    "area_id": "leipziger-strae",
+    "area_name": "Leipziger Straße",
+    "centroid": [
+      11.62157,
+      52.10502
+    ],
+    "area_km2": 3.34
+  },
+  {
+    "area_id": "lemsdorf",
+    "area_name": "Lemsdorf",
+    "centroid": [
+      11.59638,
+      52.09781
+    ],
+    "area_km2": 1.35
+  },
+  {
+    "area_id": "neu-olvenstedt",
+    "area_name": "Neu Olvenstedt",
+    "centroid": [
+      11.58681,
+      52.15109
+    ],
+    "area_km2": 3.35
+  },
+  {
+    "area_id": "neue-neustadt",
+    "area_name": "Neue Neustadt",
+    "centroid": [
+      11.64177,
+      52.15762
+    ],
+    "area_km2": 4.58
+  },
+  {
+    "area_id": "neustadter-feld",
+    "area_name": "Neustädter Feld",
+    "centroid": [
+      11.61778,
+      52.15898
+    ],
+    "area_km2": 2.05
+  },
+  {
+    "area_id": "neustadter-see",
+    "area_name": "Neustädter See",
+    "centroid": [
+      11.6393,
+      52.18029
+    ],
+    "area_km2": 4.74
+  },
+  {
+    "area_id": "nordwest",
+    "area_name": "Nordwest",
+    "centroid": [
+      11.61151,
+      52.14711
+    ],
+    "area_km2": 2.77
+  },
+  {
+    "area_id": "ottersleben",
+    "area_name": "Ottersleben",
+    "centroid": [
+      11.55538,
+      52.08437
+    ],
+    "area_km2": 16.49
+  },
+  {
+    "area_id": "pechau",
+    "area_name": "Pechau",
+    "centroid": [
+      11.72997,
+      52.08701
+    ],
+    "area_km2": 6.97
+  },
+  {
+    "area_id": "prester",
+    "area_name": "Prester",
+    "centroid": [
+      11.68249,
+      52.10153
+    ],
+    "area_km2": 5.21
+  },
+  {
+    "area_id": "randau-calenberge",
+    "area_name": "Randau-Calenberge",
+    "centroid": [
+      11.7165,
+      52.06034
+    ],
+    "area_km2": 13.72
+  },
+  {
+    "area_id": "reform",
+    "area_name": "Reform",
+    "centroid": [
+      11.61011,
+      52.08916
+    ],
+    "area_km2": 3.15
+  },
+  {
+    "area_id": "rothensee",
+    "area_name": "Rothensee",
+    "centroid": [
+      11.65884,
+      52.17871
+    ],
+    "area_km2": 2.13
+  },
+  {
+    "area_id": "salbke",
+    "area_name": "Salbke",
+    "centroid": [
+      11.65498,
+      52.07234
+    ],
+    "area_km2": 7.72
+  },
+  {
+    "area_id": "stadtfeld-ost",
+    "area_name": "Stadtfeld Ost",
+    "centroid": [
+      11.61355,
+      52.13279
+    ],
+    "area_km2": 3.27
+  },
+  {
+    "area_id": "stadtfeld-west",
+    "area_name": "Stadtfeld West",
+    "centroid": [
+      11.58934,
+      52.13072
+    ],
+    "area_km2": 4.64
+  },
+  {
+    "area_id": "sudenburg",
+    "area_name": "Sudenburg",
+    "centroid": [
+      11.59229,
+      52.11154
+    ],
+    "area_km2": 5.3
+  },
+  {
+    "area_id": "sulzegrund",
+    "area_name": "Sülzegrund",
+    "centroid": [
+      11.60803,
+      52.1772
+    ],
+    "area_km2": 3.36
+  },
+  {
+    "area_id": "werder",
+    "area_name": "Werder",
+    "centroid": [
+      11.64989,
+      52.12193
+    ],
+    "area_km2": 3.58
+  },
+  {
+    "area_id": "westerhusen",
+    "area_name": "Westerhüsen",
+    "centroid": [
+      11.66922,
+      52.05257
+    ],
+    "area_km2": 7.26
+  },
+  {
+    "area_id": "zipkeleben",
+    "area_name": "Zipkeleben",
+    "centroid": [
+      11.70242,
+      52.10993
+    ],
+    "area_km2": 4.66
+  }
+]

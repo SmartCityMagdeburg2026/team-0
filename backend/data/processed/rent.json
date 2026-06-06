@@ -1,0 +1,2010 @@
+{
+  "Alt Olvenstedt": {
+    "rent_eur_sqm": 7.45,
+    "est_rent_50sqm": 522,
+    "rent_growth_pct_2012_2024": 67.4,
+    "rent_proj_2026": 10.97,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.45
+      },
+      {
+        "year": 2013,
+        "rent": 5.15
+      },
+      {
+        "year": 2014,
+        "rent": 5.04
+      },
+      {
+        "year": 2015,
+        "rent": 5.3
+      },
+      {
+        "year": 2016,
+        "rent": 4.98
+      },
+      {
+        "year": 2017,
+        "rent": 5.38
+      },
+      {
+        "year": 2018,
+        "rent": 5.51
+      },
+      {
+        "year": 2019,
+        "rent": 5.56
+      },
+      {
+        "year": 2020,
+        "rent": 5.83
+      },
+      {
+        "year": 2021,
+        "rent": 6.08
+      },
+      {
+        "year": 2022,
+        "rent": 6.51
+      },
+      {
+        "year": 2023,
+        "rent": 6.72
+      },
+      {
+        "year": 2024,
+        "rent": 7.45
+      },
+      {
+        "year": 2025,
+        "rent": 7.64
+      },
+      {
+        "year": 2026,
+        "rent": 10.97
+      }
+    ]
+  },
+  "Alte Neustadt": {
+    "rent_eur_sqm": 7.39,
+    "est_rent_50sqm": 520,
+    "rent_growth_pct_2012_2024": 38.9,
+    "rent_proj_2026": 7.78,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.32
+      },
+      {
+        "year": 2013,
+        "rent": 5.32
+      },
+      {
+        "year": 2014,
+        "rent": 5.42
+      },
+      {
+        "year": 2015,
+        "rent": 5.52
+      },
+      {
+        "year": 2016,
+        "rent": 5.61
+      },
+      {
+        "year": 2017,
+        "rent": 5.97
+      },
+      {
+        "year": 2018,
+        "rent": 6.25
+      },
+      {
+        "year": 2019,
+        "rent": 6.33
+      },
+      {
+        "year": 2020,
+        "rent": 6.29
+      },
+      {
+        "year": 2021,
+        "rent": 6.53
+      },
+      {
+        "year": 2022,
+        "rent": 6.92
+      },
+      {
+        "year": 2023,
+        "rent": 7.14
+      },
+      {
+        "year": 2024,
+        "rent": 7.39
+      },
+      {
+        "year": 2025,
+        "rent": 7.94
+      },
+      {
+        "year": 2026,
+        "rent": 7.78
+      }
+    ]
+  },
+  "Altstadt": {
+    "rent_eur_sqm": 7.59,
+    "est_rent_50sqm": 530,
+    "rent_growth_pct_2012_2024": 33.9,
+    "rent_proj_2026": 8.17,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.67
+      },
+      {
+        "year": 2013,
+        "rent": 5.77
+      },
+      {
+        "year": 2014,
+        "rent": 6.21
+      },
+      {
+        "year": 2015,
+        "rent": 6.07
+      },
+      {
+        "year": 2016,
+        "rent": 6.15
+      },
+      {
+        "year": 2017,
+        "rent": 6.17
+      },
+      {
+        "year": 2018,
+        "rent": 6.49
+      },
+      {
+        "year": 2019,
+        "rent": 6.64
+      },
+      {
+        "year": 2020,
+        "rent": 6.76
+      },
+      {
+        "year": 2021,
+        "rent": 6.99
+      },
+      {
+        "year": 2022,
+        "rent": 7.12
+      },
+      {
+        "year": 2023,
+        "rent": 7.41
+      },
+      {
+        "year": 2024,
+        "rent": 7.59
+      },
+      {
+        "year": 2025,
+        "rent": 7.88
+      },
+      {
+        "year": 2026,
+        "rent": 8.17
+      }
+    ]
+  },
+  "Berliner Chaussee": {
+    "rent_eur_sqm": 6.77,
+    "est_rent_50sqm": 488,
+    "rent_growth_pct_2012_2024": 17.7,
+    "rent_proj_2026": null,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.75
+      },
+      {
+        "year": 2016,
+        "rent": 6.18
+      },
+      {
+        "year": 2018,
+        "rent": 6.14
+      },
+      {
+        "year": 2019,
+        "rent": 7.71
+      },
+      {
+        "year": 2021,
+        "rent": 6.86
+      },
+      {
+        "year": 2022,
+        "rent": 6.41
+      },
+      {
+        "year": 2023,
+        "rent": 8.84
+      },
+      {
+        "year": 2024,
+        "rent": 6.77
+      },
+      {
+        "year": 2025,
+        "rent": 9.41
+      }
+    ]
+  },
+  "Beyendorf-Sohlen": {
+    "rent_eur_sqm": 6.06,
+    "est_rent_50sqm": 453,
+    "rent_growth_pct_2012_2024": 27.0,
+    "rent_proj_2026": null,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.77
+      },
+      {
+        "year": 2016,
+        "rent": 5
+      },
+      {
+        "year": 2017,
+        "rent": 5.11
+      },
+      {
+        "year": 2018,
+        "rent": 5.33
+      },
+      {
+        "year": 2019,
+        "rent": 6.41
+      },
+      {
+        "year": 2020,
+        "rent": 5.69
+      },
+      {
+        "year": 2021,
+        "rent": 6
+      },
+      {
+        "year": 2022,
+        "rent": 5.46
+      },
+      {
+        "year": 2025,
+        "rent": 6.06
+      }
+    ]
+  },
+  "Brückfeld": {
+    "rent_eur_sqm": 7.39,
+    "est_rent_50sqm": 520,
+    "rent_growth_pct_2012_2024": 51.1,
+    "rent_proj_2026": 8.05,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.89
+      },
+      {
+        "year": 2013,
+        "rent": 5.01
+      },
+      {
+        "year": 2014,
+        "rent": 5.17
+      },
+      {
+        "year": 2015,
+        "rent": 5.17
+      },
+      {
+        "year": 2016,
+        "rent": 5.37
+      },
+      {
+        "year": 2017,
+        "rent": 5.54
+      },
+      {
+        "year": 2018,
+        "rent": 7.06
+      },
+      {
+        "year": 2019,
+        "rent": 5.94
+      },
+      {
+        "year": 2020,
+        "rent": 6.26
+      },
+      {
+        "year": 2021,
+        "rent": 6.65
+      },
+      {
+        "year": 2022,
+        "rent": 6.65
+      },
+      {
+        "year": 2023,
+        "rent": 7.21
+      },
+      {
+        "year": 2024,
+        "rent": 7.39
+      },
+      {
+        "year": 2025,
+        "rent": 7.67
+      },
+      {
+        "year": 2026,
+        "rent": 8.05
+      }
+    ]
+  },
+  "Buckau": {
+    "rent_eur_sqm": 8.42,
+    "est_rent_50sqm": 571,
+    "rent_growth_pct_2012_2024": 59.8,
+    "rent_proj_2026": 9.3,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.27
+      },
+      {
+        "year": 2013,
+        "rent": 5.27
+      },
+      {
+        "year": 2014,
+        "rent": 5.32
+      },
+      {
+        "year": 2015,
+        "rent": 5.68
+      },
+      {
+        "year": 2016,
+        "rent": 5.89
+      },
+      {
+        "year": 2017,
+        "rent": 6.05
+      },
+      {
+        "year": 2018,
+        "rent": 6.45
+      },
+      {
+        "year": 2019,
+        "rent": 6.57
+      },
+      {
+        "year": 2020,
+        "rent": 6.69
+      },
+      {
+        "year": 2021,
+        "rent": 7.3
+      },
+      {
+        "year": 2022,
+        "rent": 7.75
+      },
+      {
+        "year": 2023,
+        "rent": 7.93
+      },
+      {
+        "year": 2024,
+        "rent": 8.42
+      },
+      {
+        "year": 2025,
+        "rent": 8.53
+      },
+      {
+        "year": 2026,
+        "rent": 9.3
+      }
+    ]
+  },
+  "Cracau": {
+    "rent_eur_sqm": 6.89,
+    "est_rent_50sqm": 494,
+    "rent_growth_pct_2012_2024": 32.2,
+    "rent_proj_2026": 7.09,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.21
+      },
+      {
+        "year": 2013,
+        "rent": 5.52
+      },
+      {
+        "year": 2014,
+        "rent": 5.63
+      },
+      {
+        "year": 2015,
+        "rent": 5.57
+      },
+      {
+        "year": 2016,
+        "rent": 5.66
+      },
+      {
+        "year": 2017,
+        "rent": 5.81
+      },
+      {
+        "year": 2018,
+        "rent": 6.05
+      },
+      {
+        "year": 2019,
+        "rent": 6.24
+      },
+      {
+        "year": 2020,
+        "rent": 6.45
+      },
+      {
+        "year": 2021,
+        "rent": 6.41
+      },
+      {
+        "year": 2022,
+        "rent": 6.77
+      },
+      {
+        "year": 2023,
+        "rent": 6.81
+      },
+      {
+        "year": 2024,
+        "rent": 6.89
+      },
+      {
+        "year": 2025,
+        "rent": 7.02
+      },
+      {
+        "year": 2026,
+        "rent": 7.09
+      }
+    ]
+  },
+  "Diesdorf": {
+    "rent_eur_sqm": 6.38,
+    "est_rent_50sqm": 469,
+    "rent_growth_pct_2012_2024": 32.6,
+    "rent_proj_2026": null,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.81
+      },
+      {
+        "year": 2014,
+        "rent": 5.02
+      },
+      {
+        "year": 2015,
+        "rent": 5.15
+      },
+      {
+        "year": 2016,
+        "rent": 5.41
+      },
+      {
+        "year": 2017,
+        "rent": 5.43
+      },
+      {
+        "year": 2018,
+        "rent": 5.81
+      },
+      {
+        "year": 2019,
+        "rent": 5.7
+      },
+      {
+        "year": 2020,
+        "rent": 5.74
+      },
+      {
+        "year": 2021,
+        "rent": 5.69
+      },
+      {
+        "year": 2022,
+        "rent": 6.85
+      },
+      {
+        "year": 2023,
+        "rent": 5.66
+      },
+      {
+        "year": 2024,
+        "rent": 6.38
+      },
+      {
+        "year": 2025,
+        "rent": 8.63
+      }
+    ]
+  },
+  "Fermersleben": {
+    "rent_eur_sqm": 6.31,
+    "est_rent_50sqm": 465,
+    "rent_growth_pct_2012_2024": 29.3,
+    "rent_proj_2026": 6.77,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.88
+      },
+      {
+        "year": 2013,
+        "rent": 4.77
+      },
+      {
+        "year": 2014,
+        "rent": 5.16
+      },
+      {
+        "year": 2015,
+        "rent": 5.02
+      },
+      {
+        "year": 2016,
+        "rent": 5.53
+      },
+      {
+        "year": 2017,
+        "rent": 5.46
+      },
+      {
+        "year": 2018,
+        "rent": 5.64
+      },
+      {
+        "year": 2019,
+        "rent": 5.81
+      },
+      {
+        "year": 2020,
+        "rent": 5.78
+      },
+      {
+        "year": 2021,
+        "rent": 5.8
+      },
+      {
+        "year": 2022,
+        "rent": 6.03
+      },
+      {
+        "year": 2023,
+        "rent": 6.08
+      },
+      {
+        "year": 2024,
+        "rent": 6.31
+      },
+      {
+        "year": 2025,
+        "rent": 6.58
+      },
+      {
+        "year": 2026,
+        "rent": 6.77
+      }
+    ]
+  },
+  "Herrenkrug": {
+    "rent_eur_sqm": 8.51,
+    "est_rent_50sqm": 576,
+    "rent_growth_pct_2012_2024": 39.5,
+    "rent_proj_2026": 8.32,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 6.1
+      },
+      {
+        "year": 2013,
+        "rent": 6.01
+      },
+      {
+        "year": 2014,
+        "rent": 5.96
+      },
+      {
+        "year": 2015,
+        "rent": 6.04
+      },
+      {
+        "year": 2016,
+        "rent": 5.94
+      },
+      {
+        "year": 2017,
+        "rent": 6.54
+      },
+      {
+        "year": 2018,
+        "rent": 6.61
+      },
+      {
+        "year": 2019,
+        "rent": 6.91
+      },
+      {
+        "year": 2020,
+        "rent": 6.96
+      },
+      {
+        "year": 2021,
+        "rent": 7.34
+      },
+      {
+        "year": 2022,
+        "rent": 6.88
+      },
+      {
+        "year": 2023,
+        "rent": 8.1
+      },
+      {
+        "year": 2024,
+        "rent": 8.51
+      },
+      {
+        "year": 2025,
+        "rent": 7.72
+      },
+      {
+        "year": 2026,
+        "rent": 8.32
+      }
+    ]
+  },
+  "Hopfengarten": {
+    "rent_eur_sqm": 7.19,
+    "est_rent_50sqm": 510,
+    "rent_growth_pct_2012_2024": 23.1,
+    "rent_proj_2026": 8.27,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.84
+      },
+      {
+        "year": 2013,
+        "rent": 5.88
+      },
+      {
+        "year": 2014,
+        "rent": 5.92
+      },
+      {
+        "year": 2015,
+        "rent": 5.87
+      },
+      {
+        "year": 2016,
+        "rent": 6.05
+      },
+      {
+        "year": 2017,
+        "rent": 6.19
+      },
+      {
+        "year": 2018,
+        "rent": 6.4
+      },
+      {
+        "year": 2019,
+        "rent": 6.35
+      },
+      {
+        "year": 2020,
+        "rent": 6.55
+      },
+      {
+        "year": 2021,
+        "rent": 6.84
+      },
+      {
+        "year": 2022,
+        "rent": 7.47
+      },
+      {
+        "year": 2023,
+        "rent": 7.18
+      },
+      {
+        "year": 2024,
+        "rent": 7.19
+      },
+      {
+        "year": 2025,
+        "rent": 8.01
+      },
+      {
+        "year": 2026,
+        "rent": 8.27
+      }
+    ]
+  },
+  "Kannenstieg": {
+    "rent_eur_sqm": 6.05,
+    "est_rent_50sqm": 453,
+    "rent_growth_pct_2012_2024": 22.5,
+    "rent_proj_2026": 6.6,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.94
+      },
+      {
+        "year": 2013,
+        "rent": 4.88
+      },
+      {
+        "year": 2014,
+        "rent": 5.06
+      },
+      {
+        "year": 2015,
+        "rent": 5.02
+      },
+      {
+        "year": 2016,
+        "rent": 5.05
+      },
+      {
+        "year": 2017,
+        "rent": 5.11
+      },
+      {
+        "year": 2018,
+        "rent": 5.42
+      },
+      {
+        "year": 2019,
+        "rent": 5.52
+      },
+      {
+        "year": 2020,
+        "rent": 5.67
+      },
+      {
+        "year": 2021,
+        "rent": 5.48
+      },
+      {
+        "year": 2022,
+        "rent": 5.87
+      },
+      {
+        "year": 2023,
+        "rent": 5.81
+      },
+      {
+        "year": 2024,
+        "rent": 6.05
+      },
+      {
+        "year": 2025,
+        "rent": 6.39
+      },
+      {
+        "year": 2026,
+        "rent": 6.6
+      }
+    ]
+  },
+  "Leipziger Straße": {
+    "rent_eur_sqm": 6.95,
+    "est_rent_50sqm": 497,
+    "rent_growth_pct_2012_2024": 37.1,
+    "rent_proj_2026": 7.42,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.07
+      },
+      {
+        "year": 2013,
+        "rent": 5.12
+      },
+      {
+        "year": 2014,
+        "rent": 5.41
+      },
+      {
+        "year": 2015,
+        "rent": 5.37
+      },
+      {
+        "year": 2016,
+        "rent": 5.47
+      },
+      {
+        "year": 2017,
+        "rent": 5.55
+      },
+      {
+        "year": 2018,
+        "rent": 5.73
+      },
+      {
+        "year": 2019,
+        "rent": 5.87
+      },
+      {
+        "year": 2020,
+        "rent": 6.04
+      },
+      {
+        "year": 2021,
+        "rent": 6.27
+      },
+      {
+        "year": 2022,
+        "rent": 6.37
+      },
+      {
+        "year": 2023,
+        "rent": 6.86
+      },
+      {
+        "year": 2024,
+        "rent": 6.95
+      },
+      {
+        "year": 2025,
+        "rent": 7.36
+      },
+      {
+        "year": 2026,
+        "rent": 7.42
+      }
+    ]
+  },
+  "Lemsdorf": {
+    "rent_eur_sqm": 9.46,
+    "est_rent_50sqm": 623,
+    "rent_growth_pct_2012_2024": 82.6,
+    "rent_proj_2026": 7.04,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.18
+      },
+      {
+        "year": 2013,
+        "rent": 5.15
+      },
+      {
+        "year": 2014,
+        "rent": 5.48
+      },
+      {
+        "year": 2015,
+        "rent": 5.45
+      },
+      {
+        "year": 2016,
+        "rent": 5.89
+      },
+      {
+        "year": 2017,
+        "rent": 6.02
+      },
+      {
+        "year": 2018,
+        "rent": 5.97
+      },
+      {
+        "year": 2019,
+        "rent": 6.25
+      },
+      {
+        "year": 2020,
+        "rent": 6.13
+      },
+      {
+        "year": 2021,
+        "rent": 6.41
+      },
+      {
+        "year": 2022,
+        "rent": 6.46
+      },
+      {
+        "year": 2023,
+        "rent": 7.62
+      },
+      {
+        "year": 2024,
+        "rent": 9.46
+      },
+      {
+        "year": 2025,
+        "rent": 8.01
+      },
+      {
+        "year": 2026,
+        "rent": 7.04
+      }
+    ]
+  },
+  "Neu Olvenstedt": {
+    "rent_eur_sqm": 6.02,
+    "est_rent_50sqm": 451,
+    "rent_growth_pct_2012_2024": 44.7,
+    "rent_proj_2026": 6.68,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.16
+      },
+      {
+        "year": 2013,
+        "rent": 4.38
+      },
+      {
+        "year": 2014,
+        "rent": 4.63
+      },
+      {
+        "year": 2015,
+        "rent": 4.63
+      },
+      {
+        "year": 2016,
+        "rent": 4.78
+      },
+      {
+        "year": 2017,
+        "rent": 4.95
+      },
+      {
+        "year": 2018,
+        "rent": 5.06
+      },
+      {
+        "year": 2019,
+        "rent": 5.12
+      },
+      {
+        "year": 2020,
+        "rent": 5.02
+      },
+      {
+        "year": 2021,
+        "rent": 5.23
+      },
+      {
+        "year": 2022,
+        "rent": 5.49
+      },
+      {
+        "year": 2023,
+        "rent": 5.82
+      },
+      {
+        "year": 2024,
+        "rent": 6.02
+      },
+      {
+        "year": 2025,
+        "rent": 6.28
+      },
+      {
+        "year": 2026,
+        "rent": 6.68
+      }
+    ]
+  },
+  "Neue Neustadt": {
+    "rent_eur_sqm": 6.72,
+    "est_rent_50sqm": 486,
+    "rent_growth_pct_2012_2024": 36.0,
+    "rent_proj_2026": 7.16,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.94
+      },
+      {
+        "year": 2013,
+        "rent": 5.06
+      },
+      {
+        "year": 2014,
+        "rent": 5.15
+      },
+      {
+        "year": 2015,
+        "rent": 5.25
+      },
+      {
+        "year": 2016,
+        "rent": 5.42
+      },
+      {
+        "year": 2017,
+        "rent": 5.62
+      },
+      {
+        "year": 2018,
+        "rent": 5.69
+      },
+      {
+        "year": 2019,
+        "rent": 5.75
+      },
+      {
+        "year": 2020,
+        "rent": 5.98
+      },
+      {
+        "year": 2021,
+        "rent": 5.89
+      },
+      {
+        "year": 2022,
+        "rent": 6.31
+      },
+      {
+        "year": 2023,
+        "rent": 6.5
+      },
+      {
+        "year": 2024,
+        "rent": 6.72
+      },
+      {
+        "year": 2025,
+        "rent": 6.9
+      },
+      {
+        "year": 2026,
+        "rent": 7.16
+      }
+    ]
+  },
+  "Neustädter Feld": {
+    "rent_eur_sqm": 6.18,
+    "est_rent_50sqm": 459,
+    "rent_growth_pct_2012_2024": 43.4,
+    "rent_proj_2026": 6.62,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.31
+      },
+      {
+        "year": 2013,
+        "rent": 4.49
+      },
+      {
+        "year": 2014,
+        "rent": 4.73
+      },
+      {
+        "year": 2015,
+        "rent": 4.72
+      },
+      {
+        "year": 2016,
+        "rent": 4.96
+      },
+      {
+        "year": 2017,
+        "rent": 4.95
+      },
+      {
+        "year": 2018,
+        "rent": 5.19
+      },
+      {
+        "year": 2019,
+        "rent": 5.32
+      },
+      {
+        "year": 2020,
+        "rent": 5.52
+      },
+      {
+        "year": 2021,
+        "rent": 5.49
+      },
+      {
+        "year": 2022,
+        "rent": 5.72
+      },
+      {
+        "year": 2023,
+        "rent": 5.94
+      },
+      {
+        "year": 2024,
+        "rent": 6.18
+      },
+      {
+        "year": 2025,
+        "rent": 6.61
+      },
+      {
+        "year": 2026,
+        "rent": 6.62
+      }
+    ]
+  },
+  "Neustädter See": {
+    "rent_eur_sqm": 6.36,
+    "est_rent_50sqm": 468,
+    "rent_growth_pct_2012_2024": 33.6,
+    "rent_proj_2026": 6.15,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.76
+      },
+      {
+        "year": 2013,
+        "rent": 4.96
+      },
+      {
+        "year": 2014,
+        "rent": 5.15
+      },
+      {
+        "year": 2015,
+        "rent": 5.12
+      },
+      {
+        "year": 2016,
+        "rent": 5.15
+      },
+      {
+        "year": 2017,
+        "rent": 5.3
+      },
+      {
+        "year": 2018,
+        "rent": 5.55
+      },
+      {
+        "year": 2019,
+        "rent": 5.56
+      },
+      {
+        "year": 2020,
+        "rent": 5.51
+      },
+      {
+        "year": 2021,
+        "rent": 5.56
+      },
+      {
+        "year": 2022,
+        "rent": 5.72
+      },
+      {
+        "year": 2023,
+        "rent": 6.21
+      },
+      {
+        "year": 2024,
+        "rent": 6.36
+      },
+      {
+        "year": 2025,
+        "rent": 6.45
+      },
+      {
+        "year": 2026,
+        "rent": 6.15
+      }
+    ]
+  },
+  "Nordwest": {
+    "rent_eur_sqm": 6.96,
+    "est_rent_50sqm": 498,
+    "rent_growth_pct_2012_2024": 10.0,
+    "rent_proj_2026": 7.63,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 6.33
+      },
+      {
+        "year": 2013,
+        "rent": 7.23
+      },
+      {
+        "year": 2014,
+        "rent": 6.34
+      },
+      {
+        "year": 2015,
+        "rent": 6.3
+      },
+      {
+        "year": 2016,
+        "rent": 6.78
+      },
+      {
+        "year": 2017,
+        "rent": 6.41
+      },
+      {
+        "year": 2018,
+        "rent": 6.77
+      },
+      {
+        "year": 2019,
+        "rent": 7.07
+      },
+      {
+        "year": 2020,
+        "rent": 7.25
+      },
+      {
+        "year": 2021,
+        "rent": 7.01
+      },
+      {
+        "year": 2022,
+        "rent": 6.78
+      },
+      {
+        "year": 2023,
+        "rent": 7.51
+      },
+      {
+        "year": 2024,
+        "rent": 6.96
+      },
+      {
+        "year": 2025,
+        "rent": 7.25
+      },
+      {
+        "year": 2026,
+        "rent": 7.63
+      }
+    ]
+  },
+  "Ottersleben": {
+    "rent_eur_sqm": 7.51,
+    "est_rent_50sqm": 526,
+    "rent_growth_pct_2012_2024": 38.3,
+    "rent_proj_2026": 9.91,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.43
+      },
+      {
+        "year": 2013,
+        "rent": 5.44
+      },
+      {
+        "year": 2014,
+        "rent": 5.91
+      },
+      {
+        "year": 2015,
+        "rent": 5.56
+      },
+      {
+        "year": 2016,
+        "rent": 6
+      },
+      {
+        "year": 2017,
+        "rent": 5.98
+      },
+      {
+        "year": 2018,
+        "rent": 6.43
+      },
+      {
+        "year": 2019,
+        "rent": 6.57
+      },
+      {
+        "year": 2020,
+        "rent": 6.46
+      },
+      {
+        "year": 2021,
+        "rent": 7.05
+      },
+      {
+        "year": 2022,
+        "rent": 7.12
+      },
+      {
+        "year": 2023,
+        "rent": 7.17
+      },
+      {
+        "year": 2024,
+        "rent": 7.51
+      },
+      {
+        "year": 2025,
+        "rent": 9.82
+      },
+      {
+        "year": 2026,
+        "rent": 9.91
+      }
+    ]
+  },
+  "Reform": {
+    "rent_eur_sqm": 6.63,
+    "est_rent_50sqm": 481,
+    "rent_growth_pct_2012_2024": 34.2,
+    "rent_proj_2026": 7.12,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.94
+      },
+      {
+        "year": 2013,
+        "rent": 5.04
+      },
+      {
+        "year": 2014,
+        "rent": 5.13
+      },
+      {
+        "year": 2015,
+        "rent": 5.11
+      },
+      {
+        "year": 2016,
+        "rent": 5.4
+      },
+      {
+        "year": 2017,
+        "rent": 5.25
+      },
+      {
+        "year": 2018,
+        "rent": 5.7
+      },
+      {
+        "year": 2019,
+        "rent": 5.83
+      },
+      {
+        "year": 2020,
+        "rent": 5.64
+      },
+      {
+        "year": 2021,
+        "rent": 5.78
+      },
+      {
+        "year": 2022,
+        "rent": 6.11
+      },
+      {
+        "year": 2023,
+        "rent": 6.39
+      },
+      {
+        "year": 2024,
+        "rent": 6.63
+      },
+      {
+        "year": 2025,
+        "rent": 6.81
+      },
+      {
+        "year": 2026,
+        "rent": 7.12
+      }
+    ]
+  },
+  "Rothensee": {
+    "rent_eur_sqm": 7.28,
+    "est_rent_50sqm": 514,
+    "rent_growth_pct_2012_2024": 48.6,
+    "rent_proj_2026": 8.11,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.9
+      },
+      {
+        "year": 2013,
+        "rent": 4.63
+      },
+      {
+        "year": 2014,
+        "rent": 4.78
+      },
+      {
+        "year": 2015,
+        "rent": 5.17
+      },
+      {
+        "year": 2016,
+        "rent": 5.45
+      },
+      {
+        "year": 2017,
+        "rent": 6.03
+      },
+      {
+        "year": 2018,
+        "rent": 6.08
+      },
+      {
+        "year": 2019,
+        "rent": 6.51
+      },
+      {
+        "year": 2020,
+        "rent": 6.56
+      },
+      {
+        "year": 2021,
+        "rent": 7.14
+      },
+      {
+        "year": 2022,
+        "rent": 7.23
+      },
+      {
+        "year": 2023,
+        "rent": 7.49
+      },
+      {
+        "year": 2024,
+        "rent": 7.28
+      },
+      {
+        "year": 2025,
+        "rent": 7.75
+      },
+      {
+        "year": 2026,
+        "rent": 8.11
+      }
+    ]
+  },
+  "Salbke": {
+    "rent_eur_sqm": 6.85,
+    "est_rent_50sqm": 492,
+    "rent_growth_pct_2012_2024": 47.3,
+    "rent_proj_2026": 8.36,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.65
+      },
+      {
+        "year": 2013,
+        "rent": 4.74
+      },
+      {
+        "year": 2014,
+        "rent": 4.93
+      },
+      {
+        "year": 2015,
+        "rent": 5.15
+      },
+      {
+        "year": 2016,
+        "rent": 5.09
+      },
+      {
+        "year": 2017,
+        "rent": 5.39
+      },
+      {
+        "year": 2018,
+        "rent": 5.67
+      },
+      {
+        "year": 2019,
+        "rent": 5.58
+      },
+      {
+        "year": 2020,
+        "rent": 5.74
+      },
+      {
+        "year": 2021,
+        "rent": 5.76
+      },
+      {
+        "year": 2022,
+        "rent": 6.14
+      },
+      {
+        "year": 2023,
+        "rent": 6.34
+      },
+      {
+        "year": 2024,
+        "rent": 6.85
+      },
+      {
+        "year": 2025,
+        "rent": 6.98
+      },
+      {
+        "year": 2026,
+        "rent": 8.36
+      }
+    ]
+  },
+  "Stadtfeld Ost": {
+    "rent_eur_sqm": 7.24,
+    "est_rent_50sqm": 512,
+    "rent_growth_pct_2012_2024": 34.8,
+    "rent_proj_2026": 7.66,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.37
+      },
+      {
+        "year": 2013,
+        "rent": 5.48
+      },
+      {
+        "year": 2014,
+        "rent": 5.71
+      },
+      {
+        "year": 2015,
+        "rent": 5.73
+      },
+      {
+        "year": 2016,
+        "rent": 5.86
+      },
+      {
+        "year": 2017,
+        "rent": 6.08
+      },
+      {
+        "year": 2018,
+        "rent": 6.16
+      },
+      {
+        "year": 2019,
+        "rent": 6.2
+      },
+      {
+        "year": 2020,
+        "rent": 6.37
+      },
+      {
+        "year": 2021,
+        "rent": 6.54
+      },
+      {
+        "year": 2022,
+        "rent": 6.89
+      },
+      {
+        "year": 2023,
+        "rent": 7.08
+      },
+      {
+        "year": 2024,
+        "rent": 7.24
+      },
+      {
+        "year": 2025,
+        "rent": 7.5
+      },
+      {
+        "year": 2026,
+        "rent": 7.66
+      }
+    ]
+  },
+  "Stadtfeld West": {
+    "rent_eur_sqm": 7.34,
+    "est_rent_50sqm": 517,
+    "rent_growth_pct_2012_2024": 38.8,
+    "rent_proj_2026": 7.96,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.29
+      },
+      {
+        "year": 2013,
+        "rent": 5.46
+      },
+      {
+        "year": 2014,
+        "rent": 5.54
+      },
+      {
+        "year": 2015,
+        "rent": 5.66
+      },
+      {
+        "year": 2016,
+        "rent": 5.79
+      },
+      {
+        "year": 2017,
+        "rent": 5.76
+      },
+      {
+        "year": 2018,
+        "rent": 6.1
+      },
+      {
+        "year": 2019,
+        "rent": 6.15
+      },
+      {
+        "year": 2020,
+        "rent": 6.21
+      },
+      {
+        "year": 2021,
+        "rent": 6.23
+      },
+      {
+        "year": 2022,
+        "rent": 6.48
+      },
+      {
+        "year": 2023,
+        "rent": 6.73
+      },
+      {
+        "year": 2024,
+        "rent": 7.34
+      },
+      {
+        "year": 2025,
+        "rent": 7.69
+      },
+      {
+        "year": 2026,
+        "rent": 7.96
+      }
+    ]
+  },
+  "Sudenburg": {
+    "rent_eur_sqm": 7.16,
+    "est_rent_50sqm": 508,
+    "rent_growth_pct_2012_2024": 41.5,
+    "rent_proj_2026": 7.32,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.06
+      },
+      {
+        "year": 2013,
+        "rent": 5.02
+      },
+      {
+        "year": 2014,
+        "rent": 5.22
+      },
+      {
+        "year": 2015,
+        "rent": 5.25
+      },
+      {
+        "year": 2016,
+        "rent": 5.55
+      },
+      {
+        "year": 2017,
+        "rent": 5.67
+      },
+      {
+        "year": 2018,
+        "rent": 5.83
+      },
+      {
+        "year": 2019,
+        "rent": 5.86
+      },
+      {
+        "year": 2020,
+        "rent": 5.99
+      },
+      {
+        "year": 2021,
+        "rent": 6.23
+      },
+      {
+        "year": 2022,
+        "rent": 6.37
+      },
+      {
+        "year": 2023,
+        "rent": 6.66
+      },
+      {
+        "year": 2024,
+        "rent": 7.16
+      },
+      {
+        "year": 2025,
+        "rent": 7.5
+      },
+      {
+        "year": 2026,
+        "rent": 7.32
+      }
+    ]
+  },
+  "Werder": {
+    "rent_eur_sqm": 8.7,
+    "est_rent_50sqm": 585,
+    "rent_growth_pct_2012_2024": 62.0,
+    "rent_proj_2026": 8.45,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 5.37
+      },
+      {
+        "year": 2013,
+        "rent": 5.75
+      },
+      {
+        "year": 2014,
+        "rent": 5.81
+      },
+      {
+        "year": 2015,
+        "rent": 6.33
+      },
+      {
+        "year": 2016,
+        "rent": 6.48
+      },
+      {
+        "year": 2017,
+        "rent": 6.73
+      },
+      {
+        "year": 2018,
+        "rent": 6.57
+      },
+      {
+        "year": 2019,
+        "rent": 6.7
+      },
+      {
+        "year": 2020,
+        "rent": 7.03
+      },
+      {
+        "year": 2021,
+        "rent": 7.16
+      },
+      {
+        "year": 2022,
+        "rent": 7.72
+      },
+      {
+        "year": 2023,
+        "rent": 7.56
+      },
+      {
+        "year": 2024,
+        "rent": 8.7
+      },
+      {
+        "year": 2025,
+        "rent": 8.5
+      },
+      {
+        "year": 2026,
+        "rent": 8.45
+      }
+    ]
+  },
+  "Westerhüsen": {
+    "rent_eur_sqm": 6.62,
+    "est_rent_50sqm": 481,
+    "rent_growth_pct_2012_2024": 33.5,
+    "rent_proj_2026": 7.55,
+    "series": [
+      {
+        "year": 2012,
+        "rent": 4.96
+      },
+      {
+        "year": 2013,
+        "rent": 5.39
+      },
+      {
+        "year": 2014,
+        "rent": 5.24
+      },
+      {
+        "year": 2015,
+        "rent": 5.27
+      },
+      {
+        "year": 2016,
+        "rent": 5.67
+      },
+      {
+        "year": 2017,
+        "rent": 5.42
+      },
+      {
+        "year": 2018,
+        "rent": 5.87
+      },
+      {
+        "year": 2019,
+        "rent": 5.88
+      },
+      {
+        "year": 2020,
+        "rent": 6.14
+      },
+      {
+        "year": 2021,
+        "rent": 6.03
+      },
+      {
+        "year": 2022,
+        "rent": 6.09
+      },
+      {
+        "year": 2023,
+        "rent": 6.51
+      },
+      {
+        "year": 2024,
+        "rent": 6.62
+      },
+      {
+        "year": 2025,
+        "rent": 7.12
+      },
+      {
+        "year": 2026,
+        "rent": 7.55
+      }
+    ]
+  },
+  "Prester": {
+    "rent_eur_sqm": 6.36,
+    "est_rent_50sqm": 468,
+    "rent_growth_pct_2012_2024": null,
+    "rent_proj_2026": null,
+    "series": [
+      {
+        "year": 2013,
+        "rent": 5.68
+      },
+      {
+        "year": 2015,
+        "rent": 6.1
+      },
+      {
+        "year": 2017,
+        "rent": 6.04
+      },
+      {
+        "year": 2018,
+        "rent": 6.37
+      },
+      {
+        "year": 2019,
+        "rent": 7.45
+      },
+      {
+        "year": 2020,
+        "rent": 6.87
+      },
+      {
+        "year": 2021,
+        "rent": 6.26
+      },
+      {
+        "year": 2022,
+        "rent": 7.44
+      },
+      {
+        "year": 2024,
+        "rent": 6.36
+      }
+    ]
+  },
+  "Randau-Calenberge": {
+    "rent_eur_sqm": 5.53,
+    "est_rent_50sqm": 427,
+    "rent_growth_pct_2012_2024": null,
+    "rent_proj_2026": null,
+    "series": [
+      {
+        "year": 2014,
+        "rent": 4.89
+      },
+      {
+        "year": 2015,
+        "rent": 6.04
+      },
+      {
+        "year": 2025,
+        "rent": 5.53
+      }
+    ]
+  },
+  "Pechau": {
+    "rent_eur_sqm": 7.29,
+    "est_rent_50sqm": 514,
+    "rent_growth_pct_2012_2024": null,
+    "rent_proj_2026": null,
+    "series": [
+      {
+        "year": 2016,
+        "rent": 5.69
+      },
+      {
+        "year": 2022,
+        "rent": 7.29
+      }
+    ]
+  },
+  "Großer Silberberg": {
+    "rent_eur_sqm": 3.81,
+    "est_rent_50sqm": 340,
+    "rent_growth_pct_2012_2024": null,
+    "rent_proj_2026": null,
+    "series": [
+      {
+        "year": 2020,
+        "rent": 3.81
+      }
+    ]
+  }
+}

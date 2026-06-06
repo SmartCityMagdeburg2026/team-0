@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Magdeburg Smart Living Navigator - Map</title>
+<!-- Google Fonts: Public Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration (Design System) -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "brand": {
+                "primary": "#D6492A",
+                "primary-alt": "#C44D36",
+                "secondary": "#006080",
+                "tertiary": "#E98300",
+                "heading": "#542D24",
+                "text-main": "#383838",
+                "text-muted": "#585858",
+                "surface": "#FFFFFF",
+                "bg-main": "#F5F4F2",
+                "bg-alt": "#F0F0F0",
+                "border": "#E8E8E8"
+              }
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": ["Public Sans", "sans-serif"],
+                    "display": ["Public Sans", "sans-serif"],
+                    "body": ["Public Sans", "sans-serif"],
+                    "label": ["Public Sans", "sans-serif"]
+            },
+            "boxShadow": {
+              'soft': '0 4px 20px rgba(0, 0, 0, 0.05)',
+              'panel': '-4px 0 24px rgba(0, 0, 0, 0.08)'
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #F5F4F2;
+            color: #383838;
+            overflow: hidden; /* App-like feel, map is background */
+        }
+        
+        /* Material Symbols Base Class */
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 300,
+          'GRAD' 0,
+          'opsz' 24;
+        }
+
+        /* Map specific styles to overlay SVG polygons nicely */
+        .map-polygon {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            stroke-width: 2;
+            stroke: rgba(255,255,255,0.8);
+        }
+        .map-polygon:hover {
+            stroke-width: 3;
+            stroke: #fff;
+            filter: drop-shadow(0 0 8px rgba(0,0,0,0.3));
+        }
+
+        /* Scrollbar styling for side panel */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E8E8E8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d1d1d1;
+        }
+    </style>
+</head>
+<body class="relative w-screen h-screen flex">
+<!-- MAP BACKGROUND AREA -->
+<!-- Using an actual image as base, but styling to look like a map background. 
+         Normally this would be Leaflet/Mapbox, but here we simulate it. -->
+<div class="absolute inset-0 z-0 bg-[#e5e3df] overflow-hidden" id="map-container">
+<!-- Base Map Image (Simulated) -->
+<img alt="Map Background" class="w-full h-full object-cover opacity-40 grayscale" data-alt="A highly detailed, overhead satellite view of a European city map layout, styled in a clean, light-mode minimalist aesthetic. The map features soft, muted beige and off-white tones, representing urban grids, streets, and natural features like rivers. The lighting is flat and even, suggesting a high-end digital interface or civic portal design. The mood is functional, modern, and uncluttered." data-location="Magdeburg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs5b-8ya1K09mprOUKf4gZTTu3UKUrG71opRZHrM2Gq0hzGNjgDA9LFmAJuI_rlSqujcc9JBmlPlICG0Q223QlPnBv4Ml91nSWezsMLxWlhVUFYBzGYQbDpoq-xx8gUsxsRpMHPWIdh1FUoJr3tQgIrYuiquTyv6yY994fqVKIglemmkrDWarrY6puW7yrSR_L07FOwI3Y4H89CR5ncoMSENuLJTXTAPadvU9SfWuozdEx1wFO5ZEH9bNRW14glHNu-0ngCe-soUs" style="mix-blend-mode: multiply;"/>
+<!-- SVG Polygons for Districts (Simulating interactive map layers) -->
+<svg class="absolute inset-0 w-full h-full z-10" preserveaspectratio="xMidYMid slice" viewbox="0 0 1000 800">
+<!-- District 1: High Value (Petrol Teal) -->
+<polygon class="map-polygon" fill="#006080" fill-opacity="0.6" points="300,200 450,220 500,350 350,400 250,300"></polygon>
+<!-- District 2: Balanced (Orange) -->
+<polygon class="map-polygon" fill="#E98300" fill-opacity="0.6" points="500,350 650,320 700,450 600,550 450,480"></polygon>
+<!-- District 3: Buckau (Selected, High Value) -->
+<polygon class="map-polygon" fill="#006080" fill-opacity="0.8" id="buckau-polygon" points="450,480 600,550 550,680 400,650 350,520" stroke="#fff" stroke-width="4"></polygon>
+<!-- District 4: Low Value (Brick Red) -->
+<polygon class="map-polygon" fill="#D6492A" fill-opacity="0.6" points="650,320 800,250 850,400 750,500 700,450"></polygon>
+<!-- District Labels -->
+<text fill="white" font-family="'Public Sans', sans-serif" font-size="16" font-weight="600" pointer-events="none" style="text-shadow: 0 1px 4px rgba(0,0,0,0.5);" x="360" y="300">Stadtfeld Ost</text>
+<text fill="white" font-family="'Public Sans', sans-serif" font-size="16" font-weight="600" pointer-events="none" style="text-shadow: 0 1px 4px rgba(0,0,0,0.5);" x="560" y="420">Altstadt</text>
+<text fill="white" font-family="'Public Sans', sans-serif" font-size="18" font-weight="700" pointer-events="none" style="text-shadow: 0 1px 4px rgba(0,0,0,0.5);" x="460" y="580">Buckau</text>
+<text fill="white" font-family="'Public Sans', sans-serif" font-size="16" font-weight="600" pointer-events="none" style="text-shadow: 0 1px 4px rgba(0,0,0,0.5);" x="750" y="380">Cracau</text>
+</svg>
+</div>
+<!-- MAIN UI SHELL -->
+<div class="relative z-20 w-full h-full flex pointer-events-none">
+<!-- SIDE NAVIGATION BAR (From Shared Components JSON) -->
+<nav class="pointer-events-auto bg-white border-r border-[#E8E8E8] h-full w-20 flex flex-col py-4 z-40 shrink-0 shadow-soft hidden md:flex">
+<!-- Brand Logo / Header -->
+<div class="flex flex-col items-center justify-center mb-8 px-2">
+<div class="w-10 h-10 rounded-full bg-brand-bg-main flex items-center justify-center mb-2 shadow-sm border border-brand-border">
+<span class="material-symbols-outlined text-brand-heading" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<!-- Suppressed text header to fit 20px/icon-only width aesthetic of vertical rail, just keeping logo -->
+</div>
+<!-- Navigation Links -->
+<ul class="flex-1 flex flex-col items-center space-y-4 w-full px-2">
+<!-- Home (Inactive) -->
+<li class="w-full">
+<a aria-label="Home" class="w-full flex flex-col items-center justify-center py-3 rounded-lg text-[#585858] hover:bg-[#F0F0F0] hover:text-[#006080] transition-all duration-200 ease-in-out group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">home</span>
+</a>
+</li>
+<!-- Explore / Map (Active - we are on the Map) -->
+<li class="w-full">
+<a aria-current="page" aria-label="Explore" class="w-full flex flex-col items-center justify-center py-3 rounded-lg text-[#006080] border-l-4 border-[#006080] bg-[#F5F4F2] transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">map</span>
+</a>
+</li>
+<!-- Favorites (Inactive) -->
+<li class="w-full">
+<a aria-label="Favorites" class="w-full flex flex-col items-center justify-center py-3 rounded-lg text-[#585858] hover:bg-[#F0F0F0] hover:text-[#006080] transition-all duration-200 ease-in-out group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">bookmark</span>
+</a>
+</li>
+<!-- Statistics (Inactive) -->
+<li class="w-full">
+<a aria-label="Statistics" class="w-full flex flex-col items-center justify-center py-3 rounded-lg text-[#585858] hover:bg-[#F0F0F0] hover:text-[#006080] transition-all duration-200 ease-in-out group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">leaderboard</span>
+</a>
+</li>
+<!-- Profile (Inactive) -->
+<li class="w-full">
+<a aria-label="Profile" class="w-full flex flex-col items-center justify-center py-3 rounded-lg text-[#585858] hover:bg-[#F0F0F0] hover:text-[#006080] transition-all duration-200 ease-in-out group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">person</span>
+</a>
+</li>
+</ul>
+<!-- Footer / Help -->
+<div class="mt-auto px-2 flex flex-col items-center space-y-4">
+<a aria-label="Help" class="w-full flex flex-col items-center justify-center py-3 rounded-lg text-[#585858] hover:bg-[#F0F0F0] hover:text-[#006080] transition-all duration-200 ease-in-out group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">help</span>
+</a>
+<!-- Secondary CTA (Report Issue - small version for narrow rail) -->
+<button class="w-10 h-10 rounded-full bg-brand-primary text-white flex items-center justify-center shadow-md hover:bg-brand-primary-alt transition-colors" title="Report Issue">
+<span class="material-symbols-outlined text-sm">flag</span>
+</button>
+</div>
+</nav>
+<!-- MAP CANVAS CONTROLS (Pointer events auto to allow interaction) -->
+<div class="flex-1 relative flex flex-col justify-between p-6 h-full">
+<!-- TOP CONTROLS -->
+<div class="flex justify-between items-start pointer-events-auto">
+<!-- Filter Pill (Top Left) -->
+<div class="bg-white/90 backdrop-blur-md border border-brand-border rounded-full shadow-soft flex items-center px-4 py-2 space-x-4">
+<div class="flex items-center text-brand-text-main">
+<span class="material-symbols-outlined text-brand-text-muted mr-2 text-xl">payments</span>
+<span class="font-body font-medium text-sm mr-3">Budget:</span>
+<div class="w-32 h-1 bg-brand-border rounded-full relative ml-2">
+<div class="absolute left-0 top-0 h-full bg-brand-secondary rounded-full w-[60%]"></div>
+<div class="absolute left-[60%] top-1/2 -translate-y-1/2 w-3 h-3 bg-white border-2 border-brand-secondary rounded-full cursor-pointer"></div>
+</div>
+<span class="font-body font-semibold text-sm ml-4 text-brand-secondary">€800</span>
+</div>
+<div class="w-px h-6 bg-brand-border"></div>
+<!-- Simplified Profile Dropdown Trigger -->
+<button class="flex items-center text-brand-text-main hover:text-brand-secondary transition-colors">
+<img alt="User profile" class="w-8 h-8 rounded-full border border-brand-border mr-2" data-alt="A small, circular headshot portrait of a professional individual looking approachable, set against a light background. Clean, high-quality, corporate civic portal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoKkQ0IYiDWFleJkvGXmjoIhgb2PjUxs2iymsarLSweiCLhN67uIoYGsYHSjVQ4z0X1KdJsl-UrBWWKcX8h4wK6XorWPUVE5b08fGPdbd4LjueWkVICmAVjjC31sI4waCuJBekaqWMM2myNgSjvWggyTqpFWO__TvARjTyU6Mx8OSYA1qYRWySjEaeRCPddyCFDxbVN_eaKYJyRanQ8Bk3Norwjm7x7QzMaZsDumd0QyJWhQQKO9xDaCblI--vz_lGHph3AdMzb5k"/>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+<!-- Top Right Search (Contextual) -->
+<div class="bg-white/90 backdrop-blur-md border border-brand-border rounded-full shadow-soft flex items-center px-4 py-2">
+<span class="material-symbols-outlined text-brand-text-muted mr-2 text-xl">search</span>
+<input class="border-none bg-transparent focus:ring-0 text-sm font-body w-48 text-brand-text-main placeholder-brand-text-muted" placeholder="Search districts..." type="text"/>
+</div>
+</div>
+<!-- BOTTOM CONTROLS -->
+<div class="pointer-events-auto self-start mt-auto">
+<!-- Legend Floating Card (Bottom Left) -->
+<div class="bg-white/95 backdrop-blur-md border border-brand-border rounded-xl shadow-soft p-4 w-64">
+<h3 class="font-headline font-bold text-brand-heading text-sm mb-3">Living Value Index</h3>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<span class="w-3 h-3 rounded-full bg-brand-secondary mr-2"></span>
+<span class="font-body text-sm text-brand-text-main">High Value</span>
+</div>
+<span class="text-xs font-semibold text-brand-text-muted">80-100</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<span class="w-3 h-3 rounded-full bg-brand-tertiary mr-2"></span>
+<span class="font-body text-sm text-brand-text-main">Balanced</span>
+</div>
+<span class="text-xs font-semibold text-brand-text-muted">50-79</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<span class="w-3 h-3 rounded-full bg-brand-primary mr-2"></span>
+<span class="font-body text-sm text-brand-text-main">Overpriced / Low</span>
+</div>
+<span class="text-xs font-semibold text-brand-text-muted">&lt; 50</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDE OVERLAY PANEL (Detail View for 'Buckau') -->
+<!-- pointer-events-auto allows interaction within this specific panel while rest of flex container is none -->
+<aside class="pointer-events-auto w-[420px] h-full bg-white shadow-panel border-l border-brand-border flex flex-col relative z-50 transform transition-transform duration-300 translate-x-0">
+<!-- Panel Header Image Area -->
+<div class="relative h-48 w-full shrink-0">
+<img alt="Buckau District" class="w-full h-full object-cover" data-alt="A beautiful, bright daytime shot of a historic European city street in a creative district. The architecture features renovated brick buildings and vibrant street-level cafes. The light is warm and inviting, fitting a premium, civic lifestyle portal highlighting urban renewal. High contrast, clear blue skies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUpt-UWCvJqx6hxiQu6Iv47bYUgOx0BcWdoCaYFeD49jullNfiwHHaIt0cubymCQUBuSpr47ke4sIyBQEhej3GCRfRLuzF7pvxhzF7AoAc4Fse9PM7UC6GRN5xes64qDOdIlLHCllwTu6JqgbWDTdPiXjGOlVWFVtih9FV4FNZp2Z6nIsp0RdxdslEW88dx1vJTZG3rld13nvzQur1IrBxXXMMHfXbgAKq0CnBuYldNs271bnVOqrcjwyh0QrSIzqKCDwQj9auZA4"/>
+<!-- Close Button -->
+<button class="absolute top-4 right-4 w-8 h-8 bg-black/30 backdrop-blur-sm text-white rounded-full flex items-center justify-center hover:bg-black/50 transition-colors">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+<!-- Badge Overlay -->
+<div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-6 pt-12">
+<div class="inline-block bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs font-semibold px-2.5 py-1 rounded-md mb-2">
+                        Best for: creatives &amp; students
+                    </div>
+<h1 class="font-headline font-extrabold text-3xl text-white tracking-tight drop-shadow-md">Buckau</h1>
+</div>
+</div>
+<!-- Panel Content (Scrollable) -->
+<div class="flex-1 overflow-y-auto p-6 space-y-8 bg-white">
+<!-- Summary -->
+<p class="font-body text-brand-text-muted text-sm leading-relaxed">
+                    A vibrant, rapidly developing riverside district known for its industrial heritage, cultural spaces, and thriving local arts scene.
+                </p>
+<!-- Key Metric: Score Ring -->
+<div class="bg-brand-bg-main rounded-xl p-5 border border-brand-border flex items-center justify-between">
+<div>
+<h2 class="font-headline font-bold text-brand-heading text-base mb-1">Livability Score</h2>
+<p class="font-body text-brand-text-muted text-xs">Based on 6 key civic metrics</p>
+</div>
+<!-- SVG Ring Gauge -->
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Circle -->
+<path class="text-brand-border" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<!-- Value Circle (84%) -->
+<path class="text-brand-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="84, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline font-bold text-brand-secondary text-lg leading-none">84</span>
+</div>
+</div>
+</div>
+<!-- Price Info -->
+<div class="border-l-4 border-brand-secondary pl-4 py-1">
+<div class="text-xs font-semibold text-brand-text-muted uppercase tracking-wider mb-1">Market Average</div>
+<div class="font-headline text-brand-text-main text-lg font-medium">Est. monthly rent €505 <span class="text-brand-text-muted text-sm font-normal">(€8.42/m²)</span></div>
+</div>
+<hr class="border-brand-border"/>
+<!-- Categories / Metric Bars -->
+<div>
+<h3 class="font-headline font-bold text-brand-heading text-sm mb-4">District Breakdown</h3>
+<div class="space-y-4">
+<!-- Metric 1 -->
+<div class="group cursor-default">
+<div class="flex justify-between items-end mb-1">
+<span class="font-body text-sm font-medium text-brand-text-main flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-secondary">account_balance_wallet</span>
+                                    Affordability
+                                </span>
+<span class="font-body text-xs font-bold text-brand-secondary">High</span>
+</div>
+<div class="w-full bg-brand-border rounded-full h-1.5">
+<div class="bg-brand-secondary h-1.5 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="group cursor-default">
+<div class="flex justify-between items-end mb-1">
+<span class="font-body text-sm font-medium text-brand-text-main flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-secondary">directions_transit</span>
+                                    Transit
+                                </span>
+<span class="font-body text-xs font-bold text-brand-secondary">Excellent</span>
+</div>
+<div class="w-full bg-brand-border rounded-full h-1.5">
+<div class="bg-brand-secondary h-1.5 rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="group cursor-default">
+<div class="flex justify-between items-end mb-1">
+<span class="font-body text-sm font-medium text-brand-text-main flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-tertiary">storefront</span>
+                                    15-Min City
+                                </span>
+<span class="font-body text-xs font-bold text-brand-tertiary">Good</span>
+</div>
+<div class="w-full bg-brand-border rounded-full h-1.5">
+<div class="bg-brand-tertiary h-1.5 rounded-full" style="width: 70%"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="group cursor-default">
+<div class="flex justify-between items-end mb-1">
+<span class="font-body text-sm font-medium text-brand-text-main flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-secondary">local_hospital</span>
+                                    Healthcare
+                                </span>
+<span class="font-body text-xs font-bold text-brand-secondary">High</span>
+</div>
+<div class="w-full bg-brand-border rounded-full h-1.5">
+<div class="bg-brand-secondary h-1.5 rounded-full" style="width: 80%"></div>
+</div>
+</div>
+<!-- Metric 5 -->
+<div class="group cursor-default">
+<div class="flex justify-between items-end mb-1">
+<span class="font-body text-sm font-medium text-brand-text-main flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-primary">park</span>
+                                    Green Space
+                                </span>
+<span class="font-body text-xs font-bold text-brand-primary">Low</span>
+</div>
+<div class="w-full bg-brand-border rounded-full h-1.5">
+<div class="bg-brand-primary h-1.5 rounded-full" style="width: 45%"></div>
+</div>
+</div>
+<!-- Metric 6 -->
+<div class="group cursor-default">
+<div class="flex justify-between items-end mb-1">
+<span class="font-body text-sm font-medium text-brand-text-main flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-secondary">trending_up</span>
+                                    Future Value
+                                </span>
+<span class="font-body text-xs font-bold text-brand-secondary">Exceptional</span>
+</div>
+<div class="w-full bg-brand-border rounded-full h-1.5">
+<div class="bg-brand-secondary h-1.5 rounded-full" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Spacing block for scroll padding -->
+<div class="h-4"></div>
+</div>
+<!-- Panel Footer / Action Area -->
+<div class="p-6 border-t border-brand-border bg-brand-bg-main shrink-0">
+<button class="w-full bg-brand-primary hover:bg-brand-primary-alt text-white font-headline font-bold py-3.5 px-4 rounded-lg shadow-sm transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">compare_arrows</span>
+                    Compare District
+                </button>
+</div>
+</aside>
+</div>
+</body></html>

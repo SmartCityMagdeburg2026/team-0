@@ -1,0 +1,29 @@
+# Magdeburg Smart Living Navigator — backend (FastAPI + data pipeline)
+# Python 3.11+    ·    install:  pip install -r backend/requirements.txt
+
+# --- API ---
+fastapi>=0.115
+uvicorn[standard]>=0.32
+pydantic>=2.9
+python-dotenv>=1.0
+httpx>=0.27              # async calls + live-API / GTFS-RT proxy endpoints
+
+# --- Data wrangling ---
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1           # read KISS-MD .xlsx originals
+requests>=2.32          # Overpass / GTFS download / live APIs
+
+# --- Geospatial (district polygons, point-in-polygon, census grids) ---
+geopandas>=1.0
+shapely>=2.0
+pyproj>=3.6             # CRS transforms for the 100 m census grids
+# osmnx>=2.0            # optional convenience OSM fetch (heavy; Overpass via requests also works)
+
+# --- Scoring / ML ---
+scikit-learn>=1.5       # 0–100 normalization + k-means "neighbourhood personas"
+
+# --- AI assistant (optional) ---
+anthropic>=0.40         # Claude: natural language -> structured filters + RAG answers
+# gtfs-realtime-bindings>=1.0   # optional: decode live GTFS-RT delays
+# protobuf>=5.0                 #   (paired with the above)

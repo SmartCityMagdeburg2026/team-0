@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Magdeburg Smart Living Navigator - Compare</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {},
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    spacing: {},
+                    fontFamily: {
+                        "headline": ["Public Sans", "sans-serif"],
+                        "display": ["Public Sans", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    },
+                    fontSize: {}
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; background-color: #F5F4F2; color: #383838; }
+        .text-primary { color: #D6492A; }
+        .bg-primary { background-color: #D6492A; }
+        .text-primary-alt { color: #C44D36; }
+        .text-secondary { color: #006080; }
+        .bg-secondary { background-color: #006080; }
+        .text-tertiary { color: #E98300; }
+        .bg-tertiary { background-color: #E98300; }
+        .text-heading { color: #542D24; }
+        .border-divider { border-color: #E8E8E8; }
+        
+        .score-good { color: #006080; }
+        .score-medium { color: #E98300; }
+        .score-low { color: #D6492A; }
+        
+        .bg-good { background-color: rgba(0, 96, 128, 0.1); }
+        .bg-medium { background-color: rgba(233, 131, 0, 0.1); }
+        .bg-low { background-color: rgba(214, 73, 42, 0.1); }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden">
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-0 h-full flex flex-col py-6 z-40 bg-white dark:bg-zinc-900 border-r border-[#E8E8E8] dark:border-zinc-800 w-64 shadow-none">
+<div class="px-6 mb-8 flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-gray-200 border border-gray-300">
+<img alt="City of Magdeburg Seal" class="w-full h-full object-cover" data-alt="A clean, professional seal or coat of arms representing a German municipality, specifically designed with civic, trustworthy aesthetics in mind. The image should feature traditional heraldic elements like a maiden or castle, rendered in a modern, flat vector style suitable for a digital dashboard. The color palette should incorporate civic maroon, clean white, and subtle gold accents to convey authority and reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzukzc0pSoLjzmfBkqXJEAFs0PK5JBgvYGVV8Lz4g-kYk-jYDCg44pa1sUHhD_BP1_RHgqOU9sgLbPNZoDWxueyMv4YGeCVkx_VGnUSL5OROM9z7BgN7g1MJZt270CV6Wpiy09xokqWi6ZUj4-LIA2f9btWRZh5XDk2bH1ZAvc5RlHL364FvWM0kq8L13H3aPeK9rfHNOVkz9sCWK-NLN4cVDT_-PsPC0wxIhooxab5WGPt_EzjM0sGBOlydtq1w3lR7StGVpgzGw"/>
+</div>
+<div>
+<h1 class="text-lg font-headline text-[#542D24] dark:text-zinc-100 font-bold leading-tight">Magdeburg</h1>
+<p class="text-xs text-[#585858] font-medium">District Navigator</p>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto px-4 space-y-1">
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#585858] dark:text-zinc-400 hover:text-[#006080] hover:bg-[#F5F4F2] dark:hover:bg-zinc-800 scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#585858] dark:text-zinc-400 hover:text-[#006080] hover:bg-[#F5F4F2] dark:hover:bg-zinc-800 scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">map</span>
+<span>Map</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#585858] dark:text-zinc-400 hover:text-[#006080] hover:bg-[#F5F4F2] dark:hover:bg-zinc-800 scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">grid_view</span>
+<span>Value Matrix</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#585858] dark:text-zinc-400 hover:text-[#006080] hover:bg-[#F5F4F2] dark:hover:bg-zinc-800 scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">schedule</span>
+<span>15-Min City</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#585858] dark:text-zinc-400 hover:text-[#006080] hover:bg-[#F5F4F2] dark:hover:bg-zinc-800 scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">account_balance_wallet</span>
+<span>Hidden Cost</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#585858] dark:text-zinc-400 hover:text-[#006080] hover:bg-[#F5F4F2] dark:hover:bg-zinc-800 scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">local_mall</span>
+<span>Daily Life</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#585858] dark:text-zinc-400 hover:text-[#006080] hover:bg-[#F5F4F2] dark:hover:bg-zinc-800 scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">auto_awesome_motion</span>
+<span>Future</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#006080] bg-[#F0F0F0] dark:bg-zinc-800 border-r-4 border-[#006080] font-bold scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">compare_arrows</span>
+<span>Compare</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-[#585858] dark:text-zinc-400 hover:text-[#006080] hover:bg-[#F5F4F2] dark:hover:bg-zinc-800 scale-95 transition-transform duration-150 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">smart_toy</span>
+<span>AI Assistant</span>
+</a>
+</div>
+<div class="px-4 mt-auto">
+<button class="w-full flex items-center justify-center space-x-2 py-2 px-4 rounded-lg border border-[#E8E8E8] text-[#585858] hover:bg-[#F5F4F2] transition-colors text-sm font-medium">
+<span class="material-symbols-outlined text-sm">help</span>
+<span>Help Center</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="ml-64 flex-1 h-full flex flex-col relative bg-[#F5F4F2]">
+<!-- Header -->
+<header class="px-8 py-6 flex justify-between items-end border-b border-divider bg-white">
+<div>
+<h2 class="text-2xl font-bold text-heading">Area Comparison</h2>
+<p class="text-sm text-[#585858] mt-1">Evaluating quality of life metrics across districts.</p>
+</div>
+<div class="flex space-x-3">
+<button class="px-4 py-2 bg-white border border-[#E8E8E8] rounded-md text-sm font-medium text-[#585858] hover:bg-[#F5F4F2] flex items-center shadow-sm">
+<span class="material-symbols-outlined text-sm mr-2">download</span> Export
+                </button>
+<button class="px-4 py-2 bg-primary text-white rounded-md text-sm font-medium hover:bg-opacity-90 flex items-center shadow-sm">
+<span class="material-symbols-outlined text-sm mr-2">share</span> Share Report
+                </button>
+</div>
+</header>
+<!-- Canvas -->
+<div class="flex-1 overflow-x-auto p-8 pb-32"> <!-- Padding bottom for verdict ribbon -->
+<div class="flex space-x-6 min-w-max h-full">
+<!-- Card 1: Stadtfeld Ost -->
+<div class="w-80 bg-white rounded-xl shadow-sm border border-divider flex flex-col overflow-hidden">
+<div class="p-6 border-b border-divider bg-gray-50 flex justify-between items-start relative overflow-hidden">
+<div class="z-10">
+<h3 class="text-xl font-bold text-heading">Stadtfeld Ost</h3>
+<p class="text-xs text-[#585858] mt-1 flex items-center">
+<span class="material-symbols-outlined text-[14px] mr-1">location_on</span> Urban Core West
+                            </p>
+</div>
+<div class="relative w-14 h-14 flex items-center justify-center z-10">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="82, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<span class="absolute text-sm font-bold text-secondary">82</span>
+</div>
+</div>
+<div class="flex-1 p-0 flex flex-col divide-y divide-divider">
+<!-- Est Rent -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">payments</span> Est. Rent</span>
+<span class="font-medium text-[#383838]">€420<span class="text-xs text-gray-400 font-normal">/mo</span></span>
+</div>
+<!-- Total Cost -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">receipt_long</span> Total Monthly</span>
+<span class="font-medium text-[#383838]">€603</span>
+</div>
+<!-- Transit -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50 bg-good">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-secondary">directions_transit</span> Transit</span>
+<div class="flex items-center">
+<span class="font-bold text-secondary mr-2">88</span>
+<span class="text-xs text-gray-500">/100</span>
+<span class="material-symbols-outlined text-[14px] text-secondary ml-1" title="Winner">emoji_events</span>
+</div>
+</div>
+<!-- 15-Min City -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">schedule</span> 15-Min City</span>
+<span class="text-sm font-medium score-good flex items-center"><span class="w-2 h-2 rounded-full bg-secondary mr-2"></span> Good</span>
+</div>
+<!-- Healthcare -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">health_and_safety</span> Healthcare</span>
+<span class="text-sm font-medium score-good">High</span>
+</div>
+<!-- Green -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">park</span> Green Space</span>
+<span class="text-sm font-medium score-medium flex items-center"><span class="w-2 h-2 rounded-full bg-tertiary mr-2"></span> Medium</span>
+</div>
+<!-- Future -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">trending_up</span> Future Value</span>
+<span class="text-sm font-medium score-medium">Stable</span>
+</div>
+</div>
+<div class="p-6 bg-gray-50 mt-auto border-t border-divider">
+<p class="text-xs text-[#585858] uppercase tracking-wider mb-2 font-semibold">Best For</p>
+<p class="text-sm font-medium text-heading">Young Professionals, Families</p>
+</div>
+</div>
+<!-- Card 2: Buckau -->
+<div class="w-80 bg-white rounded-xl shadow-sm border border-secondary flex flex-col overflow-hidden relative">
+<!-- Recommended Badge -->
+<div class="absolute top-0 right-0 bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider z-20">
+                        Top Pick
+                    </div>
+<div class="p-6 border-b border-divider bg-gray-50 flex justify-between items-start relative overflow-hidden">
+<div class="z-10">
+<h3 class="text-xl font-bold text-heading">Buckau</h3>
+<p class="text-xs text-[#585858] mt-1 flex items-center">
+<span class="material-symbols-outlined text-[14px] mr-1">location_on</span> Riverside South
+                            </p>
+</div>
+<div class="relative w-14 h-14 flex items-center justify-center z-10">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="86, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<span class="absolute text-sm font-bold text-secondary">86</span>
+</div>
+</div>
+<div class="flex-1 p-0 flex flex-col divide-y divide-divider">
+<!-- Est Rent -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">payments</span> Est. Rent</span>
+<span class="font-medium text-[#383838]">€450<span class="text-xs text-gray-400 font-normal">/mo</span></span>
+</div>
+<!-- Total Cost -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50 bg-good">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-secondary">receipt_long</span> Total Monthly</span>
+<div class="flex items-center">
+<span class="font-bold text-secondary mr-2">€505</span>
+<span class="material-symbols-outlined text-[14px] text-secondary ml-1" title="Winner">emoji_events</span>
+</div>
+</div>
+<!-- Transit -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">directions_transit</span> Transit</span>
+<span class="text-sm font-medium text-[#383838]">84<span class="text-xs text-gray-400 font-normal">/100</span></span>
+</div>
+<!-- 15-Min City -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">schedule</span> 15-Min City</span>
+<span class="text-sm font-medium score-good flex items-center"><span class="w-2 h-2 rounded-full bg-secondary mr-2"></span> Good</span>
+</div>
+<!-- Healthcare -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">health_and_safety</span> Healthcare</span>
+<span class="text-sm font-medium score-good">High</span>
+</div>
+<!-- Green -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-gray-400">park</span> Green Space</span>
+<span class="text-sm font-medium score-low flex items-center"><span class="w-2 h-2 rounded-full bg-primary mr-2"></span> Low</span>
+</div>
+<!-- Future -->
+<div class="px-6 py-4 flex justify-between items-center group hover:bg-gray-50 bg-good">
+<span class="text-sm text-[#585858] flex items-center"><span class="material-symbols-outlined text-[16px] mr-2 text-secondary">trending_up</span> Future Value</span>
+<div class="flex items-center">
+<span class="font-bold text-secondary">Exceptional</span>
+<span class="material-symbols-outlined text-[14px] text-secondary ml-1" title="Winner">emoji_events</span>
+</div>
+</div>
+</div>
+<div class="p-6 bg-gray-50 mt-auto border-t border-divider">
+<p class="text-xs text-[#585858] uppercase tracking-wider mb-2 font-semibold">Best For</p>
+<p class="text-sm font-medium text-heading">Creatives, Students</p>
+</div>
+</div>
+<!-- Card 3: Add Area -->
+<div class="w-80 border-2 border-dashed border-[#E8E8E8] rounded-xl flex flex-col items-center justify-center bg-white/50 hover:bg-white hover:border-gray-300 transition-all cursor-pointer group">
+<div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-4 group-hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined text-3xl text-gray-400 group-hover:text-gray-600">add</span>
+</div>
+<h3 class="text-lg font-medium text-[#383838]">Add Area</h3>
+<p class="text-sm text-[#585858] mt-2 text-center px-6">Select another district to compare metrics side-by-side.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Verdict Ribbon -->
+<div class="absolute bottom-0 left-0 right-0 bg-white border-t border-divider shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] p-4 flex items-center justify-between px-8 z-20">
+<div class="flex items-center space-x-6">
+<span class="text-sm font-bold text-heading uppercase tracking-wider">Analysis Verdict:</span>
+<div class="flex space-x-3">
+<div class="flex items-center px-3 py-1.5 bg-gray-50 border border-divider rounded-md">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-2">savings</span>
+<span class="text-sm text-[#383838]">Best value: <span class="font-bold">Buckau</span></span>
+</div>
+<div class="flex items-center px-3 py-1.5 bg-gray-50 border border-divider rounded-md">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-2">commute</span>
+<span class="text-sm text-[#383838]">Best accessibility: <span class="font-bold">Stadtfeld Ost</span></span>
+</div>
+<div class="flex items-center px-3 py-1.5 bg-gray-50 border border-divider rounded-md">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-2">family_restroom</span>
+<span class="text-sm text-[#383838]">Best for families: <span class="font-bold">Stadtfeld Ost</span></span>
+</div>
+</div>
+</div>
+<button class="text-sm font-medium text-secondary hover:underline flex items-center">
+                View detailed breakdown <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+</button>
+</div>
+</main>
+</body></html>

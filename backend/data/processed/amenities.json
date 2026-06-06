@@ -1,0 +1,4042 @@
+{
+  "Hopfengarten": {
+    "grocery": {
+      "count": 2,
+      "nearest_m": 707,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.63685,
+        52.08061
+      ]
+    },
+    "pharmacy": {
+      "count": 2,
+      "nearest_m": 713,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.62579,
+        52.09122
+      ]
+    },
+    "healthcare": {
+      "count": 4,
+      "nearest_m": 330,
+      "r5": 1,
+      "r10": 3,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.63751,
+        52.08624
+      ]
+    },
+    "school": {
+      "count": 2,
+      "nearest_m": 494,
+      "r5": 0,
+      "r10": 2,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.62551,
+        52.08658
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3767,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 2,
+      "nearest_m": 467,
+      "r5": 0,
+      "r10": 2,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.63205,
+        52.08225
+      ]
+    },
+    "gym": {
+      "count": 1,
+      "nearest_m": 879,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.63705,
+        52.079
+      ]
+    },
+    "cafe": {
+      "count": 2,
+      "nearest_m": 597,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.63172,
+        52.09177
+      ]
+    },
+    "transit": {
+      "count": 26,
+      "nearest_m": 225,
+      "r5": 2,
+      "r10": 17,
+      "r15": 40,
+      "nearest_lonlat": [
+        11.63186,
+        52.08839
+      ]
+    }
+  },
+  "Reform": {
+    "grocery": {
+      "count": 6,
+      "nearest_m": 162,
+      "r5": 2,
+      "r10": 4,
+      "r15": 7,
+      "nearest_lonlat": [
+        11.61151,
+        52.09033
+      ]
+    },
+    "pharmacy": {
+      "count": 3,
+      "nearest_m": 165,
+      "r5": 2,
+      "r10": 2,
+      "r15": 5,
+      "nearest_lonlat": [
+        11.61162,
+        52.09032
+      ]
+    },
+    "healthcare": {
+      "count": 1,
+      "nearest_m": 172,
+      "r5": 1,
+      "r10": 1,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.61261,
+        52.08919
+      ]
+    },
+    "school": {
+      "count": 8,
+      "nearest_m": 128,
+      "r5": 5,
+      "r10": 7,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.60873,
+        52.08993
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3793,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 5,
+      "nearest_m": 110,
+      "r5": 2,
+      "r10": 4,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.61145,
+        52.0897
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1736,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60119,
+        52.10376
+      ]
+    },
+    "cafe": {
+      "count": 6,
+      "nearest_m": 783,
+      "r5": 0,
+      "r10": 1,
+      "r15": 7,
+      "nearest_lonlat": [
+        11.62143,
+        52.09011
+      ]
+    },
+    "transit": {
+      "count": 37,
+      "nearest_m": 113,
+      "r5": 6,
+      "r10": 21,
+      "r15": 55,
+      "nearest_lonlat": [
+        11.61095,
+        52.09004
+      ]
+    }
+  },
+  "Werder": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 752,
+      "r5": 0,
+      "r10": 1,
+      "r15": 8,
+      "nearest_lonlat": [
+        11.65993,
+        52.11921
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 896,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.66196,
+        52.11883
+      ]
+    },
+    "healthcare": {
+      "count": 1,
+      "nearest_m": 636,
+      "r5": 0,
+      "r10": 2,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.64987,
+        52.12764
+      ]
+    },
+    "school": {
+      "count": 2,
+      "nearest_m": 321,
+      "r5": 3,
+      "r10": 5,
+      "r15": 12,
+      "nearest_lonlat": [
+        11.65371,
+        52.12358
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 1193,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 5,
+      "nearest_m": 484,
+      "r5": 0,
+      "r10": 3,
+      "r15": 16,
+      "nearest_lonlat": [
+        11.6444,
+        52.11918
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1354,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63571,
+        52.13041
+      ]
+    },
+    "cafe": {
+      "count": 6,
+      "nearest_m": 521,
+      "r5": 0,
+      "r10": 5,
+      "r15": 25,
+      "nearest_lonlat": [
+        11.65626,
+        52.11937
+      ]
+    },
+    "transit": {
+      "count": 9,
+      "nearest_m": 371,
+      "r5": 2,
+      "r10": 14,
+      "r15": 30,
+      "nearest_lonlat": [
+        11.65492,
+        52.12313
+      ]
+    }
+  },
+  "Altstadt": {
+    "grocery": {
+      "count": 24,
+      "nearest_m": 269,
+      "r5": 2,
+      "r10": 17,
+      "r15": 23,
+      "nearest_lonlat": [
+        11.63043,
+        52.13002
+      ]
+    },
+    "pharmacy": {
+      "count": 9,
+      "nearest_m": 247,
+      "r5": 4,
+      "r10": 6,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.63355,
+        52.12601
+      ]
+    },
+    "healthcare": {
+      "count": 47,
+      "nearest_m": 142,
+      "r5": 21,
+      "r10": 33,
+      "r15": 43,
+      "nearest_lonlat": [
+        11.63397,
+        52.12707
+      ]
+    },
+    "school": {
+      "count": 15,
+      "nearest_m": 103,
+      "r5": 4,
+      "r10": 7,
+      "r15": 18,
+      "nearest_lonlat": [
+        11.6317,
+        52.12776
+      ]
+    },
+    "university": {
+      "count": 1,
+      "nearest_m": 882,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 23,
+      "nearest_m": 238,
+      "r5": 2,
+      "r10": 12,
+      "r15": 20,
+      "nearest_lonlat": [
+        11.63573,
+        52.12687
+      ]
+    },
+    "gym": {
+      "count": 4,
+      "nearest_m": 261,
+      "r5": 2,
+      "r10": 3,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.63102,
+        52.1302
+      ]
+    },
+    "cafe": {
+      "count": 102,
+      "nearest_m": 4,
+      "r5": 39,
+      "r10": 77,
+      "r15": 103,
+      "nearest_lonlat": [
+        11.63297,
+        52.12823
+      ]
+    },
+    "transit": {
+      "count": 84,
+      "nearest_m": 90,
+      "r5": 16,
+      "r10": 50,
+      "r15": 84,
+      "nearest_lonlat": [
+        11.63426,
+        52.12793
+      ]
+    }
+  },
+  "Stadtfeld Ost": {
+    "grocery": {
+      "count": 13,
+      "nearest_m": 289,
+      "r5": 3,
+      "r10": 12,
+      "r15": 19,
+      "nearest_lonlat": [
+        11.61173,
+        52.13045
+      ]
+    },
+    "pharmacy": {
+      "count": 7,
+      "nearest_m": 325,
+      "r5": 4,
+      "r10": 6,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.61145,
+        52.13017
+      ]
+    },
+    "healthcare": {
+      "count": 44,
+      "nearest_m": 40,
+      "r5": 26,
+      "r10": 40,
+      "r15": 54,
+      "nearest_lonlat": [
+        11.61322,
+        52.13309
+      ]
+    },
+    "school": {
+      "count": 22,
+      "nearest_m": 327,
+      "r5": 3,
+      "r10": 14,
+      "r15": 26,
+      "nearest_lonlat": [
+        11.60877,
+        52.13286
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 1910,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 8,
+      "nearest_m": 98,
+      "r5": 2,
+      "r10": 9,
+      "r15": 12,
+      "nearest_lonlat": [
+        11.61445,
+        52.13348
+      ]
+    },
+    "gym": {
+      "count": 2,
+      "nearest_m": 599,
+      "r5": 0,
+      "r10": 2,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.60483,
+        52.13236
+      ]
+    },
+    "cafe": {
+      "count": 26,
+      "nearest_m": 185,
+      "r5": 10,
+      "r10": 23,
+      "r15": 36,
+      "nearest_lonlat": [
+        11.61565,
+        52.13384
+      ]
+    },
+    "transit": {
+      "count": 58,
+      "nearest_m": 262,
+      "r5": 16,
+      "r10": 55,
+      "r15": 88,
+      "nearest_lonlat": [
+        11.60974,
+        52.13301
+      ]
+    }
+  },
+  "Barleber See": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 3345,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62125,
+        52.19634
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 3535,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.61469,
+        52.19831
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 5508,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62938,
+        52.17096
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 3383,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62322,
+        52.19477
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 4447,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60012,
+        52.19687
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 3774,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66314,
+        52.18418
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 4763,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60558,
+        52.18796
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 3470,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.61693,
+        52.19754
+      ]
+    },
+    "transit": {
+      "count": 0,
+      "nearest_m": 2443,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67508,
+        52.19939
+      ]
+    }
+  },
+  "Buckau": {
+    "grocery": {
+      "count": 6,
+      "nearest_m": 85,
+      "r5": 3,
+      "r10": 5,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.64101,
+        52.10533
+      ]
+    },
+    "pharmacy": {
+      "count": 3,
+      "nearest_m": 485,
+      "r5": 0,
+      "r10": 3,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.6438,
+        52.10194
+      ]
+    },
+    "healthcare": {
+      "count": 9,
+      "nearest_m": 71,
+      "r5": 2,
+      "r10": 9,
+      "r15": 9,
+      "nearest_lonlat": [
+        11.6409,
+        52.1055
+      ]
+    },
+    "school": {
+      "count": 6,
+      "nearest_m": 199,
+      "r5": 2,
+      "r10": 8,
+      "r15": 8,
+      "nearest_lonlat": [
+        11.6388,
+        52.1068
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 1695,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 6,
+      "nearest_m": 323,
+      "r5": 1,
+      "r10": 4,
+      "r15": 8,
+      "nearest_lonlat": [
+        11.64169,
+        52.10315
+      ]
+    },
+    "gym": {
+      "count": 1,
+      "nearest_m": 872,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.63188,
+        52.11122
+      ]
+    },
+    "cafe": {
+      "count": 10,
+      "nearest_m": 85,
+      "r5": 5,
+      "r10": 7,
+      "r15": 12,
+      "nearest_lonlat": [
+        11.64109,
+        52.10678
+      ]
+    },
+    "transit": {
+      "count": 17,
+      "nearest_m": 168,
+      "r5": 5,
+      "r10": 14,
+      "r15": 23,
+      "nearest_lonlat": [
+        11.64199,
+        52.10457
+      ]
+    }
+  },
+  "Leipziger Straße": {
+    "grocery": {
+      "count": 10,
+      "nearest_m": 145,
+      "r5": 2,
+      "r10": 6,
+      "r15": 11,
+      "nearest_lonlat": [
+        11.61987,
+        52.10425
+      ]
+    },
+    "pharmacy": {
+      "count": 3,
+      "nearest_m": 438,
+      "r5": 0,
+      "r10": 3,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.61824,
+        52.10839
+      ]
+    },
+    "healthcare": {
+      "count": 17,
+      "nearest_m": 303,
+      "r5": 5,
+      "r10": 14,
+      "r15": 19,
+      "nearest_lonlat": [
+        11.6208,
+        52.10234
+      ]
+    },
+    "school": {
+      "count": 19,
+      "nearest_m": 156,
+      "r5": 4,
+      "r10": 12,
+      "r15": 23,
+      "nearest_lonlat": [
+        11.62123,
+        52.10364
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 1861,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 19,
+      "nearest_m": 165,
+      "r5": 7,
+      "r10": 16,
+      "r15": 22,
+      "nearest_lonlat": [
+        11.61954,
+        52.10422
+      ]
+    },
+    "gym": {
+      "count": 1,
+      "nearest_m": 482,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.6175,
+        52.10856
+      ]
+    },
+    "cafe": {
+      "count": 12,
+      "nearest_m": 321,
+      "r5": 4,
+      "r10": 7,
+      "r15": 19,
+      "nearest_lonlat": [
+        11.61979,
+        52.10769
+      ]
+    },
+    "transit": {
+      "count": 42,
+      "nearest_m": 137,
+      "r5": 10,
+      "r10": 30,
+      "r15": 48,
+      "nearest_lonlat": [
+        11.62025,
+        52.1041
+      ]
+    }
+  },
+  "Lemsdorf": {
+    "grocery": {
+      "count": 1,
+      "nearest_m": 575,
+      "r5": 0,
+      "r10": 3,
+      "r15": 8,
+      "nearest_lonlat": [
+        11.59868,
+        52.10278
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 1048,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.59249,
+        52.10691
+      ]
+    },
+    "healthcare": {
+      "count": 2,
+      "nearest_m": 96,
+      "r5": 2,
+      "r10": 2,
+      "r15": 8,
+      "nearest_lonlat": [
+        11.59668,
+        52.09866
+      ]
+    },
+    "school": {
+      "count": 2,
+      "nearest_m": 392,
+      "r5": 1,
+      "r10": 2,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.59941,
+        52.1008
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3526,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 849,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.60486,
+        52.09225
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 740,
+      "r5": 0,
+      "r10": 1,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.60119,
+        52.10376
+      ]
+    },
+    "cafe": {
+      "count": 1,
+      "nearest_m": 97,
+      "r5": 1,
+      "r10": 1,
+      "r15": 5,
+      "nearest_lonlat": [
+        11.59645,
+        52.09868
+      ]
+    },
+    "transit": {
+      "count": 6,
+      "nearest_m": 105,
+      "r5": 4,
+      "r10": 9,
+      "r15": 28,
+      "nearest_lonlat": [
+        11.59752,
+        52.09844
+      ]
+    }
+  },
+  "Ottersleben": {
+    "grocery": {
+      "count": 5,
+      "nearest_m": 837,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.56602,
+        52.08806
+      ]
+    },
+    "pharmacy": {
+      "count": 2,
+      "nearest_m": 1249,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.5698,
+        52.09124
+      ]
+    },
+    "healthcare": {
+      "count": 11,
+      "nearest_m": 738,
+      "r5": 0,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.56365,
+        52.08862
+      ]
+    },
+    "school": {
+      "count": 4,
+      "nearest_m": 1407,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.57298,
+        52.09088
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 6634,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 10,
+      "nearest_m": 760,
+      "r5": 0,
+      "r10": 2,
+      "r15": 5,
+      "nearest_lonlat": [
+        11.56156,
+        52.09004
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 3533,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.59084,
+        52.10742
+      ]
+    },
+    "cafe": {
+      "count": 5,
+      "nearest_m": 660,
+      "r5": 0,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.56156,
+        52.08892
+      ]
+    },
+    "transit": {
+      "count": 32,
+      "nearest_m": 635,
+      "r5": 0,
+      "r10": 2,
+      "r15": 11,
+      "nearest_lonlat": [
+        11.56108,
+        52.08887
+      ]
+    }
+  },
+  "Beyendorfer Grund": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 916,
+      "r5": 0,
+      "r10": 0,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.60502,
+        52.08219
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 1151,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.59977,
+        52.08363
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1756,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.61261,
+        52.08919
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 1622,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6129,
+        52.08787
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 5473,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 1331,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60776,
+        52.08587
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2215,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63705,
+        52.079
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 1153,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.59965,
+        52.08362
+      ]
+    },
+    "transit": {
+      "count": 0,
+      "nearest_m": 898,
+      "r5": 0,
+      "r10": 0,
+      "r15": 12,
+      "nearest_lonlat": [
+        11.61556,
+        52.06859
+      ]
+    }
+  },
+  "Diesdorf": {
+    "grocery": {
+      "count": 2,
+      "nearest_m": 1293,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.56759,
+        52.13068
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 1308,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.56771,
+        52.1308
+      ]
+    },
+    "healthcare": {
+      "count": 1,
+      "nearest_m": 1484,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.57327,
+        52.12982
+      ]
+    },
+    "school": {
+      "count": 2,
+      "nearest_m": 1284,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.56957,
+        52.12959
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 5198,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 1,
+      "nearest_m": 1088,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.56542,
+        52.12936
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2647,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.59504,
+        52.11777
+      ]
+    },
+    "cafe": {
+      "count": 1,
+      "nearest_m": 1630,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.57258,
+        52.13211
+      ]
+    },
+    "transit": {
+      "count": 9,
+      "nearest_m": 1127,
+      "r5": 0,
+      "r10": 0,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.56339,
+        52.13043
+      ]
+    }
+  },
+  "Stadtfeld West": {
+    "grocery": {
+      "count": 7,
+      "nearest_m": 301,
+      "r5": 1,
+      "r10": 4,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.58742,
+        52.12828
+      ]
+    },
+    "pharmacy": {
+      "count": 3,
+      "nearest_m": 460,
+      "r5": 0,
+      "r10": 2,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.59507,
+        52.12858
+      ]
+    },
+    "healthcare": {
+      "count": 12,
+      "nearest_m": 743,
+      "r5": 0,
+      "r10": 6,
+      "r15": 13,
+      "nearest_lonlat": [
+        11.59967,
+        52.12868
+      ]
+    },
+    "school": {
+      "count": 10,
+      "nearest_m": 516,
+      "r5": 0,
+      "r10": 5,
+      "r15": 7,
+      "nearest_lonlat": [
+        11.58841,
+        52.12612
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3187,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 17,
+      "nearest_m": 178,
+      "r5": 1,
+      "r10": 12,
+      "r15": 18,
+      "nearest_lonlat": [
+        11.59143,
+        52.13168
+      ]
+    },
+    "gym": {
+      "count": 1,
+      "nearest_m": 790,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.59965,
+        52.13391
+      ]
+    },
+    "cafe": {
+      "count": 10,
+      "nearest_m": 348,
+      "r5": 3,
+      "r10": 7,
+      "r15": 11,
+      "nearest_lonlat": [
+        11.59352,
+        52.13249
+      ]
+    },
+    "transit": {
+      "count": 49,
+      "nearest_m": 272,
+      "r5": 10,
+      "r10": 25,
+      "r15": 57,
+      "nearest_lonlat": [
+        11.59121,
+        52.12856
+      ]
+    }
+  },
+  "Sudenburg": {
+    "grocery": {
+      "count": 22,
+      "nearest_m": 402,
+      "r5": 0,
+      "r10": 11,
+      "r15": 20,
+      "nearest_lonlat": [
+        11.59322,
+        52.10798
+      ]
+    },
+    "pharmacy": {
+      "count": 5,
+      "nearest_m": 515,
+      "r5": 0,
+      "r10": 4,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.59249,
+        52.10691
+      ]
+    },
+    "healthcare": {
+      "count": 32,
+      "nearest_m": 169,
+      "r5": 8,
+      "r10": 20,
+      "r15": 27,
+      "nearest_lonlat": [
+        11.59418,
+        52.11057
+      ]
+    },
+    "school": {
+      "count": 12,
+      "nearest_m": 85,
+      "r5": 4,
+      "r10": 8,
+      "r15": 12,
+      "nearest_lonlat": [
+        11.59119,
+        52.1119
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 2932,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 5,
+      "nearest_m": 974,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.60606,
+        52.1094
+      ]
+    },
+    "gym": {
+      "count": 7,
+      "nearest_m": 469,
+      "r5": 0,
+      "r10": 2,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.59084,
+        52.10742
+      ]
+    },
+    "cafe": {
+      "count": 23,
+      "nearest_m": 425,
+      "r5": 0,
+      "r10": 8,
+      "r15": 15,
+      "nearest_lonlat": [
+        11.59485,
+        52.10807
+      ]
+    },
+    "transit": {
+      "count": 64,
+      "nearest_m": 182,
+      "r5": 4,
+      "r10": 27,
+      "r15": 48,
+      "nearest_lonlat": [
+        11.59143,
+        52.1131
+      ]
+    }
+  },
+  "Herrenkrug": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 2341,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.72208,
+        52.16084
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 2377,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.72237,
+        52.16127
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1725,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.71537,
+        52.15332
+      ]
+    },
+    "school": {
+      "count": 2,
+      "nearest_m": 1816,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67127,
+        52.14182
+      ]
+    },
+    "university": {
+      "count": 1,
+      "nearest_m": 1721,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6761,
+        52.14046
+      ]
+    },
+    "park": {
+      "count": 2,
+      "nearest_m": 856,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.67798,
+        52.15154
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2942,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6718,
+        52.12937
+      ]
+    },
+    "cafe": {
+      "count": 8,
+      "nearest_m": 876,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.67736,
+        52.15348
+      ]
+    },
+    "transit": {
+      "count": 23,
+      "nearest_m": 713,
+      "r5": 0,
+      "r10": 4,
+      "r15": 5,
+      "nearest_lonlat": [
+        11.67993,
+        52.15206
+      ]
+    }
+  },
+  "Brückfeld": {
+    "grocery": {
+      "count": 1,
+      "nearest_m": 229,
+      "r5": 3,
+      "r10": 3,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.67167,
+        52.12908
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 164,
+      "r5": 1,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.67073,
+        52.12919
+      ]
+    },
+    "healthcare": {
+      "count": 4,
+      "nearest_m": 151,
+      "r5": 3,
+      "r10": 4,
+      "r15": 5,
+      "nearest_lonlat": [
+        11.67054,
+        52.12919
+      ]
+    },
+    "school": {
+      "count": 1,
+      "nearest_m": 399,
+      "r5": 1,
+      "r10": 4,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.6676,
+        52.1327
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 1367,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6761,
+        52.14046
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 629,
+      "r5": 0,
+      "r10": 1,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.66441,
+        52.12403
+      ]
+    },
+    "gym": {
+      "count": 1,
+      "nearest_m": 239,
+      "r5": 1,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.6718,
+        52.12937
+      ]
+    },
+    "cafe": {
+      "count": 4,
+      "nearest_m": 138,
+      "r5": 2,
+      "r10": 5,
+      "r15": 9,
+      "nearest_lonlat": [
+        11.67016,
+        52.12966
+      ]
+    },
+    "transit": {
+      "count": 14,
+      "nearest_m": 96,
+      "r5": 7,
+      "r10": 24,
+      "r15": 38,
+      "nearest_lonlat": [
+        11.66697,
+        52.12895
+      ]
+    }
+  },
+  "Beyendorf-Sohlen": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 3446,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63685,
+        52.08061
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 4370,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.59977,
+        52.08363
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 4074,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63751,
+        52.08624
+      ]
+    },
+    "school": {
+      "count": 1,
+      "nearest_m": 225,
+      "r5": 1,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.63424,
+        52.05131
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 7845,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 3097,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.58724,
+        52.0529
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 3269,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63705,
+        52.079
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 3377,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6687,
+        52.07007
+      ]
+    },
+    "transit": {
+      "count": 9,
+      "nearest_m": 313,
+      "r5": 2,
+      "r10": 3,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.6337,
+        52.05241
+      ]
+    }
+  },
+  "Westerhüsen": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 2173,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6693,
+        52.0721
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 4566,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.65552,
+        52.09273
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 2981,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66717,
+        52.07933
+      ]
+    },
+    "school": {
+      "count": 2,
+      "nearest_m": 1003,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.67745,
+        52.06002
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 7940,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 2601,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66409,
+        52.07573
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 3676,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63705,
+        52.079
+      ]
+    },
+    "cafe": {
+      "count": 2,
+      "nearest_m": 1515,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67684,
+        52.06535
+      ]
+    },
+    "transit": {
+      "count": 21,
+      "nearest_m": 744,
+      "r5": 0,
+      "r10": 6,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.67825,
+        52.05627
+      ]
+    }
+  },
+  "Fermersleben": {
+    "grocery": {
+      "count": 1,
+      "nearest_m": 407,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.65589,
+        52.09254
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 417,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.65552,
+        52.09273
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1182,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.64617,
+        52.10045
+      ]
+    },
+    "school": {
+      "count": 1,
+      "nearest_m": 402,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.65482,
+        52.09492
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3432,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 3,
+      "nearest_m": 366,
+      "r5": 1,
+      "r10": 3,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.65672,
+        52.0925
+      ]
+    },
+    "gym": {
+      "count": 1,
+      "nearest_m": 879,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.64874,
+        52.0976
+      ]
+    },
+    "cafe": {
+      "count": 3,
+      "nearest_m": 633,
+      "r5": 0,
+      "r10": 2,
+      "r15": 5,
+      "nearest_lonlat": [
+        11.65354,
+        52.0911
+      ]
+    },
+    "transit": {
+      "count": 11,
+      "nearest_m": 439,
+      "r5": 0,
+      "r10": 9,
+      "r15": 18,
+      "nearest_lonlat": [
+        11.65604,
+        52.09199
+      ]
+    }
+  },
+  "Salbke": {
+    "grocery": {
+      "count": 2,
+      "nearest_m": 983,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.6693,
+        52.0721
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 2269,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.65552,
+        52.09273
+      ]
+    },
+    "healthcare": {
+      "count": 2,
+      "nearest_m": 1142,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.66717,
+        52.07933
+      ]
+    },
+    "school": {
+      "count": 4,
+      "nearest_m": 934,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.6675,
+        52.07565
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 5550,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 1,
+      "nearest_m": 730,
+      "r5": 0,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.66409,
+        52.07573
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1435,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63705,
+        52.079
+      ]
+    },
+    "cafe": {
+      "count": 3,
+      "nearest_m": 975,
+      "r5": 0,
+      "r10": 0,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.6687,
+        52.07007
+      ]
+    },
+    "transit": {
+      "count": 27,
+      "nearest_m": 634,
+      "r5": 0,
+      "r10": 5,
+      "r15": 17,
+      "nearest_lonlat": [
+        11.65848,
+        52.07761
+      ]
+    }
+  },
+  "Cracau": {
+    "grocery": {
+      "count": 7,
+      "nearest_m": 265,
+      "r5": 2,
+      "r10": 7,
+      "r15": 8,
+      "nearest_lonlat": [
+        11.66346,
+        52.11783
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 312,
+      "r5": 1,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.66196,
+        52.11883
+      ]
+    },
+    "healthcare": {
+      "count": 2,
+      "nearest_m": 473,
+      "r5": 0,
+      "r10": 2,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.66789,
+        52.11521
+      ]
+    },
+    "school": {
+      "count": 11,
+      "nearest_m": 393,
+      "r5": 1,
+      "r10": 8,
+      "r15": 11,
+      "nearest_lonlat": [
+        11.66869,
+        52.11611
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 2315,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 6,
+      "nearest_m": 328,
+      "r5": 2,
+      "r10": 4,
+      "r15": 7,
+      "nearest_lonlat": [
+        11.66275,
+        52.12124
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1173,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.6718,
+        52.12937
+      ]
+    },
+    "cafe": {
+      "count": 2,
+      "nearest_m": 697,
+      "r5": 0,
+      "r10": 2,
+      "r15": 5,
+      "nearest_lonlat": [
+        11.65626,
+        52.11937
+      ]
+    },
+    "transit": {
+      "count": 20,
+      "nearest_m": 320,
+      "r5": 7,
+      "r10": 15,
+      "r15": 29,
+      "nearest_lonlat": [
+        11.66189,
+        52.1187
+      ]
+    }
+  },
+  "Gewerbegebiet Nord": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 1851,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66744,
+        52.18037
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 1678,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66348,
+        52.18264
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 4095,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62938,
+        52.17096
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 2184,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66574,
+        52.17753
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 4919,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60012,
+        52.19687
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 1528,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66314,
+        52.18418
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 4616,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63612,
+        52.16166
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 1521,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66403,
+        52.18402
+      ]
+    },
+    "transit": {
+      "count": 16,
+      "nearest_m": 217,
+      "r5": 8,
+      "r10": 10,
+      "r15": 12,
+      "nearest_lonlat": [
+        11.67444,
+        52.19806
+      ]
+    }
+  },
+  "Industriehafen": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 1131,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.65441,
+        52.16217
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 1592,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64725,
+        52.16352
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1626,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64679,
+        52.16326
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 1357,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66495,
+        52.17632
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 2715,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6761,
+        52.14046
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 1420,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6497,
+        52.16458
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2197,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63921,
+        52.16005
+      ]
+    },
+    "cafe": {
+      "count": 2,
+      "nearest_m": 293,
+      "r5": 1,
+      "r10": 2,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.66793,
+        52.16674
+      ]
+    },
+    "transit": {
+      "count": 6,
+      "nearest_m": 678,
+      "r5": 0,
+      "r10": 4,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.66215,
+        52.16794
+      ]
+    }
+  },
+  "Rothensee": {
+    "grocery": {
+      "count": 1,
+      "nearest_m": 616,
+      "r5": 0,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.66744,
+        52.18037
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 540,
+      "r5": 0,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.66348,
+        52.18264
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1907,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64679,
+        52.16326
+      ]
+    },
+    "school": {
+      "count": 2,
+      "nearest_m": 490,
+      "r5": 0,
+      "r10": 2,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.66574,
+        52.17753
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 4338,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64558,
+        52.14059
+      ]
+    },
+    "park": {
+      "count": 1,
+      "nearest_m": 676,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.66314,
+        52.18418
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2453,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63612,
+        52.16166
+      ]
+    },
+    "cafe": {
+      "count": 1,
+      "nearest_m": 689,
+      "r5": 0,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.66403,
+        52.18402
+      ]
+    },
+    "transit": {
+      "count": 0,
+      "nearest_m": 563,
+      "r5": 0,
+      "r10": 2,
+      "r15": 7,
+      "nearest_lonlat": [
+        11.66681,
+        52.17747
+      ]
+    }
+  },
+  "Neustädter See": {
+    "grocery": {
+      "count": 3,
+      "nearest_m": 1019,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.62924,
+        52.17353
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 1381,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62953,
+        52.16943
+      ]
+    },
+    "healthcare": {
+      "count": 9,
+      "nearest_m": 1240,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62938,
+        52.17096
+      ]
+    },
+    "school": {
+      "count": 6,
+      "nearest_m": 888,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.63307,
+        52.17328
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3253,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60012,
+        52.19687
+      ]
+    },
+    "park": {
+      "count": 3,
+      "nearest_m": 793,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.63878,
+        52.17317
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2084,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63612,
+        52.16166
+      ]
+    },
+    "cafe": {
+      "count": 3,
+      "nearest_m": 839,
+      "r5": 0,
+      "r10": 0,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.62989,
+        52.17545
+      ]
+    },
+    "transit": {
+      "count": 10,
+      "nearest_m": 602,
+      "r5": 0,
+      "r10": 2,
+      "r15": 7,
+      "nearest_lonlat": [
+        11.63545,
+        52.17543
+      ]
+    }
+  },
+  "Kannenstieg": {
+    "grocery": {
+      "count": 2,
+      "nearest_m": 341,
+      "r5": 2,
+      "r10": 5,
+      "r15": 9,
+      "nearest_lonlat": [
+        11.62501,
+        52.1696
+      ]
+    },
+    "pharmacy": {
+      "count": 2,
+      "nearest_m": 376,
+      "r5": 1,
+      "r10": 3,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.62511,
+        52.16926
+      ]
+    },
+    "healthcare": {
+      "count": 6,
+      "nearest_m": 379,
+      "r5": 2,
+      "r10": 19,
+      "r15": 20,
+      "nearest_lonlat": [
+        11.62505,
+        52.1692
+      ]
+    },
+    "school": {
+      "count": 4,
+      "nearest_m": 49,
+      "r5": 4,
+      "r10": 6,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.62136,
+        52.17228
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3142,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60012,
+        52.19687
+      ]
+    },
+    "park": {
+      "count": 1,
+      "nearest_m": 368,
+      "r5": 1,
+      "r10": 2,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.61815,
+        52.17436
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1507,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63612,
+        52.16166
+      ]
+    },
+    "cafe": {
+      "count": 2,
+      "nearest_m": 372,
+      "r5": 1,
+      "r10": 3,
+      "r15": 7,
+      "nearest_lonlat": [
+        11.62484,
+        52.16919
+      ]
+    },
+    "transit": {
+      "count": 26,
+      "nearest_m": 142,
+      "r5": 14,
+      "r10": 36,
+      "r15": 51,
+      "nearest_lonlat": [
+        11.624,
+        52.17186
+      ]
+    }
+  },
+  "Sülzegrund": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 1437,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62501,
+        52.1696
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 1465,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62511,
+        52.16926
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1466,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.62505,
+        52.1692
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 938,
+      "r5": 0,
+      "r10": 0,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.61844,
+        52.17172
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 2254,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60012,
+        52.19687
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 761,
+      "r5": 0,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.61815,
+        52.17436
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1209,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60558,
+        52.18796
+      ]
+    },
+    "cafe": {
+      "count": 1,
+      "nearest_m": 797,
+      "r5": 0,
+      "r10": 1,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.61715,
+        52.18166
+      ]
+    },
+    "transit": {
+      "count": 4,
+      "nearest_m": 901,
+      "r5": 0,
+      "r10": 0,
+      "r15": 9,
+      "nearest_lonlat": [
+        11.61025,
+        52.16923
+      ]
+    }
+  },
+  "Großer Silberberg": {
+    "grocery": {
+      "count": 1,
+      "nearest_m": 1157,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.58758,
+        52.1564
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 1349,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6059,
+        52.16102
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1076,
+      "r5": 0,
+      "r10": 0,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.58113,
+        52.15824
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 1417,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.59436,
+        52.15455
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3440,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60012,
+        52.19687
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 1148,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.57974,
+        52.15799
+      ]
+    },
+    "gym": {
+      "count": 1,
+      "nearest_m": 1404,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60676,
+        52.16098
+      ]
+    },
+    "cafe": {
+      "count": 3,
+      "nearest_m": 1374,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60511,
+        52.15981
+      ]
+    },
+    "transit": {
+      "count": 1,
+      "nearest_m": 1080,
+      "r5": 0,
+      "r10": 0,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.58929,
+        52.15708
+      ]
+    }
+  },
+  "Neustädter Feld": {
+    "grocery": {
+      "count": 7,
+      "nearest_m": 256,
+      "r5": 1,
+      "r10": 6,
+      "r15": 9,
+      "nearest_lonlat": [
+        11.62145,
+        52.15856
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 464,
+      "r5": 0,
+      "r10": 1,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.61977,
+        52.155
+      ]
+    },
+    "healthcare": {
+      "count": 11,
+      "nearest_m": 343,
+      "r5": 3,
+      "r10": 7,
+      "r15": 19,
+      "nearest_lonlat": [
+        11.61715,
+        52.15592
+      ]
+    },
+    "school": {
+      "count": 5,
+      "nearest_m": 220,
+      "r5": 3,
+      "r10": 5,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.62063,
+        52.15807
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 2795,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64558,
+        52.14059
+      ]
+    },
+    "park": {
+      "count": 3,
+      "nearest_m": 658,
+      "r5": 0,
+      "r10": 2,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.60868,
+        52.15706
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 786,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.60676,
+        52.16098
+      ]
+    },
+    "cafe": {
+      "count": 6,
+      "nearest_m": 109,
+      "r5": 2,
+      "r10": 7,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.61934,
+        52.15914
+      ]
+    },
+    "transit": {
+      "count": 23,
+      "nearest_m": 227,
+      "r5": 6,
+      "r10": 18,
+      "r15": 46,
+      "nearest_lonlat": [
+        11.62105,
+        52.15866
+      ]
+    }
+  },
+  "Nordwest": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 949,
+      "r5": 0,
+      "r10": 0,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.61487,
+        52.13884
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 188,
+      "r5": 1,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.60877,
+        52.14728
+      ]
+    },
+    "healthcare": {
+      "count": 1,
+      "nearest_m": 194,
+      "r5": 1,
+      "r10": 2,
+      "r15": 8,
+      "nearest_lonlat": [
+        11.60867,
+        52.1471
+      ]
+    },
+    "school": {
+      "count": 5,
+      "nearest_m": 629,
+      "r5": 0,
+      "r10": 4,
+      "r15": 16,
+      "nearest_lonlat": [
+        11.60318,
+        52.1495
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 2443,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64558,
+        52.14059
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 677,
+      "r5": 0,
+      "r10": 1,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.61536,
+        52.15271
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1547,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63196,
+        52.15302
+      ]
+    },
+    "cafe": {
+      "count": 2,
+      "nearest_m": 785,
+      "r5": 0,
+      "r10": 1,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.60005,
+        52.14707
+      ]
+    },
+    "transit": {
+      "count": 11,
+      "nearest_m": 166,
+      "r5": 3,
+      "r10": 7,
+      "r15": 31,
+      "nearest_lonlat": [
+        11.60908,
+        52.14716
+      ]
+    }
+  },
+  "Alte Neustadt": {
+    "grocery": {
+      "count": 6,
+      "nearest_m": 314,
+      "r5": 3,
+      "r10": 6,
+      "r15": 9,
+      "nearest_lonlat": [
+        11.65335,
+        52.14314
+      ]
+    },
+    "pharmacy": {
+      "count": 1,
+      "nearest_m": 489,
+      "r5": 0,
+      "r10": 1,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.64414,
+        52.1476
+      ]
+    },
+    "healthcare": {
+      "count": 4,
+      "nearest_m": 389,
+      "r5": 1,
+      "r10": 4,
+      "r15": 15,
+      "nearest_lonlat": [
+        11.64593,
+        52.14746
+      ]
+    },
+    "school": {
+      "count": 12,
+      "nearest_m": 23,
+      "r5": 5,
+      "r10": 12,
+      "r15": 17,
+      "nearest_lonlat": [
+        11.65005,
+        52.14487
+      ]
+    },
+    "university": {
+      "count": 2,
+      "nearest_m": 552,
+      "r5": 0,
+      "r10": 2,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.64558,
+        52.14059
+      ]
+    },
+    "park": {
+      "count": 10,
+      "nearest_m": 404,
+      "r5": 0,
+      "r10": 7,
+      "r15": 12,
+      "nearest_lonlat": [
+        11.64491,
+        52.14273
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1518,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63196,
+        52.15302
+      ]
+    },
+    "cafe": {
+      "count": 16,
+      "nearest_m": 236,
+      "r5": 5,
+      "r10": 15,
+      "r15": 25,
+      "nearest_lonlat": [
+        11.64627,
+        52.14476
+      ]
+    },
+    "transit": {
+      "count": 45,
+      "nearest_m": 159,
+      "r5": 9,
+      "r10": 39,
+      "r15": 67,
+      "nearest_lonlat": [
+        11.6475,
+        52.1444
+      ]
+    }
+  },
+  "Neue Neustadt": {
+    "grocery": {
+      "count": 18,
+      "nearest_m": 267,
+      "r5": 4,
+      "r10": 11,
+      "r15": 21,
+      "nearest_lonlat": [
+        11.64069,
+        52.15531
+      ]
+    },
+    "pharmacy": {
+      "count": 5,
+      "nearest_m": 362,
+      "r5": 2,
+      "r10": 5,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.63673,
+        52.15662
+      ]
+    },
+    "healthcare": {
+      "count": 22,
+      "nearest_m": 214,
+      "r5": 6,
+      "r10": 22,
+      "r15": 26,
+      "nearest_lonlat": [
+        11.64478,
+        52.15711
+      ]
+    },
+    "school": {
+      "count": 14,
+      "nearest_m": 215,
+      "r5": 4,
+      "r10": 9,
+      "r15": 17,
+      "nearest_lonlat": [
+        11.64235,
+        52.15572
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 1913,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64558,
+        52.14059
+      ]
+    },
+    "park": {
+      "count": 10,
+      "nearest_m": 70,
+      "r5": 1,
+      "r10": 5,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.64225,
+        52.15707
+      ]
+    },
+    "gym": {
+      "count": 4,
+      "nearest_m": 322,
+      "r5": 1,
+      "r10": 3,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.63921,
+        52.16005
+      ]
+    },
+    "cafe": {
+      "count": 12,
+      "nearest_m": 135,
+      "r5": 3,
+      "r10": 8,
+      "r15": 11,
+      "nearest_lonlat": [
+        11.64186,
+        52.15641
+      ]
+    },
+    "transit": {
+      "count": 46,
+      "nearest_m": 373,
+      "r5": 8,
+      "r10": 31,
+      "r15": 65,
+      "nearest_lonlat": [
+        11.63658,
+        52.15658
+      ]
+    }
+  },
+  "Neu Olvenstedt": {
+    "grocery": {
+      "count": 10,
+      "nearest_m": 49,
+      "r5": 4,
+      "r10": 8,
+      "r15": 10,
+      "nearest_lonlat": [
+        11.58739,
+        52.15082
+      ]
+    },
+    "pharmacy": {
+      "count": 2,
+      "nearest_m": 11,
+      "r5": 1,
+      "r10": 2,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.58695,
+        52.15114
+      ]
+    },
+    "healthcare": {
+      "count": 9,
+      "nearest_m": 17,
+      "r5": 6,
+      "r10": 7,
+      "r15": 9,
+      "nearest_lonlat": [
+        11.587,
+        52.15119
+      ]
+    },
+    "school": {
+      "count": 17,
+      "nearest_m": 315,
+      "r5": 2,
+      "r10": 12,
+      "r15": 22,
+      "nearest_lonlat": [
+        11.59103,
+        52.14995
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 4189,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64558,
+        52.14059
+      ]
+    },
+    "park": {
+      "count": 8,
+      "nearest_m": 287,
+      "r5": 1,
+      "r10": 4,
+      "r15": 7,
+      "nearest_lonlat": [
+        11.591,
+        52.15111
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 1754,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60676,
+        52.16098
+      ]
+    },
+    "cafe": {
+      "count": 2,
+      "nearest_m": 231,
+      "r5": 1,
+      "r10": 2,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.58725,
+        52.15315
+      ]
+    },
+    "transit": {
+      "count": 34,
+      "nearest_m": 71,
+      "r5": 5,
+      "r10": 22,
+      "r15": 49,
+      "nearest_lonlat": [
+        11.58703,
+        52.15046
+      ]
+    }
+  },
+  "Alt Olvenstedt": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 798,
+      "r5": 0,
+      "r10": 1,
+      "r15": 2,
+      "nearest_lonlat": [
+        11.57855,
+        52.15478
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 1341,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.58294,
+        52.14745
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1064,
+      "r5": 0,
+      "r10": 0,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.58113,
+        52.15824
+      ]
+    },
+    "school": {
+      "count": 3,
+      "nearest_m": 157,
+      "r5": 2,
+      "r10": 4,
+      "r15": 13,
+      "nearest_lonlat": [
+        11.56866,
+        52.15529
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 5245,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60012,
+        52.19687
+      ]
+    },
+    "park": {
+      "count": 1,
+      "nearest_m": 337,
+      "r5": 1,
+      "r10": 1,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.57113,
+        52.15594
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2824,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.60676,
+        52.16098
+      ]
+    },
+    "cafe": {
+      "count": 3,
+      "nearest_m": 335,
+      "r5": 2,
+      "r10": 3,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.57169,
+        52.15504
+      ]
+    },
+    "transit": {
+      "count": 18,
+      "nearest_m": 140,
+      "r5": 5,
+      "r10": 19,
+      "r15": 27,
+      "nearest_lonlat": [
+        11.56596,
+        52.15549
+      ]
+    }
+  },
+  "Berliner Chaussee": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 2031,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67167,
+        52.12908
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 2096,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67073,
+        52.12919
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1938,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67304,
+        52.12924
+      ]
+    },
+    "school": {
+      "count": 1,
+      "nearest_m": 1270,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.71079,
+        52.1388
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 2148,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6761,
+        52.14046
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 2110,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67433,
+        52.13812
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2023,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6718,
+        52.12937
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 1803,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.68026,
+        52.1387
+      ]
+    },
+    "transit": {
+      "count": 6,
+      "nearest_m": 478,
+      "r5": 0,
+      "r10": 4,
+      "r15": 6,
+      "nearest_lonlat": [
+        11.70072,
+        52.13327
+      ]
+    }
+  },
+  "Prester": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 1589,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67049,
+        52.11374
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 2092,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.65552,
+        52.09273
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 1822,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66789,
+        52.11521
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 1536,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67179,
+        52.11365
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 4001,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 1,
+      "nearest_m": 1402,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67312,
+        52.11273
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 2354,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64874,
+        52.0976
+      ]
+    },
+    "cafe": {
+      "count": 3,
+      "nearest_m": 484,
+      "r5": 0,
+      "r10": 2,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.67543,
+        52.10168
+      ]
+    },
+    "transit": {
+      "count": 5,
+      "nearest_m": 314,
+      "r5": 2,
+      "r10": 4,
+      "r15": 4,
+      "nearest_lonlat": [
+        11.67842,
+        52.10282
+      ]
+    }
+  },
+  "Zipkeleben": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 2228,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67049,
+        52.11374
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 2943,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66196,
+        52.11883
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 2438,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66789,
+        52.11521
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 2139,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67179,
+        52.11365
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 3846,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6761,
+        52.14046
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 2031,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67312,
+        52.11273
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 3013,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6718,
+        52.12937
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 2020,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67491,
+        52.10341
+      ]
+    },
+    "transit": {
+      "count": 0,
+      "nearest_m": 1825,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67842,
+        52.10282
+      ]
+    }
+  },
+  "Pechau": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 4375,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66735,
+        52.07942
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 5143,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.65552,
+        52.09273
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 4387,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66717,
+        52.07939
+      ]
+    },
+    "school": {
+      "count": 1,
+      "nearest_m": 1115,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.71414,
+        52.08933
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 7000,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6761,
+        52.14046
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 4688,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66409,
+        52.07573
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 5691,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64874,
+        52.0976
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 4079,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67543,
+        52.10168
+      ]
+    },
+    "transit": {
+      "count": 4,
+      "nearest_m": 915,
+      "r5": 0,
+      "r10": 0,
+      "r15": 3,
+      "nearest_lonlat": [
+        11.7169,
+        52.08868
+      ]
+    }
+  },
+  "Kreuzhorst": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 2078,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66735,
+        52.07942
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 3173,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.65552,
+        52.09273
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 2090,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66717,
+        52.07939
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 1479,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.71414,
+        52.08933
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 6251,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 2364,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66409,
+        52.07573
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 3833,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.64874,
+        52.0976
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 2018,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6689,
+        52.07669
+      ]
+    },
+    "transit": {
+      "count": 0,
+      "nearest_m": 1039,
+      "r5": 0,
+      "r10": 0,
+      "r15": 1,
+      "nearest_lonlat": [
+        11.71212,
+        52.08341
+      ]
+    }
+  },
+  "Randau-Calenberge": {
+    "grocery": {
+      "count": 0,
+      "nearest_m": 3491,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.6693,
+        52.0721
+      ]
+    },
+    "pharmacy": {
+      "count": 0,
+      "nearest_m": 5520,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.65552,
+        52.09273
+      ]
+    },
+    "healthcare": {
+      "count": 0,
+      "nearest_m": 3988,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66717,
+        52.07933
+      ]
+    },
+    "school": {
+      "count": 0,
+      "nearest_m": 2678,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67745,
+        52.06002
+      ]
+    },
+    "university": {
+      "count": 0,
+      "nearest_m": 8803,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63267,
+        52.12029
+      ]
+    },
+    "park": {
+      "count": 0,
+      "nearest_m": 3981,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.66409,
+        52.07573
+      ]
+    },
+    "gym": {
+      "count": 0,
+      "nearest_m": 5830,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.63705,
+        52.079
+      ]
+    },
+    "cafe": {
+      "count": 0,
+      "nearest_m": 2776,
+      "r5": 0,
+      "r10": 0,
+      "r15": 0,
+      "nearest_lonlat": [
+        11.67684,
+        52.06535
+      ]
+    },
+    "transit": {
+      "count": 8,
+      "nearest_m": 469,
+      "r5": 0,
+      "r10": 3,
+      "r15": 5,
+      "nearest_lonlat": [
+        11.72328,
+        52.06088
+      ]
+    }
+  }
+}

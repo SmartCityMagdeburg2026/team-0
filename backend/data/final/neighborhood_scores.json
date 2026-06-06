@@ -1,0 +1,7101 @@
+[
+  {
+    "area_id": "altstadt",
+    "area_name": "Altstadt",
+    "centroid": [
+      11.63303,
+      52.12821
+    ],
+    "area_km2": 3.76,
+    "affordability_score": 33,
+    "transit_score": 100,
+    "fifteen_min_score": 95,
+    "grocery_score": 100,
+    "pharmacy_score": 100,
+    "healthcare_score": 100,
+    "education_score": 68,
+    "park_score": 100,
+    "green_score": 100,
+    "lifestyle_score": 100,
+    "gym_score": 57,
+    "economic_score": null,
+    "future_value_score": 33,
+    "rent_eur_sqm": 7.59,
+    "est_rent_50sqm": 530,
+    "rent_proj_2026": 8.17,
+    "rent_growth_pct": 33.9,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.67
+      },
+      {
+        "year": 2013,
+        "rent": 5.77
+      },
+      {
+        "year": 2014,
+        "rent": 6.21
+      },
+      {
+        "year": 2015,
+        "rent": 6.07
+      },
+      {
+        "year": 2016,
+        "rent": 6.15
+      },
+      {
+        "year": 2017,
+        "rent": 6.17
+      },
+      {
+        "year": 2018,
+        "rent": 6.49
+      },
+      {
+        "year": 2019,
+        "rent": 6.64
+      },
+      {
+        "year": 2020,
+        "rent": 6.76
+      },
+      {
+        "year": 2021,
+        "rent": 6.99
+      },
+      {
+        "year": 2022,
+        "rent": 7.12
+      },
+      {
+        "year": 2023,
+        "rent": 7.41
+      },
+      {
+        "year": 2024,
+        "rent": 7.59
+      },
+      {
+        "year": 2025,
+        "rent": 7.88
+      },
+      {
+        "year": 2026,
+        "rent": 8.17
+      }
+    ],
+    "life_value_score": 77,
+    "best_for": [
+      "car-free living",
+      "nature lovers",
+      "commuters"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 24,
+        "nearest_m": 269,
+        "r5": 2,
+        "r10": 17,
+        "r15": 23,
+        "nearest_lonlat": [
+          11.63043,
+          52.13002
+        ]
+      },
+      "pharmacy": {
+        "count": 9,
+        "nearest_m": 247,
+        "r5": 4,
+        "r10": 6,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.63355,
+          52.12601
+        ]
+      },
+      "healthcare": {
+        "count": 47,
+        "nearest_m": 142,
+        "r5": 21,
+        "r10": 33,
+        "r15": 43,
+        "nearest_lonlat": [
+          11.63397,
+          52.12707
+        ]
+      },
+      "school": {
+        "count": 15,
+        "nearest_m": 103,
+        "r5": 4,
+        "r10": 7,
+        "r15": 18,
+        "nearest_lonlat": [
+          11.6317,
+          52.12776
+        ]
+      },
+      "university": {
+        "count": 1,
+        "nearest_m": 882,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 23,
+        "nearest_m": 238,
+        "r5": 2,
+        "r10": 12,
+        "r15": 20,
+        "nearest_lonlat": [
+          11.63573,
+          52.12687
+        ]
+      },
+      "gym": {
+        "count": 4,
+        "nearest_m": 261,
+        "r5": 2,
+        "r10": 3,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.63102,
+          52.1302
+        ]
+      },
+      "cafe": {
+        "count": 102,
+        "nearest_m": 4,
+        "r5": 39,
+        "r10": 77,
+        "r15": 103,
+        "nearest_lonlat": [
+          11.63297,
+          52.12823
+        ]
+      },
+      "transit": {
+        "count": 84,
+        "nearest_m": 90,
+        "r5": 16,
+        "r10": 50,
+        "r15": 84,
+        "nearest_lonlat": [
+          11.63426,
+          52.12793
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "stadtfeld-ost",
+    "area_name": "Stadtfeld Ost",
+    "centroid": [
+      11.61355,
+      52.13279
+    ],
+    "area_km2": 3.27,
+    "affordability_score": 39,
+    "transit_score": 69,
+    "fifteen_min_score": 65,
+    "grocery_score": 54,
+    "pharmacy_score": 78,
+    "healthcare_score": 94,
+    "education_score": 100,
+    "park_score": 35,
+    "green_score": 35,
+    "lifestyle_score": 25,
+    "gym_score": 29,
+    "economic_score": null,
+    "future_value_score": 34,
+    "rent_eur_sqm": 7.24,
+    "est_rent_50sqm": 512,
+    "rent_proj_2026": 7.66,
+    "rent_growth_pct": 34.8,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.37
+      },
+      {
+        "year": 2013,
+        "rent": 5.48
+      },
+      {
+        "year": 2014,
+        "rent": 5.71
+      },
+      {
+        "year": 2015,
+        "rent": 5.73
+      },
+      {
+        "year": 2016,
+        "rent": 5.86
+      },
+      {
+        "year": 2017,
+        "rent": 6.08
+      },
+      {
+        "year": 2018,
+        "rent": 6.16
+      },
+      {
+        "year": 2019,
+        "rent": 6.2
+      },
+      {
+        "year": 2020,
+        "rent": 6.37
+      },
+      {
+        "year": 2021,
+        "rent": 6.54
+      },
+      {
+        "year": 2022,
+        "rent": 6.89
+      },
+      {
+        "year": 2023,
+        "rent": 7.08
+      },
+      {
+        "year": 2024,
+        "rent": 7.24
+      },
+      {
+        "year": 2025,
+        "rent": 7.5
+      },
+      {
+        "year": 2026,
+        "rent": 7.66
+      }
+    ],
+    "life_value_score": 57,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 13,
+        "nearest_m": 289,
+        "r5": 3,
+        "r10": 12,
+        "r15": 19,
+        "nearest_lonlat": [
+          11.61173,
+          52.13045
+        ]
+      },
+      "pharmacy": {
+        "count": 7,
+        "nearest_m": 325,
+        "r5": 4,
+        "r10": 6,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.61145,
+          52.13017
+        ]
+      },
+      "healthcare": {
+        "count": 44,
+        "nearest_m": 40,
+        "r5": 26,
+        "r10": 40,
+        "r15": 54,
+        "nearest_lonlat": [
+          11.61322,
+          52.13309
+        ]
+      },
+      "school": {
+        "count": 22,
+        "nearest_m": 327,
+        "r5": 3,
+        "r10": 14,
+        "r15": 26,
+        "nearest_lonlat": [
+          11.60877,
+          52.13286
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 1910,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 8,
+        "nearest_m": 98,
+        "r5": 2,
+        "r10": 9,
+        "r15": 12,
+        "nearest_lonlat": [
+          11.61445,
+          52.13348
+        ]
+      },
+      "gym": {
+        "count": 2,
+        "nearest_m": 599,
+        "r5": 0,
+        "r10": 2,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.60483,
+          52.13236
+        ]
+      },
+      "cafe": {
+        "count": 26,
+        "nearest_m": 185,
+        "r5": 10,
+        "r10": 23,
+        "r15": 36,
+        "nearest_lonlat": [
+          11.61565,
+          52.13384
+        ]
+      },
+      "transit": {
+        "count": 58,
+        "nearest_m": 262,
+        "r5": 16,
+        "r10": 55,
+        "r15": 88,
+        "nearest_lonlat": [
+          11.60974,
+          52.13301
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "sudenburg",
+    "area_name": "Sudenburg",
+    "centroid": [
+      11.59229,
+      52.11154
+    ],
+    "area_km2": 5.3,
+    "affordability_score": 41,
+    "transit_score": 76,
+    "fifteen_min_score": 56,
+    "grocery_score": 92,
+    "pharmacy_score": 56,
+    "healthcare_score": 68,
+    "education_score": 55,
+    "park_score": 22,
+    "green_score": 22,
+    "lifestyle_score": 23,
+    "gym_score": 100,
+    "economic_score": null,
+    "future_value_score": 43,
+    "rent_eur_sqm": 7.16,
+    "est_rent_50sqm": 508,
+    "rent_proj_2026": 7.32,
+    "rent_growth_pct": 41.5,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.06
+      },
+      {
+        "year": 2013,
+        "rent": 5.02
+      },
+      {
+        "year": 2014,
+        "rent": 5.22
+      },
+      {
+        "year": 2015,
+        "rent": 5.25
+      },
+      {
+        "year": 2016,
+        "rent": 5.55
+      },
+      {
+        "year": 2017,
+        "rent": 5.67
+      },
+      {
+        "year": 2018,
+        "rent": 5.83
+      },
+      {
+        "year": 2019,
+        "rent": 5.86
+      },
+      {
+        "year": 2020,
+        "rent": 5.99
+      },
+      {
+        "year": 2021,
+        "rent": 6.23
+      },
+      {
+        "year": 2022,
+        "rent": 6.37
+      },
+      {
+        "year": 2023,
+        "rent": 6.66
+      },
+      {
+        "year": 2024,
+        "rent": 7.16
+      },
+      {
+        "year": 2025,
+        "rent": 7.5
+      },
+      {
+        "year": 2026,
+        "rent": 7.32
+      }
+    ],
+    "life_value_score": 53,
+    "best_for": [
+      "commuters"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 22,
+        "nearest_m": 402,
+        "r5": 0,
+        "r10": 11,
+        "r15": 20,
+        "nearest_lonlat": [
+          11.59322,
+          52.10798
+        ]
+      },
+      "pharmacy": {
+        "count": 5,
+        "nearest_m": 515,
+        "r5": 0,
+        "r10": 4,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.59249,
+          52.10691
+        ]
+      },
+      "healthcare": {
+        "count": 32,
+        "nearest_m": 169,
+        "r5": 8,
+        "r10": 20,
+        "r15": 27,
+        "nearest_lonlat": [
+          11.59418,
+          52.11057
+        ]
+      },
+      "school": {
+        "count": 12,
+        "nearest_m": 85,
+        "r5": 4,
+        "r10": 8,
+        "r15": 12,
+        "nearest_lonlat": [
+          11.59119,
+          52.1119
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 2932,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 5,
+        "nearest_m": 974,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.60606,
+          52.1094
+        ]
+      },
+      "gym": {
+        "count": 7,
+        "nearest_m": 469,
+        "r5": 0,
+        "r10": 2,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.59084,
+          52.10742
+        ]
+      },
+      "cafe": {
+        "count": 23,
+        "nearest_m": 425,
+        "r5": 0,
+        "r10": 8,
+        "r15": 15,
+        "nearest_lonlat": [
+          11.59485,
+          52.10807
+        ]
+      },
+      "transit": {
+        "count": 64,
+        "nearest_m": 182,
+        "r5": 4,
+        "r10": 27,
+        "r15": 48,
+        "nearest_lonlat": [
+          11.59143,
+          52.1131
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "leipziger-strae",
+    "area_name": "Leipziger Straße",
+    "centroid": [
+      11.62157,
+      52.10502
+    ],
+    "area_km2": 3.34,
+    "affordability_score": 44,
+    "transit_score": 50,
+    "fifteen_min_score": 49,
+    "grocery_score": 42,
+    "pharmacy_score": 33,
+    "healthcare_score": 36,
+    "education_score": 86,
+    "park_score": 83,
+    "green_score": 83,
+    "lifestyle_score": 12,
+    "gym_score": 14,
+    "economic_score": null,
+    "future_value_score": 37,
+    "rent_eur_sqm": 6.95,
+    "est_rent_50sqm": 497,
+    "rent_proj_2026": 7.42,
+    "rent_growth_pct": 37.1,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.07
+      },
+      {
+        "year": 2013,
+        "rent": 5.12
+      },
+      {
+        "year": 2014,
+        "rent": 5.41
+      },
+      {
+        "year": 2015,
+        "rent": 5.37
+      },
+      {
+        "year": 2016,
+        "rent": 5.47
+      },
+      {
+        "year": 2017,
+        "rent": 5.55
+      },
+      {
+        "year": 2018,
+        "rent": 5.73
+      },
+      {
+        "year": 2019,
+        "rent": 5.87
+      },
+      {
+        "year": 2020,
+        "rent": 6.04
+      },
+      {
+        "year": 2021,
+        "rent": 6.27
+      },
+      {
+        "year": 2022,
+        "rent": 6.37
+      },
+      {
+        "year": 2023,
+        "rent": 6.86
+      },
+      {
+        "year": 2024,
+        "rent": 6.95
+      },
+      {
+        "year": 2025,
+        "rent": 7.36
+      },
+      {
+        "year": 2026,
+        "rent": 7.42
+      }
+    ],
+    "life_value_score": 50,
+    "best_for": [
+      "nature lovers"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 10,
+        "nearest_m": 145,
+        "r5": 2,
+        "r10": 6,
+        "r15": 11,
+        "nearest_lonlat": [
+          11.61987,
+          52.10425
+        ]
+      },
+      "pharmacy": {
+        "count": 3,
+        "nearest_m": 438,
+        "r5": 0,
+        "r10": 3,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.61824,
+          52.10839
+        ]
+      },
+      "healthcare": {
+        "count": 17,
+        "nearest_m": 303,
+        "r5": 5,
+        "r10": 14,
+        "r15": 19,
+        "nearest_lonlat": [
+          11.6208,
+          52.10234
+        ]
+      },
+      "school": {
+        "count": 19,
+        "nearest_m": 156,
+        "r5": 4,
+        "r10": 12,
+        "r15": 23,
+        "nearest_lonlat": [
+          11.62123,
+          52.10364
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 1861,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 19,
+        "nearest_m": 165,
+        "r5": 7,
+        "r10": 16,
+        "r15": 22,
+        "nearest_lonlat": [
+          11.61954,
+          52.10422
+        ]
+      },
+      "gym": {
+        "count": 1,
+        "nearest_m": 482,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.6175,
+          52.10856
+        ]
+      },
+      "cafe": {
+        "count": 12,
+        "nearest_m": 321,
+        "r5": 4,
+        "r10": 7,
+        "r15": 19,
+        "nearest_lonlat": [
+          11.61979,
+          52.10769
+        ]
+      },
+      "transit": {
+        "count": 42,
+        "nearest_m": 137,
+        "r5": 10,
+        "r10": 30,
+        "r15": 48,
+        "nearest_lonlat": [
+          11.62025,
+          52.1041
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "neue-neustadt",
+    "area_name": "Neue Neustadt",
+    "centroid": [
+      11.64177,
+      52.15762
+    ],
+    "area_km2": 4.58,
+    "affordability_score": 48,
+    "transit_score": 55,
+    "fifteen_min_score": 50,
+    "grocery_score": 75,
+    "pharmacy_score": 56,
+    "healthcare_score": 47,
+    "education_score": 64,
+    "park_score": 43,
+    "green_score": 43,
+    "lifestyle_score": 12,
+    "gym_score": 57,
+    "economic_score": null,
+    "future_value_score": 36,
+    "rent_eur_sqm": 6.72,
+    "est_rent_50sqm": 486,
+    "rent_proj_2026": 7.16,
+    "rent_growth_pct": 36.0,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.94
+      },
+      {
+        "year": 2013,
+        "rent": 5.06
+      },
+      {
+        "year": 2014,
+        "rent": 5.15
+      },
+      {
+        "year": 2015,
+        "rent": 5.25
+      },
+      {
+        "year": 2016,
+        "rent": 5.42
+      },
+      {
+        "year": 2017,
+        "rent": 5.62
+      },
+      {
+        "year": 2018,
+        "rent": 5.69
+      },
+      {
+        "year": 2019,
+        "rent": 5.75
+      },
+      {
+        "year": 2020,
+        "rent": 5.98
+      },
+      {
+        "year": 2021,
+        "rent": 5.89
+      },
+      {
+        "year": 2022,
+        "rent": 6.31
+      },
+      {
+        "year": 2023,
+        "rent": 6.5
+      },
+      {
+        "year": 2024,
+        "rent": 6.72
+      },
+      {
+        "year": 2025,
+        "rent": 6.9
+      },
+      {
+        "year": 2026,
+        "rent": 7.16
+      }
+    ],
+    "life_value_score": 49,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 18,
+        "nearest_m": 267,
+        "r5": 4,
+        "r10": 11,
+        "r15": 21,
+        "nearest_lonlat": [
+          11.64069,
+          52.15531
+        ]
+      },
+      "pharmacy": {
+        "count": 5,
+        "nearest_m": 362,
+        "r5": 2,
+        "r10": 5,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.63673,
+          52.15662
+        ]
+      },
+      "healthcare": {
+        "count": 22,
+        "nearest_m": 214,
+        "r5": 6,
+        "r10": 22,
+        "r15": 26,
+        "nearest_lonlat": [
+          11.64478,
+          52.15711
+        ]
+      },
+      "school": {
+        "count": 14,
+        "nearest_m": 215,
+        "r5": 4,
+        "r10": 9,
+        "r15": 17,
+        "nearest_lonlat": [
+          11.64235,
+          52.15572
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 1913,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64558,
+          52.14059
+        ]
+      },
+      "park": {
+        "count": 10,
+        "nearest_m": 70,
+        "r5": 1,
+        "r10": 5,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.64225,
+          52.15707
+        ]
+      },
+      "gym": {
+        "count": 4,
+        "nearest_m": 322,
+        "r5": 1,
+        "r10": 3,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.63921,
+          52.16005
+        ]
+      },
+      "cafe": {
+        "count": 12,
+        "nearest_m": 135,
+        "r5": 3,
+        "r10": 8,
+        "r15": 11,
+        "nearest_lonlat": [
+          11.64186,
+          52.15641
+        ]
+      },
+      "transit": {
+        "count": 46,
+        "nearest_m": 373,
+        "r5": 8,
+        "r10": 31,
+        "r15": 65,
+        "nearest_lonlat": [
+          11.63658,
+          52.15658
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "stadtfeld-west",
+    "area_name": "Stadtfeld West",
+    "centroid": [
+      11.58934,
+      52.13072
+    ],
+    "area_km2": 4.64,
+    "affordability_score": 38,
+    "transit_score": 58,
+    "fifteen_min_score": 39,
+    "grocery_score": 29,
+    "pharmacy_score": 33,
+    "healthcare_score": 26,
+    "education_score": 45,
+    "park_score": 74,
+    "green_score": 74,
+    "lifestyle_score": 10,
+    "gym_score": 14,
+    "economic_score": null,
+    "future_value_score": 40,
+    "rent_eur_sqm": 7.34,
+    "est_rent_50sqm": 517,
+    "rent_proj_2026": 7.96,
+    "rent_growth_pct": 38.8,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.29
+      },
+      {
+        "year": 2013,
+        "rent": 5.46
+      },
+      {
+        "year": 2014,
+        "rent": 5.54
+      },
+      {
+        "year": 2015,
+        "rent": 5.66
+      },
+      {
+        "year": 2016,
+        "rent": 5.79
+      },
+      {
+        "year": 2017,
+        "rent": 5.76
+      },
+      {
+        "year": 2018,
+        "rent": 6.1
+      },
+      {
+        "year": 2019,
+        "rent": 6.15
+      },
+      {
+        "year": 2020,
+        "rent": 6.21
+      },
+      {
+        "year": 2021,
+        "rent": 6.23
+      },
+      {
+        "year": 2022,
+        "rent": 6.48
+      },
+      {
+        "year": 2023,
+        "rent": 6.73
+      },
+      {
+        "year": 2024,
+        "rent": 7.34
+      },
+      {
+        "year": 2025,
+        "rent": 7.69
+      },
+      {
+        "year": 2026,
+        "rent": 7.96
+      }
+    ],
+    "life_value_score": 45,
+    "best_for": [
+      "nature lovers"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 7,
+        "nearest_m": 301,
+        "r5": 1,
+        "r10": 4,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.58742,
+          52.12828
+        ]
+      },
+      "pharmacy": {
+        "count": 3,
+        "nearest_m": 460,
+        "r5": 0,
+        "r10": 2,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.59507,
+          52.12858
+        ]
+      },
+      "healthcare": {
+        "count": 12,
+        "nearest_m": 743,
+        "r5": 0,
+        "r10": 6,
+        "r15": 13,
+        "nearest_lonlat": [
+          11.59967,
+          52.12868
+        ]
+      },
+      "school": {
+        "count": 10,
+        "nearest_m": 516,
+        "r5": 0,
+        "r10": 5,
+        "r15": 7,
+        "nearest_lonlat": [
+          11.58841,
+          52.12612
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3187,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 17,
+        "nearest_m": 178,
+        "r5": 1,
+        "r10": 12,
+        "r15": 18,
+        "nearest_lonlat": [
+          11.59143,
+          52.13168
+        ]
+      },
+      "gym": {
+        "count": 1,
+        "nearest_m": 790,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.59965,
+          52.13391
+        ]
+      },
+      "cafe": {
+        "count": 10,
+        "nearest_m": 348,
+        "r5": 3,
+        "r10": 7,
+        "r15": 11,
+        "nearest_lonlat": [
+          11.59352,
+          52.13249
+        ]
+      },
+      "transit": {
+        "count": 49,
+        "nearest_m": 272,
+        "r5": 10,
+        "r10": 25,
+        "r15": 57,
+        "nearest_lonlat": [
+          11.59121,
+          52.12856
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "neu-olvenstedt",
+    "area_name": "Neu Olvenstedt",
+    "centroid": [
+      11.58681,
+      52.15109
+    ],
+    "area_km2": 3.35,
+    "affordability_score": 61,
+    "transit_score": 40,
+    "fifteen_min_score": 34,
+    "grocery_score": 42,
+    "pharmacy_score": 22,
+    "healthcare_score": 19,
+    "education_score": 77,
+    "park_score": 35,
+    "green_score": 35,
+    "lifestyle_score": 2,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 48,
+    "rent_eur_sqm": 6.02,
+    "est_rent_50sqm": 451,
+    "rent_proj_2026": 6.68,
+    "rent_growth_pct": 44.7,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.16
+      },
+      {
+        "year": 2013,
+        "rent": 4.38
+      },
+      {
+        "year": 2014,
+        "rent": 4.63
+      },
+      {
+        "year": 2015,
+        "rent": 4.63
+      },
+      {
+        "year": 2016,
+        "rent": 4.78
+      },
+      {
+        "year": 2017,
+        "rent": 4.95
+      },
+      {
+        "year": 2018,
+        "rent": 5.06
+      },
+      {
+        "year": 2019,
+        "rent": 5.12
+      },
+      {
+        "year": 2020,
+        "rent": 5.02
+      },
+      {
+        "year": 2021,
+        "rent": 5.23
+      },
+      {
+        "year": 2022,
+        "rent": 5.49
+      },
+      {
+        "year": 2023,
+        "rent": 5.82
+      },
+      {
+        "year": 2024,
+        "rent": 6.02
+      },
+      {
+        "year": 2025,
+        "rent": 6.28
+      },
+      {
+        "year": 2026,
+        "rent": 6.68
+      }
+    ],
+    "life_value_score": 42,
+    "best_for": [
+      "budget-friendly"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 10,
+        "nearest_m": 49,
+        "r5": 4,
+        "r10": 8,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.58739,
+          52.15082
+        ]
+      },
+      "pharmacy": {
+        "count": 2,
+        "nearest_m": 11,
+        "r5": 1,
+        "r10": 2,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.58695,
+          52.15114
+        ]
+      },
+      "healthcare": {
+        "count": 9,
+        "nearest_m": 17,
+        "r5": 6,
+        "r10": 7,
+        "r15": 9,
+        "nearest_lonlat": [
+          11.587,
+          52.15119
+        ]
+      },
+      "school": {
+        "count": 17,
+        "nearest_m": 315,
+        "r5": 2,
+        "r10": 12,
+        "r15": 22,
+        "nearest_lonlat": [
+          11.59103,
+          52.14995
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 4189,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64558,
+          52.14059
+        ]
+      },
+      "park": {
+        "count": 8,
+        "nearest_m": 287,
+        "r5": 1,
+        "r10": 4,
+        "r15": 7,
+        "nearest_lonlat": [
+          11.591,
+          52.15111
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1754,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60676,
+          52.16098
+        ]
+      },
+      "cafe": {
+        "count": 2,
+        "nearest_m": 231,
+        "r5": 1,
+        "r10": 2,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.58725,
+          52.15315
+        ]
+      },
+      "transit": {
+        "count": 34,
+        "nearest_m": 71,
+        "r5": 5,
+        "r10": 22,
+        "r15": 49,
+        "nearest_lonlat": [
+          11.58703,
+          52.15046
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "alte-neustadt",
+    "area_name": "Alte Neustadt",
+    "centroid": [
+      11.64971,
+      52.14485
+    ],
+    "area_km2": 2.57,
+    "affordability_score": 37,
+    "transit_score": 54,
+    "fifteen_min_score": 30,
+    "grocery_score": 25,
+    "pharmacy_score": 11,
+    "healthcare_score": 9,
+    "education_score": 55,
+    "park_score": 43,
+    "green_score": 43,
+    "lifestyle_score": 16,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 40,
+    "rent_eur_sqm": 7.39,
+    "est_rent_50sqm": 520,
+    "rent_proj_2026": 7.78,
+    "rent_growth_pct": 38.9,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.32
+      },
+      {
+        "year": 2013,
+        "rent": 5.32
+      },
+      {
+        "year": 2014,
+        "rent": 5.42
+      },
+      {
+        "year": 2015,
+        "rent": 5.52
+      },
+      {
+        "year": 2016,
+        "rent": 5.61
+      },
+      {
+        "year": 2017,
+        "rent": 5.97
+      },
+      {
+        "year": 2018,
+        "rent": 6.25
+      },
+      {
+        "year": 2019,
+        "rent": 6.33
+      },
+      {
+        "year": 2020,
+        "rent": 6.29
+      },
+      {
+        "year": 2021,
+        "rent": 6.53
+      },
+      {
+        "year": 2022,
+        "rent": 6.92
+      },
+      {
+        "year": 2023,
+        "rent": 7.14
+      },
+      {
+        "year": 2024,
+        "rent": 7.39
+      },
+      {
+        "year": 2025,
+        "rent": 7.94
+      },
+      {
+        "year": 2026,
+        "rent": 7.78
+      }
+    ],
+    "life_value_score": 37,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 6,
+        "nearest_m": 314,
+        "r5": 3,
+        "r10": 6,
+        "r15": 9,
+        "nearest_lonlat": [
+          11.65335,
+          52.14314
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 489,
+        "r5": 0,
+        "r10": 1,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.64414,
+          52.1476
+        ]
+      },
+      "healthcare": {
+        "count": 4,
+        "nearest_m": 389,
+        "r5": 1,
+        "r10": 4,
+        "r15": 15,
+        "nearest_lonlat": [
+          11.64593,
+          52.14746
+        ]
+      },
+      "school": {
+        "count": 12,
+        "nearest_m": 23,
+        "r5": 5,
+        "r10": 12,
+        "r15": 17,
+        "nearest_lonlat": [
+          11.65005,
+          52.14487
+        ]
+      },
+      "university": {
+        "count": 2,
+        "nearest_m": 552,
+        "r5": 0,
+        "r10": 2,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.64558,
+          52.14059
+        ]
+      },
+      "park": {
+        "count": 10,
+        "nearest_m": 404,
+        "r5": 0,
+        "r10": 7,
+        "r15": 12,
+        "nearest_lonlat": [
+          11.64491,
+          52.14273
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1518,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63196,
+          52.15302
+        ]
+      },
+      "cafe": {
+        "count": 16,
+        "nearest_m": 236,
+        "r5": 5,
+        "r10": 15,
+        "r15": 25,
+        "nearest_lonlat": [
+          11.64627,
+          52.14476
+        ]
+      },
+      "transit": {
+        "count": 45,
+        "nearest_m": 159,
+        "r5": 9,
+        "r10": 39,
+        "r15": 67,
+        "nearest_lonlat": [
+          11.6475,
+          52.1444
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "reform",
+    "area_name": "Reform",
+    "centroid": [
+      11.61011,
+      52.08916
+    ],
+    "area_km2": 3.15,
+    "affordability_score": 50,
+    "transit_score": 44,
+    "fifteen_min_score": 24,
+    "grocery_score": 25,
+    "pharmacy_score": 33,
+    "healthcare_score": 2,
+    "education_score": 36,
+    "park_score": 22,
+    "green_score": 22,
+    "lifestyle_score": 6,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 33,
+    "rent_eur_sqm": 6.63,
+    "est_rent_50sqm": 481,
+    "rent_proj_2026": 7.12,
+    "rent_growth_pct": 34.2,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.94
+      },
+      {
+        "year": 2013,
+        "rent": 5.04
+      },
+      {
+        "year": 2014,
+        "rent": 5.13
+      },
+      {
+        "year": 2015,
+        "rent": 5.11
+      },
+      {
+        "year": 2016,
+        "rent": 5.4
+      },
+      {
+        "year": 2017,
+        "rent": 5.25
+      },
+      {
+        "year": 2018,
+        "rent": 5.7
+      },
+      {
+        "year": 2019,
+        "rent": 5.83
+      },
+      {
+        "year": 2020,
+        "rent": 5.64
+      },
+      {
+        "year": 2021,
+        "rent": 5.78
+      },
+      {
+        "year": 2022,
+        "rent": 6.11
+      },
+      {
+        "year": 2023,
+        "rent": 6.39
+      },
+      {
+        "year": 2024,
+        "rent": 6.63
+      },
+      {
+        "year": 2025,
+        "rent": 6.81
+      },
+      {
+        "year": 2026,
+        "rent": 7.12
+      }
+    ],
+    "life_value_score": 34,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 6,
+        "nearest_m": 162,
+        "r5": 2,
+        "r10": 4,
+        "r15": 7,
+        "nearest_lonlat": [
+          11.61151,
+          52.09033
+        ]
+      },
+      "pharmacy": {
+        "count": 3,
+        "nearest_m": 165,
+        "r5": 2,
+        "r10": 2,
+        "r15": 5,
+        "nearest_lonlat": [
+          11.61162,
+          52.09032
+        ]
+      },
+      "healthcare": {
+        "count": 1,
+        "nearest_m": 172,
+        "r5": 1,
+        "r10": 1,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.61261,
+          52.08919
+        ]
+      },
+      "school": {
+        "count": 8,
+        "nearest_m": 128,
+        "r5": 5,
+        "r10": 7,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.60873,
+          52.08993
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3793,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 5,
+        "nearest_m": 110,
+        "r5": 2,
+        "r10": 4,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.61145,
+          52.0897
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1736,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60119,
+          52.10376
+        ]
+      },
+      "cafe": {
+        "count": 6,
+        "nearest_m": 783,
+        "r5": 0,
+        "r10": 1,
+        "r15": 7,
+        "nearest_lonlat": [
+          11.62143,
+          52.09011
+        ]
+      },
+      "transit": {
+        "count": 37,
+        "nearest_m": 113,
+        "r5": 6,
+        "r10": 21,
+        "r15": 55,
+        "nearest_lonlat": [
+          11.61095,
+          52.09004
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "neustadter-feld",
+    "area_name": "Neustädter Feld",
+    "centroid": [
+      11.61778,
+      52.15898
+    ],
+    "area_km2": 2.05,
+    "affordability_score": 58,
+    "transit_score": 27,
+    "fifteen_min_score": 19,
+    "grocery_score": 29,
+    "pharmacy_score": 11,
+    "healthcare_score": 23,
+    "education_score": 23,
+    "park_score": 13,
+    "green_score": 13,
+    "lifestyle_score": 6,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 46,
+    "rent_eur_sqm": 6.18,
+    "est_rent_50sqm": 459,
+    "rent_proj_2026": 6.62,
+    "rent_growth_pct": 43.4,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.31
+      },
+      {
+        "year": 2013,
+        "rent": 4.49
+      },
+      {
+        "year": 2014,
+        "rent": 4.73
+      },
+      {
+        "year": 2015,
+        "rent": 4.72
+      },
+      {
+        "year": 2016,
+        "rent": 4.96
+      },
+      {
+        "year": 2017,
+        "rent": 4.95
+      },
+      {
+        "year": 2018,
+        "rent": 5.19
+      },
+      {
+        "year": 2019,
+        "rent": 5.32
+      },
+      {
+        "year": 2020,
+        "rent": 5.52
+      },
+      {
+        "year": 2021,
+        "rent": 5.49
+      },
+      {
+        "year": 2022,
+        "rent": 5.72
+      },
+      {
+        "year": 2023,
+        "rent": 5.94
+      },
+      {
+        "year": 2024,
+        "rent": 6.18
+      },
+      {
+        "year": 2025,
+        "rent": 6.61
+      },
+      {
+        "year": 2026,
+        "rent": 6.62
+      }
+    ],
+    "life_value_score": 33,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 7,
+        "nearest_m": 256,
+        "r5": 1,
+        "r10": 6,
+        "r15": 9,
+        "nearest_lonlat": [
+          11.62145,
+          52.15856
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 464,
+        "r5": 0,
+        "r10": 1,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.61977,
+          52.155
+        ]
+      },
+      "healthcare": {
+        "count": 11,
+        "nearest_m": 343,
+        "r5": 3,
+        "r10": 7,
+        "r15": 19,
+        "nearest_lonlat": [
+          11.61715,
+          52.15592
+        ]
+      },
+      "school": {
+        "count": 5,
+        "nearest_m": 220,
+        "r5": 3,
+        "r10": 5,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.62063,
+          52.15807
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 2795,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64558,
+          52.14059
+        ]
+      },
+      "park": {
+        "count": 3,
+        "nearest_m": 658,
+        "r5": 0,
+        "r10": 2,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.60868,
+          52.15706
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 786,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.60676,
+          52.16098
+        ]
+      },
+      "cafe": {
+        "count": 6,
+        "nearest_m": 109,
+        "r5": 2,
+        "r10": 7,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.61934,
+          52.15914
+        ]
+      },
+      "transit": {
+        "count": 23,
+        "nearest_m": 227,
+        "r5": 6,
+        "r10": 18,
+        "r15": 46,
+        "nearest_lonlat": [
+          11.62105,
+          52.15866
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "ottersleben",
+    "area_name": "Ottersleben",
+    "centroid": [
+      11.55538,
+      52.08437
+    ],
+    "area_km2": 16.49,
+    "affordability_score": 35,
+    "transit_score": 38,
+    "fifteen_min_score": 24,
+    "grocery_score": 21,
+    "pharmacy_score": 22,
+    "healthcare_score": 23,
+    "education_score": 18,
+    "park_score": 43,
+    "green_score": 43,
+    "lifestyle_score": 5,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 39,
+    "rent_eur_sqm": 7.51,
+    "est_rent_50sqm": 526,
+    "rent_proj_2026": 9.91,
+    "rent_growth_pct": 38.3,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.43
+      },
+      {
+        "year": 2013,
+        "rent": 5.44
+      },
+      {
+        "year": 2014,
+        "rent": 5.91
+      },
+      {
+        "year": 2015,
+        "rent": 5.56
+      },
+      {
+        "year": 2016,
+        "rent": 6
+      },
+      {
+        "year": 2017,
+        "rent": 5.98
+      },
+      {
+        "year": 2018,
+        "rent": 6.43
+      },
+      {
+        "year": 2019,
+        "rent": 6.57
+      },
+      {
+        "year": 2020,
+        "rent": 6.46
+      },
+      {
+        "year": 2021,
+        "rent": 7.05
+      },
+      {
+        "year": 2022,
+        "rent": 7.12
+      },
+      {
+        "year": 2023,
+        "rent": 7.17
+      },
+      {
+        "year": 2024,
+        "rent": 7.51
+      },
+      {
+        "year": 2025,
+        "rent": 9.82
+      },
+      {
+        "year": 2026,
+        "rent": 9.91
+      }
+    ],
+    "life_value_score": 33,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 5,
+        "nearest_m": 837,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.56602,
+          52.08806
+        ]
+      },
+      "pharmacy": {
+        "count": 2,
+        "nearest_m": 1249,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.5698,
+          52.09124
+        ]
+      },
+      "healthcare": {
+        "count": 11,
+        "nearest_m": 738,
+        "r5": 0,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.56365,
+          52.08862
+        ]
+      },
+      "school": {
+        "count": 4,
+        "nearest_m": 1407,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.57298,
+          52.09088
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 6634,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 10,
+        "nearest_m": 760,
+        "r5": 0,
+        "r10": 2,
+        "r15": 5,
+        "nearest_lonlat": [
+          11.56156,
+          52.09004
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 3533,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.59084,
+          52.10742
+        ]
+      },
+      "cafe": {
+        "count": 5,
+        "nearest_m": 660,
+        "r5": 0,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.56156,
+          52.08892
+        ]
+      },
+      "transit": {
+        "count": 32,
+        "nearest_m": 635,
+        "r5": 0,
+        "r10": 2,
+        "r15": 11,
+        "nearest_lonlat": [
+          11.56108,
+          52.08887
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "groer-silberberg",
+    "area_name": "Großer Silberberg",
+    "centroid": [
+      11.58854,
+      52.16678
+    ],
+    "area_km2": 3.86,
+    "affordability_score": 100,
+    "transit_score": 1,
+    "fifteen_min_score": 3,
+    "grocery_score": 4,
+    "pharmacy_score": 11,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 3,
+    "gym_score": 14,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": 3.81,
+    "est_rent_50sqm": 340,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [
+      {
+        "year": 2020,
+        "rent": 3.81
+      }
+    ],
+    "life_value_score": 30,
+    "best_for": [
+      "budget-friendly"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 1,
+        "nearest_m": 1157,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.58758,
+          52.1564
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 1349,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6059,
+          52.16102
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1076,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.58113,
+          52.15824
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 1417,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.59436,
+          52.15455
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3440,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60012,
+          52.19687
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 1148,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.57974,
+          52.15799
+        ]
+      },
+      "gym": {
+        "count": 1,
+        "nearest_m": 1404,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60676,
+          52.16098
+        ]
+      },
+      "cafe": {
+        "count": 3,
+        "nearest_m": 1374,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60511,
+          52.15981
+        ]
+      },
+      "transit": {
+        "count": 1,
+        "nearest_m": 1080,
+        "r5": 0,
+        "r10": 0,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.58929,
+          52.15708
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "kannenstieg",
+    "area_name": "Kannenstieg",
+    "centroid": [
+      11.62194,
+      52.17202
+    ],
+    "area_km2": 1.14,
+    "affordability_score": 60,
+    "transit_score": 31,
+    "fifteen_min_score": 14,
+    "grocery_score": 8,
+    "pharmacy_score": 22,
+    "healthcare_score": 13,
+    "education_score": 18,
+    "park_score": 4,
+    "green_score": 4,
+    "lifestyle_score": 2,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 17,
+    "rent_eur_sqm": 6.05,
+    "est_rent_50sqm": 453,
+    "rent_proj_2026": 6.6,
+    "rent_growth_pct": 22.5,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.94
+      },
+      {
+        "year": 2013,
+        "rent": 4.88
+      },
+      {
+        "year": 2014,
+        "rent": 5.06
+      },
+      {
+        "year": 2015,
+        "rent": 5.02
+      },
+      {
+        "year": 2016,
+        "rent": 5.05
+      },
+      {
+        "year": 2017,
+        "rent": 5.11
+      },
+      {
+        "year": 2018,
+        "rent": 5.42
+      },
+      {
+        "year": 2019,
+        "rent": 5.52
+      },
+      {
+        "year": 2020,
+        "rent": 5.67
+      },
+      {
+        "year": 2021,
+        "rent": 5.48
+      },
+      {
+        "year": 2022,
+        "rent": 5.87
+      },
+      {
+        "year": 2023,
+        "rent": 5.81
+      },
+      {
+        "year": 2024,
+        "rent": 6.05
+      },
+      {
+        "year": 2025,
+        "rent": 6.39
+      },
+      {
+        "year": 2026,
+        "rent": 6.6
+      }
+    ],
+    "life_value_score": 30,
+    "best_for": [
+      "budget-friendly"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 2,
+        "nearest_m": 341,
+        "r5": 2,
+        "r10": 5,
+        "r15": 9,
+        "nearest_lonlat": [
+          11.62501,
+          52.1696
+        ]
+      },
+      "pharmacy": {
+        "count": 2,
+        "nearest_m": 376,
+        "r5": 1,
+        "r10": 3,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.62511,
+          52.16926
+        ]
+      },
+      "healthcare": {
+        "count": 6,
+        "nearest_m": 379,
+        "r5": 2,
+        "r10": 19,
+        "r15": 20,
+        "nearest_lonlat": [
+          11.62505,
+          52.1692
+        ]
+      },
+      "school": {
+        "count": 4,
+        "nearest_m": 49,
+        "r5": 4,
+        "r10": 6,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.62136,
+          52.17228
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3142,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60012,
+          52.19687
+        ]
+      },
+      "park": {
+        "count": 1,
+        "nearest_m": 368,
+        "r5": 1,
+        "r10": 2,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.61815,
+          52.17436
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1507,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63612,
+          52.16166
+        ]
+      },
+      "cafe": {
+        "count": 2,
+        "nearest_m": 372,
+        "r5": 1,
+        "r10": 3,
+        "r15": 7,
+        "nearest_lonlat": [
+          11.62484,
+          52.16919
+        ]
+      },
+      "transit": {
+        "count": 26,
+        "nearest_m": 142,
+        "r5": 14,
+        "r10": 36,
+        "r15": 51,
+        "nearest_lonlat": [
+          11.624,
+          52.17186
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "cracau",
+    "area_name": "Cracau",
+    "centroid": [
+      11.66643,
+      52.11936
+    ],
+    "area_km2": 2.61,
+    "affordability_score": 45,
+    "transit_score": 24,
+    "fifteen_min_score": 21,
+    "grocery_score": 29,
+    "pharmacy_score": 11,
+    "healthcare_score": 4,
+    "education_score": 50,
+    "park_score": 26,
+    "green_score": 26,
+    "lifestyle_score": 2,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 31,
+    "rent_eur_sqm": 6.89,
+    "est_rent_50sqm": 494,
+    "rent_proj_2026": 7.09,
+    "rent_growth_pct": 32.2,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.21
+      },
+      {
+        "year": 2013,
+        "rent": 5.52
+      },
+      {
+        "year": 2014,
+        "rent": 5.63
+      },
+      {
+        "year": 2015,
+        "rent": 5.57
+      },
+      {
+        "year": 2016,
+        "rent": 5.66
+      },
+      {
+        "year": 2017,
+        "rent": 5.81
+      },
+      {
+        "year": 2018,
+        "rent": 6.05
+      },
+      {
+        "year": 2019,
+        "rent": 6.24
+      },
+      {
+        "year": 2020,
+        "rent": 6.45
+      },
+      {
+        "year": 2021,
+        "rent": 6.41
+      },
+      {
+        "year": 2022,
+        "rent": 6.77
+      },
+      {
+        "year": 2023,
+        "rent": 6.81
+      },
+      {
+        "year": 2024,
+        "rent": 6.89
+      },
+      {
+        "year": 2025,
+        "rent": 7.02
+      },
+      {
+        "year": 2026,
+        "rent": 7.09
+      }
+    ],
+    "life_value_score": 28,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 7,
+        "nearest_m": 265,
+        "r5": 2,
+        "r10": 7,
+        "r15": 8,
+        "nearest_lonlat": [
+          11.66346,
+          52.11783
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 312,
+        "r5": 1,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.66196,
+          52.11883
+        ]
+      },
+      "healthcare": {
+        "count": 2,
+        "nearest_m": 473,
+        "r5": 0,
+        "r10": 2,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.66789,
+          52.11521
+        ]
+      },
+      "school": {
+        "count": 11,
+        "nearest_m": 393,
+        "r5": 1,
+        "r10": 8,
+        "r15": 11,
+        "nearest_lonlat": [
+          11.66869,
+          52.11611
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 2315,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 6,
+        "nearest_m": 328,
+        "r5": 2,
+        "r10": 4,
+        "r15": 7,
+        "nearest_lonlat": [
+          11.66275,
+          52.12124
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1173,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.6718,
+          52.12937
+        ]
+      },
+      "cafe": {
+        "count": 2,
+        "nearest_m": 697,
+        "r5": 0,
+        "r10": 2,
+        "r15": 5,
+        "nearest_lonlat": [
+          11.65626,
+          52.11937
+        ]
+      },
+      "transit": {
+        "count": 20,
+        "nearest_m": 320,
+        "r5": 7,
+        "r10": 15,
+        "r15": 29,
+        "nearest_lonlat": [
+          11.66189,
+          52.1187
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "neustadter-see",
+    "area_name": "Neustädter See",
+    "centroid": [
+      11.6393,
+      52.18029
+    ],
+    "area_km2": 4.74,
+    "affordability_score": 55,
+    "transit_score": 12,
+    "fifteen_min_score": 14,
+    "grocery_score": 12,
+    "pharmacy_score": 11,
+    "healthcare_score": 19,
+    "education_score": 27,
+    "park_score": 13,
+    "green_score": 13,
+    "lifestyle_score": 3,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 33,
+    "rent_eur_sqm": 6.36,
+    "est_rent_50sqm": 468,
+    "rent_proj_2026": 6.15,
+    "rent_growth_pct": 33.6,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.76
+      },
+      {
+        "year": 2013,
+        "rent": 4.96
+      },
+      {
+        "year": 2014,
+        "rent": 5.15
+      },
+      {
+        "year": 2015,
+        "rent": 5.12
+      },
+      {
+        "year": 2016,
+        "rent": 5.15
+      },
+      {
+        "year": 2017,
+        "rent": 5.3
+      },
+      {
+        "year": 2018,
+        "rent": 5.55
+      },
+      {
+        "year": 2019,
+        "rent": 5.56
+      },
+      {
+        "year": 2020,
+        "rent": 5.51
+      },
+      {
+        "year": 2021,
+        "rent": 5.56
+      },
+      {
+        "year": 2022,
+        "rent": 5.72
+      },
+      {
+        "year": 2023,
+        "rent": 6.21
+      },
+      {
+        "year": 2024,
+        "rent": 6.36
+      },
+      {
+        "year": 2025,
+        "rent": 6.45
+      },
+      {
+        "year": 2026,
+        "rent": 6.15
+      }
+    ],
+    "life_value_score": 26,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 3,
+        "nearest_m": 1019,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.62924,
+          52.17353
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 1381,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62953,
+          52.16943
+        ]
+      },
+      "healthcare": {
+        "count": 9,
+        "nearest_m": 1240,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62938,
+          52.17096
+        ]
+      },
+      "school": {
+        "count": 6,
+        "nearest_m": 888,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.63307,
+          52.17328
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3253,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60012,
+          52.19687
+        ]
+      },
+      "park": {
+        "count": 3,
+        "nearest_m": 793,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.63878,
+          52.17317
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2084,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63612,
+          52.16166
+        ]
+      },
+      "cafe": {
+        "count": 3,
+        "nearest_m": 839,
+        "r5": 0,
+        "r10": 0,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.62989,
+          52.17545
+        ]
+      },
+      "transit": {
+        "count": 10,
+        "nearest_m": 602,
+        "r5": 0,
+        "r10": 2,
+        "r15": 7,
+        "nearest_lonlat": [
+          11.63545,
+          52.17543
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "salbke",
+    "area_name": "Salbke",
+    "centroid": [
+      11.65498,
+      52.07234
+    ],
+    "area_km2": 7.72,
+    "affordability_score": 46,
+    "transit_score": 32,
+    "fifteen_min_score": 10,
+    "grocery_score": 8,
+    "pharmacy_score": 0,
+    "healthcare_score": 4,
+    "education_score": 18,
+    "park_score": 4,
+    "green_score": 4,
+    "lifestyle_score": 3,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 51,
+    "rent_eur_sqm": 6.85,
+    "est_rent_50sqm": 492,
+    "rent_proj_2026": 8.36,
+    "rent_growth_pct": 47.3,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.65
+      },
+      {
+        "year": 2013,
+        "rent": 4.74
+      },
+      {
+        "year": 2014,
+        "rent": 4.93
+      },
+      {
+        "year": 2015,
+        "rent": 5.15
+      },
+      {
+        "year": 2016,
+        "rent": 5.09
+      },
+      {
+        "year": 2017,
+        "rent": 5.39
+      },
+      {
+        "year": 2018,
+        "rent": 5.67
+      },
+      {
+        "year": 2019,
+        "rent": 5.58
+      },
+      {
+        "year": 2020,
+        "rent": 5.74
+      },
+      {
+        "year": 2021,
+        "rent": 5.76
+      },
+      {
+        "year": 2022,
+        "rent": 6.14
+      },
+      {
+        "year": 2023,
+        "rent": 6.34
+      },
+      {
+        "year": 2024,
+        "rent": 6.85
+      },
+      {
+        "year": 2025,
+        "rent": 6.98
+      },
+      {
+        "year": 2026,
+        "rent": 8.36
+      }
+    ],
+    "life_value_score": 26,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 2,
+        "nearest_m": 983,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.6693,
+          52.0721
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 2269,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.65552,
+          52.09273
+        ]
+      },
+      "healthcare": {
+        "count": 2,
+        "nearest_m": 1142,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.66717,
+          52.07933
+        ]
+      },
+      "school": {
+        "count": 4,
+        "nearest_m": 934,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.6675,
+          52.07565
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 5550,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 1,
+        "nearest_m": 730,
+        "r5": 0,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.66409,
+          52.07573
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1435,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63705,
+          52.079
+        ]
+      },
+      "cafe": {
+        "count": 3,
+        "nearest_m": 975,
+        "r5": 0,
+        "r10": 0,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.6687,
+          52.07007
+        ]
+      },
+      "transit": {
+        "count": 27,
+        "nearest_m": 634,
+        "r5": 0,
+        "r10": 5,
+        "r15": 17,
+        "nearest_lonlat": [
+          11.65848,
+          52.07761
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "hopfengarten",
+    "area_name": "Hopfengarten",
+    "centroid": [
+      11.63271,
+      52.08643
+    ],
+    "area_km2": 2.81,
+    "affordability_score": 40,
+    "transit_score": 31,
+    "fifteen_min_score": 13,
+    "grocery_score": 8,
+    "pharmacy_score": 22,
+    "healthcare_score": 9,
+    "education_score": 9,
+    "park_score": 9,
+    "green_score": 9,
+    "lifestyle_score": 2,
+    "gym_score": 14,
+    "economic_score": null,
+    "future_value_score": 18,
+    "rent_eur_sqm": 7.19,
+    "est_rent_50sqm": 510,
+    "rent_proj_2026": 8.27,
+    "rent_growth_pct": 23.1,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.84
+      },
+      {
+        "year": 2013,
+        "rent": 5.88
+      },
+      {
+        "year": 2014,
+        "rent": 5.92
+      },
+      {
+        "year": 2015,
+        "rent": 5.87
+      },
+      {
+        "year": 2016,
+        "rent": 6.05
+      },
+      {
+        "year": 2017,
+        "rent": 6.19
+      },
+      {
+        "year": 2018,
+        "rent": 6.4
+      },
+      {
+        "year": 2019,
+        "rent": 6.35
+      },
+      {
+        "year": 2020,
+        "rent": 6.55
+      },
+      {
+        "year": 2021,
+        "rent": 6.84
+      },
+      {
+        "year": 2022,
+        "rent": 7.47
+      },
+      {
+        "year": 2023,
+        "rent": 7.18
+      },
+      {
+        "year": 2024,
+        "rent": 7.19
+      },
+      {
+        "year": 2025,
+        "rent": 8.01
+      },
+      {
+        "year": 2026,
+        "rent": 8.27
+      }
+    ],
+    "life_value_score": 24,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 2,
+        "nearest_m": 707,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.63685,
+          52.08061
+        ]
+      },
+      "pharmacy": {
+        "count": 2,
+        "nearest_m": 713,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.62579,
+          52.09122
+        ]
+      },
+      "healthcare": {
+        "count": 4,
+        "nearest_m": 330,
+        "r5": 1,
+        "r10": 3,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.63751,
+          52.08624
+        ]
+      },
+      "school": {
+        "count": 2,
+        "nearest_m": 494,
+        "r5": 0,
+        "r10": 2,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.62551,
+          52.08658
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3767,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 2,
+        "nearest_m": 467,
+        "r5": 0,
+        "r10": 2,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.63205,
+          52.08225
+        ]
+      },
+      "gym": {
+        "count": 1,
+        "nearest_m": 879,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.63705,
+          52.079
+        ]
+      },
+      "cafe": {
+        "count": 2,
+        "nearest_m": 597,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.63172,
+          52.09177
+        ]
+      },
+      "transit": {
+        "count": 26,
+        "nearest_m": 225,
+        "r5": 2,
+        "r10": 17,
+        "r15": 40,
+        "nearest_lonlat": [
+          11.63186,
+          52.08839
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "buckau",
+    "area_name": "Buckau",
+    "centroid": [
+      11.64143,
+      52.10605
+    ],
+    "area_km2": 2.22,
+    "affordability_score": 18,
+    "transit_score": 20,
+    "fifteen_min_score": 23,
+    "grocery_score": 25,
+    "pharmacy_score": 33,
+    "healthcare_score": 19,
+    "education_score": 27,
+    "park_score": 26,
+    "green_score": 26,
+    "lifestyle_score": 10,
+    "gym_score": 14,
+    "economic_score": null,
+    "future_value_score": 69,
+    "rent_eur_sqm": 8.42,
+    "est_rent_50sqm": 571,
+    "rent_proj_2026": 9.3,
+    "rent_growth_pct": 59.8,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.27
+      },
+      {
+        "year": 2013,
+        "rent": 5.27
+      },
+      {
+        "year": 2014,
+        "rent": 5.32
+      },
+      {
+        "year": 2015,
+        "rent": 5.68
+      },
+      {
+        "year": 2016,
+        "rent": 5.89
+      },
+      {
+        "year": 2017,
+        "rent": 6.05
+      },
+      {
+        "year": 2018,
+        "rent": 6.45
+      },
+      {
+        "year": 2019,
+        "rent": 6.57
+      },
+      {
+        "year": 2020,
+        "rent": 6.69
+      },
+      {
+        "year": 2021,
+        "rent": 7.3
+      },
+      {
+        "year": 2022,
+        "rent": 7.75
+      },
+      {
+        "year": 2023,
+        "rent": 7.93
+      },
+      {
+        "year": 2024,
+        "rent": 8.42
+      },
+      {
+        "year": 2025,
+        "rent": 8.53
+      },
+      {
+        "year": 2026,
+        "rent": 9.3
+      }
+    ],
+    "life_value_score": 23,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 6,
+        "nearest_m": 85,
+        "r5": 3,
+        "r10": 5,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.64101,
+          52.10533
+        ]
+      },
+      "pharmacy": {
+        "count": 3,
+        "nearest_m": 485,
+        "r5": 0,
+        "r10": 3,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.6438,
+          52.10194
+        ]
+      },
+      "healthcare": {
+        "count": 9,
+        "nearest_m": 71,
+        "r5": 2,
+        "r10": 9,
+        "r15": 9,
+        "nearest_lonlat": [
+          11.6409,
+          52.1055
+        ]
+      },
+      "school": {
+        "count": 6,
+        "nearest_m": 199,
+        "r5": 2,
+        "r10": 8,
+        "r15": 8,
+        "nearest_lonlat": [
+          11.6388,
+          52.1068
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 1695,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 6,
+        "nearest_m": 323,
+        "r5": 1,
+        "r10": 4,
+        "r15": 8,
+        "nearest_lonlat": [
+          11.64169,
+          52.10315
+        ]
+      },
+      "gym": {
+        "count": 1,
+        "nearest_m": 872,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.63188,
+          52.11122
+        ]
+      },
+      "cafe": {
+        "count": 10,
+        "nearest_m": 85,
+        "r5": 5,
+        "r10": 7,
+        "r15": 12,
+        "nearest_lonlat": [
+          11.64109,
+          52.10678
+        ]
+      },
+      "transit": {
+        "count": 17,
+        "nearest_m": 168,
+        "r5": 5,
+        "r10": 14,
+        "r15": 23,
+        "nearest_lonlat": [
+          11.64199,
+          52.10457
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "fermersleben",
+    "area_name": "Fermersleben",
+    "centroid": [
+      11.66068,
+      52.09471
+    ],
+    "area_km2": 3.34,
+    "affordability_score": 56,
+    "transit_score": 13,
+    "fifteen_min_score": 7,
+    "grocery_score": 4,
+    "pharmacy_score": 11,
+    "healthcare_score": 0,
+    "education_score": 5,
+    "park_score": 13,
+    "green_score": 13,
+    "lifestyle_score": 3,
+    "gym_score": 14,
+    "economic_score": null,
+    "future_value_score": 27,
+    "rent_eur_sqm": 6.31,
+    "est_rent_50sqm": 465,
+    "rent_proj_2026": 6.77,
+    "rent_growth_pct": 29.3,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.88
+      },
+      {
+        "year": 2013,
+        "rent": 4.77
+      },
+      {
+        "year": 2014,
+        "rent": 5.16
+      },
+      {
+        "year": 2015,
+        "rent": 5.02
+      },
+      {
+        "year": 2016,
+        "rent": 5.53
+      },
+      {
+        "year": 2017,
+        "rent": 5.46
+      },
+      {
+        "year": 2018,
+        "rent": 5.64
+      },
+      {
+        "year": 2019,
+        "rent": 5.81
+      },
+      {
+        "year": 2020,
+        "rent": 5.78
+      },
+      {
+        "year": 2021,
+        "rent": 5.8
+      },
+      {
+        "year": 2022,
+        "rent": 6.03
+      },
+      {
+        "year": 2023,
+        "rent": 6.08
+      },
+      {
+        "year": 2024,
+        "rent": 6.31
+      },
+      {
+        "year": 2025,
+        "rent": 6.58
+      },
+      {
+        "year": 2026,
+        "rent": 6.77
+      }
+    ],
+    "life_value_score": 23,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 1,
+        "nearest_m": 407,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.65589,
+          52.09254
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 417,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.65552,
+          52.09273
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1182,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.64617,
+          52.10045
+        ]
+      },
+      "school": {
+        "count": 1,
+        "nearest_m": 402,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.65482,
+          52.09492
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3432,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 3,
+        "nearest_m": 366,
+        "r5": 1,
+        "r10": 3,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.65672,
+          52.0925
+        ]
+      },
+      "gym": {
+        "count": 1,
+        "nearest_m": 879,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.64874,
+          52.0976
+        ]
+      },
+      "cafe": {
+        "count": 3,
+        "nearest_m": 633,
+        "r5": 0,
+        "r10": 2,
+        "r15": 5,
+        "nearest_lonlat": [
+          11.65354,
+          52.0911
+        ]
+      },
+      "transit": {
+        "count": 11,
+        "nearest_m": 439,
+        "r5": 0,
+        "r10": 9,
+        "r15": 18,
+        "nearest_lonlat": [
+          11.65604,
+          52.09199
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "randau-calenberge",
+    "area_name": "Randau-Calenberge",
+    "centroid": [
+      11.7165,
+      52.06034
+    ],
+    "area_km2": 13.72,
+    "affordability_score": 70,
+    "transit_score": 10,
+    "fifteen_min_score": 1,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": 5.53,
+    "est_rent_50sqm": 427,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [
+      {
+        "year": 2014,
+        "rent": 4.89
+      },
+      {
+        "year": 2015,
+        "rent": 6.04
+      },
+      {
+        "year": 2025,
+        "rent": 5.53
+      }
+    ],
+    "life_value_score": 23,
+    "best_for": [
+      "budget-friendly"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 3491,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6693,
+          52.0721
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 5520,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.65552,
+          52.09273
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 3988,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66717,
+          52.07933
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 2678,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67745,
+          52.06002
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 8803,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 3981,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66409,
+          52.07573
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 5830,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63705,
+          52.079
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 2776,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67684,
+          52.06535
+        ]
+      },
+      "transit": {
+        "count": 8,
+        "nearest_m": 469,
+        "r5": 0,
+        "r10": 3,
+        "r15": 5,
+        "nearest_lonlat": [
+          11.72328,
+          52.06088
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "diesdorf",
+    "area_name": "Diesdorf",
+    "centroid": [
+      11.55679,
+      52.12116
+    ],
+    "area_km2": 10.22,
+    "affordability_score": 55,
+    "transit_score": 11,
+    "fifteen_min_score": 7,
+    "grocery_score": 8,
+    "pharmacy_score": 11,
+    "healthcare_score": 2,
+    "education_score": 9,
+    "park_score": 4,
+    "green_score": 4,
+    "lifestyle_score": 1,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 31,
+    "rent_eur_sqm": 6.38,
+    "est_rent_50sqm": 469,
+    "rent_proj_2026": null,
+    "rent_growth_pct": 32.6,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.81
+      },
+      {
+        "year": 2014,
+        "rent": 5.02
+      },
+      {
+        "year": 2015,
+        "rent": 5.15
+      },
+      {
+        "year": 2016,
+        "rent": 5.41
+      },
+      {
+        "year": 2017,
+        "rent": 5.43
+      },
+      {
+        "year": 2018,
+        "rent": 5.81
+      },
+      {
+        "year": 2019,
+        "rent": 5.7
+      },
+      {
+        "year": 2020,
+        "rent": 5.74
+      },
+      {
+        "year": 2021,
+        "rent": 5.69
+      },
+      {
+        "year": 2022,
+        "rent": 6.85
+      },
+      {
+        "year": 2023,
+        "rent": 5.66
+      },
+      {
+        "year": 2024,
+        "rent": 6.38
+      },
+      {
+        "year": 2025,
+        "rent": 8.63
+      }
+    ],
+    "life_value_score": 22,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 2,
+        "nearest_m": 1293,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.56759,
+          52.13068
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 1308,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.56771,
+          52.1308
+        ]
+      },
+      "healthcare": {
+        "count": 1,
+        "nearest_m": 1484,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.57327,
+          52.12982
+        ]
+      },
+      "school": {
+        "count": 2,
+        "nearest_m": 1284,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.56957,
+          52.12959
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 5198,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 1,
+        "nearest_m": 1088,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.56542,
+          52.12936
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2647,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.59504,
+          52.11777
+        ]
+      },
+      "cafe": {
+        "count": 1,
+        "nearest_m": 1630,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.57258,
+          52.13211
+        ]
+      },
+      "transit": {
+        "count": 9,
+        "nearest_m": 1127,
+        "r5": 0,
+        "r10": 0,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.56339,
+          52.13043
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "westerhusen",
+    "area_name": "Westerhüsen",
+    "centroid": [
+      11.66922,
+      52.05257
+    ],
+    "area_km2": 7.26,
+    "affordability_score": 50,
+    "transit_score": 25,
+    "fifteen_min_score": 5,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 9,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 2,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 32,
+    "rent_eur_sqm": 6.62,
+    "est_rent_50sqm": 481,
+    "rent_proj_2026": 7.55,
+    "rent_growth_pct": 33.5,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.96
+      },
+      {
+        "year": 2013,
+        "rent": 5.39
+      },
+      {
+        "year": 2014,
+        "rent": 5.24
+      },
+      {
+        "year": 2015,
+        "rent": 5.27
+      },
+      {
+        "year": 2016,
+        "rent": 5.67
+      },
+      {
+        "year": 2017,
+        "rent": 5.42
+      },
+      {
+        "year": 2018,
+        "rent": 5.87
+      },
+      {
+        "year": 2019,
+        "rent": 5.88
+      },
+      {
+        "year": 2020,
+        "rent": 6.14
+      },
+      {
+        "year": 2021,
+        "rent": 6.03
+      },
+      {
+        "year": 2022,
+        "rent": 6.09
+      },
+      {
+        "year": 2023,
+        "rent": 6.51
+      },
+      {
+        "year": 2024,
+        "rent": 6.62
+      },
+      {
+        "year": 2025,
+        "rent": 7.12
+      },
+      {
+        "year": 2026,
+        "rent": 7.55
+      }
+    ],
+    "life_value_score": 22,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 2173,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6693,
+          52.0721
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 4566,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.65552,
+          52.09273
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 2981,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66717,
+          52.07933
+        ]
+      },
+      "school": {
+        "count": 2,
+        "nearest_m": 1003,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.67745,
+          52.06002
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 7940,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 2601,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66409,
+          52.07573
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 3676,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63705,
+          52.079
+        ]
+      },
+      "cafe": {
+        "count": 2,
+        "nearest_m": 1515,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67684,
+          52.06535
+        ]
+      },
+      "transit": {
+        "count": 21,
+        "nearest_m": 744,
+        "r5": 0,
+        "r10": 6,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.67825,
+          52.05627
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "alt-olvenstedt",
+    "area_name": "Alt Olvenstedt",
+    "centroid": [
+      11.56691,
+      52.15437
+    ],
+    "area_km2": 3.13,
+    "affordability_score": 36,
+    "transit_score": 21,
+    "fifteen_min_score": 6,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 14,
+    "park_score": 4,
+    "green_score": 4,
+    "lifestyle_score": 3,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 79,
+    "rent_eur_sqm": 7.45,
+    "est_rent_50sqm": 522,
+    "rent_proj_2026": 10.97,
+    "rent_growth_pct": 67.4,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.45
+      },
+      {
+        "year": 2013,
+        "rent": 5.15
+      },
+      {
+        "year": 2014,
+        "rent": 5.04
+      },
+      {
+        "year": 2015,
+        "rent": 5.3
+      },
+      {
+        "year": 2016,
+        "rent": 4.98
+      },
+      {
+        "year": 2017,
+        "rent": 5.38
+      },
+      {
+        "year": 2018,
+        "rent": 5.51
+      },
+      {
+        "year": 2019,
+        "rent": 5.56
+      },
+      {
+        "year": 2020,
+        "rent": 5.83
+      },
+      {
+        "year": 2021,
+        "rent": 6.08
+      },
+      {
+        "year": 2022,
+        "rent": 6.51
+      },
+      {
+        "year": 2023,
+        "rent": 6.72
+      },
+      {
+        "year": 2024,
+        "rent": 7.45
+      },
+      {
+        "year": 2025,
+        "rent": 7.64
+      },
+      {
+        "year": 2026,
+        "rent": 10.97
+      }
+    ],
+    "life_value_score": 21,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 798,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.57855,
+          52.15478
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 1341,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.58294,
+          52.14745
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1064,
+        "r5": 0,
+        "r10": 0,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.58113,
+          52.15824
+        ]
+      },
+      "school": {
+        "count": 3,
+        "nearest_m": 157,
+        "r5": 2,
+        "r10": 4,
+        "r15": 13,
+        "nearest_lonlat": [
+          11.56866,
+          52.15529
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 5245,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60012,
+          52.19687
+        ]
+      },
+      "park": {
+        "count": 1,
+        "nearest_m": 337,
+        "r5": 1,
+        "r10": 1,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.57113,
+          52.15594
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2824,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60676,
+          52.16098
+        ]
+      },
+      "cafe": {
+        "count": 3,
+        "nearest_m": 335,
+        "r5": 2,
+        "r10": 3,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.57169,
+          52.15504
+        ]
+      },
+      "transit": {
+        "count": 18,
+        "nearest_m": 140,
+        "r5": 5,
+        "r10": 19,
+        "r15": 27,
+        "nearest_lonlat": [
+          11.56596,
+          52.15549
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "beyendorf-sohlen",
+    "area_name": "Beyendorf-Sohlen",
+    "centroid": [
+      11.63209,
+      52.04978
+    ],
+    "area_km2": 8.13,
+    "affordability_score": 60,
+    "transit_score": 11,
+    "fifteen_min_score": 2,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 5,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 23,
+    "rent_eur_sqm": 6.06,
+    "est_rent_50sqm": 453,
+    "rent_proj_2026": null,
+    "rent_growth_pct": 27.0,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.77
+      },
+      {
+        "year": 2016,
+        "rent": 5
+      },
+      {
+        "year": 2017,
+        "rent": 5.11
+      },
+      {
+        "year": 2018,
+        "rent": 5.33
+      },
+      {
+        "year": 2019,
+        "rent": 6.41
+      },
+      {
+        "year": 2020,
+        "rent": 5.69
+      },
+      {
+        "year": 2021,
+        "rent": 6
+      },
+      {
+        "year": 2022,
+        "rent": 5.46
+      },
+      {
+        "year": 2025,
+        "rent": 6.06
+      }
+    ],
+    "life_value_score": 21,
+    "best_for": [
+      "budget-friendly"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 3446,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63685,
+          52.08061
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 4370,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.59977,
+          52.08363
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 4074,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63751,
+          52.08624
+        ]
+      },
+      "school": {
+        "count": 1,
+        "nearest_m": 225,
+        "r5": 1,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.63424,
+          52.05131
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 7845,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 3097,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.58724,
+          52.0529
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 3269,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63705,
+          52.079
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 3377,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6687,
+          52.07007
+        ]
+      },
+      "transit": {
+        "count": 9,
+        "nearest_m": 313,
+        "r5": 2,
+        "r10": 3,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.6337,
+          52.05241
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "bruckfeld",
+    "area_name": "Brückfeld",
+    "centroid": [
+      11.66833,
+      52.12914
+    ],
+    "area_km2": 1.51,
+    "affordability_score": 37,
+    "transit_score": 17,
+    "fifteen_min_score": 7,
+    "grocery_score": 4,
+    "pharmacy_score": 11,
+    "healthcare_score": 9,
+    "education_score": 5,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 4,
+    "gym_score": 14,
+    "economic_score": null,
+    "future_value_score": 57,
+    "rent_eur_sqm": 7.39,
+    "est_rent_50sqm": 520,
+    "rent_proj_2026": 8.05,
+    "rent_growth_pct": 51.1,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.89
+      },
+      {
+        "year": 2013,
+        "rent": 5.01
+      },
+      {
+        "year": 2014,
+        "rent": 5.17
+      },
+      {
+        "year": 2015,
+        "rent": 5.17
+      },
+      {
+        "year": 2016,
+        "rent": 5.37
+      },
+      {
+        "year": 2017,
+        "rent": 5.54
+      },
+      {
+        "year": 2018,
+        "rent": 7.06
+      },
+      {
+        "year": 2019,
+        "rent": 5.94
+      },
+      {
+        "year": 2020,
+        "rent": 6.26
+      },
+      {
+        "year": 2021,
+        "rent": 6.65
+      },
+      {
+        "year": 2022,
+        "rent": 6.65
+      },
+      {
+        "year": 2023,
+        "rent": 7.21
+      },
+      {
+        "year": 2024,
+        "rent": 7.39
+      },
+      {
+        "year": 2025,
+        "rent": 7.67
+      },
+      {
+        "year": 2026,
+        "rent": 8.05
+      }
+    ],
+    "life_value_score": 20,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 1,
+        "nearest_m": 229,
+        "r5": 3,
+        "r10": 3,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.67167,
+          52.12908
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 164,
+        "r5": 1,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.67073,
+          52.12919
+        ]
+      },
+      "healthcare": {
+        "count": 4,
+        "nearest_m": 151,
+        "r5": 3,
+        "r10": 4,
+        "r15": 5,
+        "nearest_lonlat": [
+          11.67054,
+          52.12919
+        ]
+      },
+      "school": {
+        "count": 1,
+        "nearest_m": 399,
+        "r5": 1,
+        "r10": 4,
+        "r15": 10,
+        "nearest_lonlat": [
+          11.6676,
+          52.1327
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 1367,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6761,
+          52.14046
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 629,
+        "r5": 0,
+        "r10": 1,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.66441,
+          52.12403
+        ]
+      },
+      "gym": {
+        "count": 1,
+        "nearest_m": 239,
+        "r5": 1,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.6718,
+          52.12937
+        ]
+      },
+      "cafe": {
+        "count": 4,
+        "nearest_m": 138,
+        "r5": 2,
+        "r10": 5,
+        "r15": 9,
+        "nearest_lonlat": [
+          11.67016,
+          52.12966
+        ]
+      },
+      "transit": {
+        "count": 14,
+        "nearest_m": 96,
+        "r5": 7,
+        "r10": 24,
+        "r15": 38,
+        "nearest_lonlat": [
+          11.66697,
+          52.12895
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "prester",
+    "area_name": "Prester",
+    "centroid": [
+      11.68249,
+      52.10153
+    ],
+    "area_km2": 5.21,
+    "affordability_score": 55,
+    "transit_score": 6,
+    "fifteen_min_score": 2,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 4,
+    "green_score": 4,
+    "lifestyle_score": 3,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": 6.36,
+    "est_rent_50sqm": 468,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [
+      {
+        "year": 2013,
+        "rent": 5.68
+      },
+      {
+        "year": 2015,
+        "rent": 6.1
+      },
+      {
+        "year": 2017,
+        "rent": 6.04
+      },
+      {
+        "year": 2018,
+        "rent": 6.37
+      },
+      {
+        "year": 2019,
+        "rent": 7.45
+      },
+      {
+        "year": 2020,
+        "rent": 6.87
+      },
+      {
+        "year": 2021,
+        "rent": 6.26
+      },
+      {
+        "year": 2022,
+        "rent": 7.44
+      },
+      {
+        "year": 2024,
+        "rent": 6.36
+      }
+    ],
+    "life_value_score": 19,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 1589,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67049,
+          52.11374
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 2092,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.65552,
+          52.09273
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1822,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66789,
+          52.11521
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 1536,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67179,
+          52.11365
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 4001,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 1,
+        "nearest_m": 1402,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67312,
+          52.11273
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2354,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64874,
+          52.0976
+        ]
+      },
+      "cafe": {
+        "count": 3,
+        "nearest_m": 484,
+        "r5": 0,
+        "r10": 2,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.67543,
+          52.10168
+        ]
+      },
+      "transit": {
+        "count": 5,
+        "nearest_m": 314,
+        "r5": 2,
+        "r10": 4,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.67842,
+          52.10282
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "nordwest",
+    "area_name": "Nordwest",
+    "centroid": [
+      11.61151,
+      52.14711
+    ],
+    "area_km2": 2.77,
+    "affordability_score": 44,
+    "transit_score": 13,
+    "fifteen_min_score": 7,
+    "grocery_score": 0,
+    "pharmacy_score": 11,
+    "healthcare_score": 2,
+    "education_score": 23,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 2,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 0,
+    "rent_eur_sqm": 6.96,
+    "est_rent_50sqm": 498,
+    "rent_proj_2026": 7.63,
+    "rent_growth_pct": 10.0,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 6.33
+      },
+      {
+        "year": 2013,
+        "rent": 7.23
+      },
+      {
+        "year": 2014,
+        "rent": 6.34
+      },
+      {
+        "year": 2015,
+        "rent": 6.3
+      },
+      {
+        "year": 2016,
+        "rent": 6.78
+      },
+      {
+        "year": 2017,
+        "rent": 6.41
+      },
+      {
+        "year": 2018,
+        "rent": 6.77
+      },
+      {
+        "year": 2019,
+        "rent": 7.07
+      },
+      {
+        "year": 2020,
+        "rent": 7.25
+      },
+      {
+        "year": 2021,
+        "rent": 7.01
+      },
+      {
+        "year": 2022,
+        "rent": 6.78
+      },
+      {
+        "year": 2023,
+        "rent": 7.51
+      },
+      {
+        "year": 2024,
+        "rent": 6.96
+      },
+      {
+        "year": 2025,
+        "rent": 7.25
+      },
+      {
+        "year": 2026,
+        "rent": 7.63
+      }
+    ],
+    "life_value_score": 17,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 949,
+        "r5": 0,
+        "r10": 0,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.61487,
+          52.13884
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 188,
+        "r5": 1,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.60877,
+          52.14728
+        ]
+      },
+      "healthcare": {
+        "count": 1,
+        "nearest_m": 194,
+        "r5": 1,
+        "r10": 2,
+        "r15": 8,
+        "nearest_lonlat": [
+          11.60867,
+          52.1471
+        ]
+      },
+      "school": {
+        "count": 5,
+        "nearest_m": 629,
+        "r5": 0,
+        "r10": 4,
+        "r15": 16,
+        "nearest_lonlat": [
+          11.60318,
+          52.1495
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 2443,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64558,
+          52.14059
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 677,
+        "r5": 0,
+        "r10": 1,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.61536,
+          52.15271
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1547,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63196,
+          52.15302
+        ]
+      },
+      "cafe": {
+        "count": 2,
+        "nearest_m": 785,
+        "r5": 0,
+        "r10": 1,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.60005,
+          52.14707
+        ]
+      },
+      "transit": {
+        "count": 11,
+        "nearest_m": 166,
+        "r5": 3,
+        "r10": 7,
+        "r15": 31,
+        "nearest_lonlat": [
+          11.60908,
+          52.14716
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "berliner-chaussee",
+    "area_name": "Berliner Chaussee",
+    "centroid": [
+      11.70134,
+      52.12899
+    ],
+    "area_km2": 5.04,
+    "affordability_score": 48,
+    "transit_score": 7,
+    "fifteen_min_score": 2,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 5,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 11,
+    "rent_eur_sqm": 6.77,
+    "est_rent_50sqm": 488,
+    "rent_proj_2026": null,
+    "rent_growth_pct": 17.7,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.75
+      },
+      {
+        "year": 2016,
+        "rent": 6.18
+      },
+      {
+        "year": 2018,
+        "rent": 6.14
+      },
+      {
+        "year": 2019,
+        "rent": 7.71
+      },
+      {
+        "year": 2021,
+        "rent": 6.86
+      },
+      {
+        "year": 2022,
+        "rent": 6.41
+      },
+      {
+        "year": 2023,
+        "rent": 8.84
+      },
+      {
+        "year": 2024,
+        "rent": 6.77
+      },
+      {
+        "year": 2025,
+        "rent": 9.41
+      }
+    ],
+    "life_value_score": 16,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 2031,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67167,
+          52.12908
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 2096,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67073,
+          52.12919
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1938,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67304,
+          52.12924
+        ]
+      },
+      "school": {
+        "count": 1,
+        "nearest_m": 1270,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.71079,
+          52.1388
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 2148,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6761,
+          52.14046
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 2110,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67433,
+          52.13812
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2023,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6718,
+          52.12937
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 1803,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.68026,
+          52.1387
+        ]
+      },
+      "transit": {
+        "count": 6,
+        "nearest_m": 478,
+        "r5": 0,
+        "r10": 4,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.70072,
+          52.13327
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "herrenkrug",
+    "area_name": "Herrenkrug",
+    "centroid": [
+      11.69016,
+      52.15328
+    ],
+    "area_km2": 11.94,
+    "affordability_score": 17,
+    "transit_score": 27,
+    "fifteen_min_score": 8,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 9,
+    "park_score": 9,
+    "green_score": 9,
+    "lifestyle_score": 8,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 41,
+    "rent_eur_sqm": 8.51,
+    "est_rent_50sqm": 576,
+    "rent_proj_2026": 8.32,
+    "rent_growth_pct": 39.5,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 6.1
+      },
+      {
+        "year": 2013,
+        "rent": 6.01
+      },
+      {
+        "year": 2014,
+        "rent": 5.96
+      },
+      {
+        "year": 2015,
+        "rent": 6.04
+      },
+      {
+        "year": 2016,
+        "rent": 5.94
+      },
+      {
+        "year": 2017,
+        "rent": 6.54
+      },
+      {
+        "year": 2018,
+        "rent": 6.61
+      },
+      {
+        "year": 2019,
+        "rent": 6.91
+      },
+      {
+        "year": 2020,
+        "rent": 6.96
+      },
+      {
+        "year": 2021,
+        "rent": 7.34
+      },
+      {
+        "year": 2022,
+        "rent": 6.88
+      },
+      {
+        "year": 2023,
+        "rent": 8.1
+      },
+      {
+        "year": 2024,
+        "rent": 8.51
+      },
+      {
+        "year": 2025,
+        "rent": 7.72
+      },
+      {
+        "year": 2026,
+        "rent": 8.32
+      }
+    ],
+    "life_value_score": 16,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 2341,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.72208,
+          52.16084
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 2377,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.72237,
+          52.16127
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1725,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.71537,
+          52.15332
+        ]
+      },
+      "school": {
+        "count": 2,
+        "nearest_m": 1816,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67127,
+          52.14182
+        ]
+      },
+      "university": {
+        "count": 1,
+        "nearest_m": 1721,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6761,
+          52.14046
+        ]
+      },
+      "park": {
+        "count": 2,
+        "nearest_m": 856,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.67798,
+          52.15154
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2942,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6718,
+          52.12937
+        ]
+      },
+      "cafe": {
+        "count": 8,
+        "nearest_m": 876,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.67736,
+          52.15348
+        ]
+      },
+      "transit": {
+        "count": 23,
+        "nearest_m": 713,
+        "r5": 0,
+        "r10": 4,
+        "r15": 5,
+        "nearest_lonlat": [
+          11.67993,
+          52.15206
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "rothensee",
+    "area_name": "Rothensee",
+    "centroid": [
+      11.65884,
+      52.17871
+    ],
+    "area_km2": 2.13,
+    "affordability_score": 39,
+    "transit_score": 0,
+    "fifteen_min_score": 4,
+    "grocery_score": 4,
+    "pharmacy_score": 11,
+    "healthcare_score": 0,
+    "education_score": 9,
+    "park_score": 4,
+    "green_score": 4,
+    "lifestyle_score": 1,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 53,
+    "rent_eur_sqm": 7.28,
+    "est_rent_50sqm": 514,
+    "rent_proj_2026": 8.11,
+    "rent_growth_pct": 48.6,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 4.9
+      },
+      {
+        "year": 2013,
+        "rent": 4.63
+      },
+      {
+        "year": 2014,
+        "rent": 4.78
+      },
+      {
+        "year": 2015,
+        "rent": 5.17
+      },
+      {
+        "year": 2016,
+        "rent": 5.45
+      },
+      {
+        "year": 2017,
+        "rent": 6.03
+      },
+      {
+        "year": 2018,
+        "rent": 6.08
+      },
+      {
+        "year": 2019,
+        "rent": 6.51
+      },
+      {
+        "year": 2020,
+        "rent": 6.56
+      },
+      {
+        "year": 2021,
+        "rent": 7.14
+      },
+      {
+        "year": 2022,
+        "rent": 7.23
+      },
+      {
+        "year": 2023,
+        "rent": 7.49
+      },
+      {
+        "year": 2024,
+        "rent": 7.28
+      },
+      {
+        "year": 2025,
+        "rent": 7.75
+      },
+      {
+        "year": 2026,
+        "rent": 8.11
+      }
+    ],
+    "life_value_score": 15,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 1,
+        "nearest_m": 616,
+        "r5": 0,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.66744,
+          52.18037
+        ]
+      },
+      "pharmacy": {
+        "count": 1,
+        "nearest_m": 540,
+        "r5": 0,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.66348,
+          52.18264
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1907,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64679,
+          52.16326
+        ]
+      },
+      "school": {
+        "count": 2,
+        "nearest_m": 490,
+        "r5": 0,
+        "r10": 2,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.66574,
+          52.17753
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 4338,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64558,
+          52.14059
+        ]
+      },
+      "park": {
+        "count": 1,
+        "nearest_m": 676,
+        "r5": 0,
+        "r10": 1,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.66314,
+          52.18418
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2453,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63612,
+          52.16166
+        ]
+      },
+      "cafe": {
+        "count": 1,
+        "nearest_m": 689,
+        "r5": 0,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.66403,
+          52.18402
+        ]
+      },
+      "transit": {
+        "count": 0,
+        "nearest_m": 563,
+        "r5": 0,
+        "r10": 2,
+        "r15": 7,
+        "nearest_lonlat": [
+          11.66681,
+          52.17747
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "werder",
+    "area_name": "Werder",
+    "centroid": [
+      11.64989,
+      52.12193
+    ],
+    "area_km2": 3.58,
+    "affordability_score": 13,
+    "transit_score": 11,
+    "fifteen_min_score": 7,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 2,
+    "education_score": 9,
+    "park_score": 22,
+    "green_score": 22,
+    "lifestyle_score": 6,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 72,
+    "rent_eur_sqm": 8.7,
+    "est_rent_50sqm": 585,
+    "rent_proj_2026": 8.45,
+    "rent_growth_pct": 62.0,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.37
+      },
+      {
+        "year": 2013,
+        "rent": 5.75
+      },
+      {
+        "year": 2014,
+        "rent": 5.81
+      },
+      {
+        "year": 2015,
+        "rent": 6.33
+      },
+      {
+        "year": 2016,
+        "rent": 6.48
+      },
+      {
+        "year": 2017,
+        "rent": 6.73
+      },
+      {
+        "year": 2018,
+        "rent": 6.57
+      },
+      {
+        "year": 2019,
+        "rent": 6.7
+      },
+      {
+        "year": 2020,
+        "rent": 7.03
+      },
+      {
+        "year": 2021,
+        "rent": 7.16
+      },
+      {
+        "year": 2022,
+        "rent": 7.72
+      },
+      {
+        "year": 2023,
+        "rent": 7.56
+      },
+      {
+        "year": 2024,
+        "rent": 8.7
+      },
+      {
+        "year": 2025,
+        "rent": 8.5
+      },
+      {
+        "year": 2026,
+        "rent": 8.45
+      }
+    ],
+    "life_value_score": 14,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 752,
+        "r5": 0,
+        "r10": 1,
+        "r15": 8,
+        "nearest_lonlat": [
+          11.65993,
+          52.11921
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 896,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.66196,
+          52.11883
+        ]
+      },
+      "healthcare": {
+        "count": 1,
+        "nearest_m": 636,
+        "r5": 0,
+        "r10": 2,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.64987,
+          52.12764
+        ]
+      },
+      "school": {
+        "count": 2,
+        "nearest_m": 321,
+        "r5": 3,
+        "r10": 5,
+        "r15": 12,
+        "nearest_lonlat": [
+          11.65371,
+          52.12358
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 1193,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 5,
+        "nearest_m": 484,
+        "r5": 0,
+        "r10": 3,
+        "r15": 16,
+        "nearest_lonlat": [
+          11.6444,
+          52.11918
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1354,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63571,
+          52.13041
+        ]
+      },
+      "cafe": {
+        "count": 6,
+        "nearest_m": 521,
+        "r5": 0,
+        "r10": 5,
+        "r15": 25,
+        "nearest_lonlat": [
+          11.65626,
+          52.11937
+        ]
+      },
+      "transit": {
+        "count": 9,
+        "nearest_m": 371,
+        "r5": 2,
+        "r10": 14,
+        "r15": 30,
+        "nearest_lonlat": [
+          11.65492,
+          52.12313
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "pechau",
+    "area_name": "Pechau",
+    "centroid": [
+      11.72997,
+      52.08701
+    ],
+    "area_km2": 6.97,
+    "affordability_score": 38,
+    "transit_score": 5,
+    "fifteen_min_score": 1,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 5,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": 7.29,
+    "est_rent_50sqm": 514,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [
+      {
+        "year": 2016,
+        "rent": 5.69
+      },
+      {
+        "year": 2022,
+        "rent": 7.29
+      }
+    ],
+    "life_value_score": 13,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 4375,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66735,
+          52.07942
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 5143,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.65552,
+          52.09273
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 4387,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66717,
+          52.07939
+        ]
+      },
+      "school": {
+        "count": 1,
+        "nearest_m": 1115,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.71414,
+          52.08933
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 7000,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6761,
+          52.14046
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 4688,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66409,
+          52.07573
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 5691,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64874,
+          52.0976
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 4079,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67543,
+          52.10168
+        ]
+      },
+      "transit": {
+        "count": 4,
+        "nearest_m": 915,
+        "r5": 0,
+        "r10": 0,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.7169,
+          52.08868
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "lemsdorf",
+    "area_name": "Lemsdorf",
+    "centroid": [
+      11.59638,
+      52.09781
+    ],
+    "area_km2": 1.35,
+    "affordability_score": 0,
+    "transit_score": 7,
+    "fifteen_min_score": 4,
+    "grocery_score": 4,
+    "pharmacy_score": 0,
+    "healthcare_score": 4,
+    "education_score": 9,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 1,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": 100,
+    "rent_eur_sqm": 9.46,
+    "est_rent_50sqm": 623,
+    "rent_proj_2026": 7.04,
+    "rent_growth_pct": 82.6,
+    "rent_series": [
+      {
+        "year": 2012,
+        "rent": 5.18
+      },
+      {
+        "year": 2013,
+        "rent": 5.15
+      },
+      {
+        "year": 2014,
+        "rent": 5.48
+      },
+      {
+        "year": 2015,
+        "rent": 5.45
+      },
+      {
+        "year": 2016,
+        "rent": 5.89
+      },
+      {
+        "year": 2017,
+        "rent": 6.02
+      },
+      {
+        "year": 2018,
+        "rent": 5.97
+      },
+      {
+        "year": 2019,
+        "rent": 6.25
+      },
+      {
+        "year": 2020,
+        "rent": 6.13
+      },
+      {
+        "year": 2021,
+        "rent": 6.41
+      },
+      {
+        "year": 2022,
+        "rent": 6.46
+      },
+      {
+        "year": 2023,
+        "rent": 7.62
+      },
+      {
+        "year": 2024,
+        "rent": 9.46
+      },
+      {
+        "year": 2025,
+        "rent": 8.01
+      },
+      {
+        "year": 2026,
+        "rent": 7.04
+      }
+    ],
+    "life_value_score": 8,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 1,
+        "nearest_m": 575,
+        "r5": 0,
+        "r10": 3,
+        "r15": 8,
+        "nearest_lonlat": [
+          11.59868,
+          52.10278
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 1048,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.59249,
+          52.10691
+        ]
+      },
+      "healthcare": {
+        "count": 2,
+        "nearest_m": 96,
+        "r5": 2,
+        "r10": 2,
+        "r15": 8,
+        "nearest_lonlat": [
+          11.59668,
+          52.09866
+        ]
+      },
+      "school": {
+        "count": 2,
+        "nearest_m": 392,
+        "r5": 1,
+        "r10": 2,
+        "r15": 6,
+        "nearest_lonlat": [
+          11.59941,
+          52.1008
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3526,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 849,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.60486,
+          52.09225
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 740,
+        "r5": 0,
+        "r10": 1,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.60119,
+          52.10376
+        ]
+      },
+      "cafe": {
+        "count": 1,
+        "nearest_m": 97,
+        "r5": 1,
+        "r10": 1,
+        "r15": 5,
+        "nearest_lonlat": [
+          11.59645,
+          52.09868
+        ]
+      },
+      "transit": {
+        "count": 6,
+        "nearest_m": 105,
+        "r5": 4,
+        "r10": 9,
+        "r15": 28,
+        "nearest_lonlat": [
+          11.59752,
+          52.09844
+        ]
+      }
+    },
+    "data_confidence": "high"
+  },
+  {
+    "area_id": "gewerbegebiet-nord",
+    "area_name": "Gewerbegebiet Nord",
+    "centroid": [
+      11.67206,
+      52.19677
+    ],
+    "area_km2": 9.33,
+    "affordability_score": null,
+    "transit_score": 19,
+    "fifteen_min_score": 3,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": null,
+    "est_rent_50sqm": null,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [],
+    "life_value_score": 7,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 1851,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66744,
+          52.18037
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 1678,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66348,
+          52.18264
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 4095,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62938,
+          52.17096
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 2184,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66574,
+          52.17753
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 4919,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60012,
+          52.19687
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 1528,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66314,
+          52.18418
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 4616,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63612,
+          52.16166
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 1521,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66403,
+          52.18402
+        ]
+      },
+      "transit": {
+        "count": 16,
+        "nearest_m": 217,
+        "r5": 8,
+        "r10": 10,
+        "r15": 12,
+        "nearest_lonlat": [
+          11.67444,
+          52.19806
+        ]
+      }
+    },
+    "data_confidence": "low"
+  },
+  {
+    "area_id": "industriehafen",
+    "area_name": "Industriehafen",
+    "centroid": [
+      11.67045,
+      52.16461
+    ],
+    "area_km2": 3.71,
+    "affordability_score": null,
+    "transit_score": 7,
+    "fifteen_min_score": 1,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 2,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": null,
+    "est_rent_50sqm": null,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [],
+    "life_value_score": 3,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 1131,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.65441,
+          52.16217
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 1592,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64725,
+          52.16352
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1626,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64679,
+          52.16326
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 1357,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66495,
+          52.17632
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 2715,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6761,
+          52.14046
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 1420,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6497,
+          52.16458
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2197,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63921,
+          52.16005
+        ]
+      },
+      "cafe": {
+        "count": 2,
+        "nearest_m": 293,
+        "r5": 1,
+        "r10": 2,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.66793,
+          52.16674
+        ]
+      },
+      "transit": {
+        "count": 6,
+        "nearest_m": 678,
+        "r5": 0,
+        "r10": 4,
+        "r15": 4,
+        "nearest_lonlat": [
+          11.66215,
+          52.16794
+        ]
+      }
+    },
+    "data_confidence": "low"
+  },
+  {
+    "area_id": "sulzegrund",
+    "area_name": "Sülzegrund",
+    "centroid": [
+      11.60803,
+      52.1772
+    ],
+    "area_km2": 3.36,
+    "affordability_score": null,
+    "transit_score": 5,
+    "fifteen_min_score": 1,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 1,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": null,
+    "est_rent_50sqm": null,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [],
+    "life_value_score": 2,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 1437,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62501,
+          52.1696
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 1465,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62511,
+          52.16926
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1466,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62505,
+          52.1692
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 938,
+        "r5": 0,
+        "r10": 0,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.61844,
+          52.17172
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 2254,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60012,
+          52.19687
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 761,
+        "r5": 0,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.61815,
+          52.17436
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 1209,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60558,
+          52.18796
+        ]
+      },
+      "cafe": {
+        "count": 1,
+        "nearest_m": 797,
+        "r5": 0,
+        "r10": 1,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.61715,
+          52.18166
+        ]
+      },
+      "transit": {
+        "count": 4,
+        "nearest_m": 901,
+        "r5": 0,
+        "r10": 0,
+        "r15": 9,
+        "nearest_lonlat": [
+          11.61025,
+          52.16923
+        ]
+      }
+    },
+    "data_confidence": "low"
+  },
+  {
+    "area_id": "barleber-see",
+    "area_name": "Barleber See",
+    "centroid": [
+      11.65556,
+      52.21778
+    ],
+    "area_km2": 5.39,
+    "affordability_score": null,
+    "transit_score": 0,
+    "fifteen_min_score": 0,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": null,
+    "est_rent_50sqm": null,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [],
+    "life_value_score": 0,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 3345,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62125,
+          52.19634
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 3535,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.61469,
+          52.19831
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 5508,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62938,
+          52.17096
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 3383,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.62322,
+          52.19477
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 4447,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60012,
+          52.19687
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 3774,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66314,
+          52.18418
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 4763,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60558,
+          52.18796
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 3470,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.61693,
+          52.19754
+        ]
+      },
+      "transit": {
+        "count": 0,
+        "nearest_m": 2443,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67508,
+          52.19939
+        ]
+      }
+    },
+    "data_confidence": "low"
+  },
+  {
+    "area_id": "beyendorfer-grund",
+    "area_name": "Beyendorfer Grund",
+    "centroid": [
+      11.60579,
+      52.07397
+    ],
+    "area_km2": 6.01,
+    "affordability_score": null,
+    "transit_score": 0,
+    "fifteen_min_score": 0,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": null,
+    "est_rent_50sqm": null,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [],
+    "life_value_score": 0,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 916,
+        "r5": 0,
+        "r10": 0,
+        "r15": 3,
+        "nearest_lonlat": [
+          11.60502,
+          52.08219
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 1151,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.59977,
+          52.08363
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 1756,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.61261,
+          52.08919
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 1622,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6129,
+          52.08787
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 5473,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 1331,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.60776,
+          52.08587
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 2215,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63705,
+          52.079
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 1153,
+        "r5": 0,
+        "r10": 0,
+        "r15": 2,
+        "nearest_lonlat": [
+          11.59965,
+          52.08362
+        ]
+      },
+      "transit": {
+        "count": 0,
+        "nearest_m": 898,
+        "r5": 0,
+        "r10": 0,
+        "r15": 12,
+        "nearest_lonlat": [
+          11.61556,
+          52.06859
+        ]
+      }
+    },
+    "data_confidence": "low"
+  },
+  {
+    "area_id": "kreuzhorst",
+    "area_name": "Kreuzhorst",
+    "centroid": [
+      11.69757,
+      52.08081
+    ],
+    "area_km2": 4.72,
+    "affordability_score": null,
+    "transit_score": 0,
+    "fifteen_min_score": 0,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": null,
+    "est_rent_50sqm": null,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [],
+    "life_value_score": 0,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 2078,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66735,
+          52.07942
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 3173,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.65552,
+          52.09273
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 2090,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66717,
+          52.07939
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 1479,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.71414,
+          52.08933
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 6251,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.63267,
+          52.12029
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 2364,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66409,
+          52.07573
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 3833,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.64874,
+          52.0976
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 2018,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6689,
+          52.07669
+        ]
+      },
+      "transit": {
+        "count": 0,
+        "nearest_m": 1039,
+        "r5": 0,
+        "r10": 0,
+        "r15": 1,
+        "nearest_lonlat": [
+          11.71212,
+          52.08341
+        ]
+      }
+    },
+    "data_confidence": "low"
+  },
+  {
+    "area_id": "zipkeleben",
+    "area_name": "Zipkeleben",
+    "centroid": [
+      11.70242,
+      52.10993
+    ],
+    "area_km2": 4.66,
+    "affordability_score": null,
+    "transit_score": 0,
+    "fifteen_min_score": 0,
+    "grocery_score": 0,
+    "pharmacy_score": 0,
+    "healthcare_score": 0,
+    "education_score": 0,
+    "park_score": 0,
+    "green_score": 0,
+    "lifestyle_score": 0,
+    "gym_score": 0,
+    "economic_score": null,
+    "future_value_score": null,
+    "rent_eur_sqm": null,
+    "est_rent_50sqm": null,
+    "rent_proj_2026": null,
+    "rent_growth_pct": null,
+    "rent_series": [],
+    "life_value_score": 0,
+    "best_for": [
+      "balanced"
+    ],
+    "amenities": {
+      "grocery": {
+        "count": 0,
+        "nearest_m": 2228,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67049,
+          52.11374
+        ]
+      },
+      "pharmacy": {
+        "count": 0,
+        "nearest_m": 2943,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66196,
+          52.11883
+        ]
+      },
+      "healthcare": {
+        "count": 0,
+        "nearest_m": 2438,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.66789,
+          52.11521
+        ]
+      },
+      "school": {
+        "count": 0,
+        "nearest_m": 2139,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67179,
+          52.11365
+        ]
+      },
+      "university": {
+        "count": 0,
+        "nearest_m": 3846,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6761,
+          52.14046
+        ]
+      },
+      "park": {
+        "count": 0,
+        "nearest_m": 2031,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67312,
+          52.11273
+        ]
+      },
+      "gym": {
+        "count": 0,
+        "nearest_m": 3013,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.6718,
+          52.12937
+        ]
+      },
+      "cafe": {
+        "count": 0,
+        "nearest_m": 2020,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67491,
+          52.10341
+        ]
+      },
+      "transit": {
+        "count": 0,
+        "nearest_m": 1825,
+        "r5": 0,
+        "r10": 0,
+        "r15": 0,
+        "nearest_lonlat": [
+          11.67842,
+          52.10282
+        ]
+      }
+    },
+    "data_confidence": "low"
+  }
+]
