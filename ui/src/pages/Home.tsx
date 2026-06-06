@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { api, type Area } from '../lib/api'
 import heroBanner from '../assets/hero_banner.jpg'
+import { BehindCards, InfoCard } from '../components/InfoCards'
 
 const PROFILES = ['General', 'Student', 'Professional', 'Family', 'Senior']
 const TRANSPORT = [
@@ -126,7 +127,7 @@ export default function Home() {
   return (
     <div className="bg-page pb-12 min-h-full">
       {/* HERO */}
-      <div className="relative h-72" style={HERO_BG}>
+      <div className="relative h-[28rem]" style={HERO_BG}>
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-6xl mx-auto w-full px-6 lg:px-8">
             <h1 className="text-4xl lg:text-5xl font-headline font-black text-white leading-[1.1] max-w-2xl">
@@ -296,6 +297,33 @@ export default function Home() {
               </div>
             )}
           </div>
+        </div>
+
+        {/* Behind the recommendation */}
+        <div className="mt-10">
+          <BehindCards label="behind the recommendation" icon="tune">
+            <InfoCard
+              watermark="dataset"
+              big="40"
+              bigUnit=" districts"
+              source="Mietspiegel 2024 · OpenStreetMap · KISS-MD"
+              details="Affordability is the Mietspiegel 2024 net cold rent; transit, 15-minute access, green space and healthcare come from ~2,000 OpenStreetMap amenities & stops; future value from the 2012–2026 rent trend. Each metric is normalized 0–100 across all districts."
+            >
+              Every district is scored from <b className="text-sun">open data</b> across six dimensions —{' '}
+              <b className="text-sun">affordability, transit, 15-min access, green, healthcare</b> and{' '}
+              <b className="text-sun">future value</b>.
+            </InfoCard>
+            <InfoCard
+              watermark="calculate"
+              source="Profile weights + lifestyle bonus, budget-filtered"
+              details="Your profile sets the weight vector (e.g. Family favours healthcare, green & schools). Each lifestyle chip you pick adds a bonus toward that dimension. Your budget + commute mode then filter out districts whose total cost (rent + utilities + transport) exceeds it — the top card is the highest-scoring district that fits."
+            >
+              <div className="text-4xl font-headline font-black text-sun mb-2">Match Score</div>
+              We start from your <b className="text-sun">profile's</b> weighted Life Value Score, add a{' '}
+              <b className="text-sun">bonus</b> for your lifestyle must-haves, then keep only districts within your{' '}
+              <b className="text-sun">budget</b> &amp; commute cost.
+            </InfoCard>
+          </BehindCards>
         </div>
 
         {/* footer */}
