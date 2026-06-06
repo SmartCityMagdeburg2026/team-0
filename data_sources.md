@@ -1,4 +1,4 @@
-# Data Sources & Coverage Audit — Magdeburg Smart Living Navigator
+# Data Sources & Coverage Audit — KiezKompass MD
 
 Audit of what the **Life Value Score** needs, what we already have, and where to
 get the rest. Verdict first, detail below.

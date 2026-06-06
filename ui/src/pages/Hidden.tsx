@@ -1,17 +1,28 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useAreas, Loading } from '../lib/ui'
 import { BehindCards, InfoCard } from '../components/InfoCards'
 
 const UTIL_PER_SQM = 2.5
-const TICKET: Record<string, number> = { walk: 0, bike: 0, tram: 58, car: 300 }
+const TICKET: Record<string, number> = { walk: 0, bike: 15, tram: 63, car: 300 }
 const COMMUTE = [
-  { key: 'walk', icon: 'directions_walk', label: 'Walk' },
-  { key: 'bike', icon: 'pedal_bike', label: 'Bike' },
-  { key: 'tram', icon: 'tram', label: 'Tram' },
-  { key: 'car', icon: 'directions_car', label: 'Car' },
+  { key: 'walk', icon: 'directions_walk' },
+  { key: 'bike', icon: 'pedal_bike' },
+  { key: 'tram', icon: 'tram' },
+  { key: 'car', icon: 'directions_car' },
 ]
 
+/** Split a translated string on <b>...</b> tags into React nodes. */
+function boldSplit(str: string): React.ReactNode[] {
+  return str.split('<b>').reduce<React.ReactNode[]>((acc, part, i) => {
+    if (i === 0) return [part]
+    const [bold, rest] = part.split('</b>')
+    return [...acc, <b key={i} className="text-sun">{bold}</b>, rest]
+  }, [])
+}
+
 export default function Hidden() {
+  const { t } = useTranslation()
   const { areas, loading, error } = useAreas()
   const [id, setId] = useState('stadtfeld-ost')
   const [size, setSize] = useState(50)
@@ -38,8 +49,11 @@ export default function Hidden() {
   const diff = total - cityTotal
 
   const seg = (v: number) => (total ? (100 * v) / total : 0)
-  const modeLabel = COMMUTE.find((c) => c.key === mode)?.label ?? 'Tram'
-  const transportSub = mode === 'tram' ? 'Deutschlandticket' : mode === 'car' ? 'fuel + parking' : 'no ticket needed'
+  const modeLabel = t(`commute.${mode}`)
+  const transportSub = t(`pages.hidden.transportSub.${mode}`)
+
+  const insightKey = diff >= 0 ? 'pages.hidden.insight.above' : 'pages.hidden.insight.below'
+  const insightStr = t(insightKey, { eur: Math.abs(diff), name: a.area_name })
 
   return (
     <div className="space-y-8">
@@ -50,11 +64,11 @@ export default function Hidden() {
         <div className="bg-white rounded-2xl border border-line shadow-sm p-6 space-y-6">
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-petrol">tune</span>
-            <h3 className="font-headline font-bold text-ink text-lg">Your Parameters</h3>
+            <h3 className="font-headline font-bold text-ink text-lg">{t('pages.hidden.params.title')}</h3>
           </div>
 
           <div className="space-y-2">
-            <label className="text-[11px] font-bold text-muted uppercase tracking-wider">Target District</label>
+            <label className="text-[11px] font-bold text-muted uppercase tracking-wider">{t('common.targetDistrict')}</label>
             <select
               value={id}
               onChange={(e) => setId(e.target.value)}
@@ -72,7 +86,7 @@ export default function Hidden() {
 
           <div className="space-y-2">
             <div className="flex justify-between items-end">
-              <label className="text-[11px] font-bold text-muted uppercase tracking-wider">Apartment Size</label>
+              <label className="text-[11px] font-bold text-muted uppercase tracking-wider">{t('common.apartmentSize')}</label>
               <span className="text-2xl font-headline font-bold text-petrol">{size} m²</span>
             </div>
             <input
@@ -90,7 +104,7 @@ export default function Hidden() {
           </div>
 
           <div className="space-y-2">
-            <label className="text-[11px] font-bold text-muted uppercase tracking-wider">Primary Commute</label>
+            <label className="text-[11px] font-bold text-muted uppercase tracking-wider">{t('pages.hidden.params.primaryCommute')}</label>
             <div className="grid grid-cols-2 gap-3">
               {COMMUTE.map((c) => (
                 <button
@@ -101,7 +115,7 @@ export default function Hidden() {
                   }`}
                 >
                   <span className="material-symbols-outlined text-base">{c.icon}</span>
-                  {c.label}
+                  {t(`commute.${c.key}`)}
                 </button>
               ))}
             </div>
@@ -111,11 +125,11 @@ export default function Hidden() {
         {/* RIGHT — total */}
         <div className="bg-white rounded-2xl border border-line shadow-sm p-6 space-y-6">
           <div>
-            <div className="text-[11px] font-bold text-muted uppercase tracking-wider mb-1">Estimated Monthly Total</div>
+            <div className="text-[11px] font-bold text-muted uppercase tracking-wider mb-1">{t('pages.hidden.total.label')}</div>
             <div className="flex items-center gap-3 flex-wrap">
               <div className="text-5xl font-headline font-black text-ink">
                 €{total}
-                <span className="text-xl text-muted font-body"> /mo</span>
+                <span className="text-xl text-muted font-body"> {t('pages.hidden.total.perMonth')}</span>
               </div>
               <span
                 className={`px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 ${
@@ -123,7 +137,7 @@ export default function Hidden() {
                 }`}
               >
                 <span className="material-symbols-outlined text-sm">{diff >= 0 ? 'trending_up' : 'trending_down'}</span>
-                {diff >= 0 ? '+' : ''}€{diff} vs city avg
+                {diff >= 0 ? '+' : ''}€{diff} {t('pages.hidden.total.vsCityAvg')}
               </span>
             </div>
           </div>
@@ -131,8 +145,8 @@ export default function Hidden() {
           {/* Cost structure */}
           <div className="space-y-2">
             <div className="flex justify-between text-xs">
-              <span className="text-muted font-bold uppercase tracking-wider">Cost Structure</span>
-              <span className="text-muted">100%</span>
+              <span className="text-muted font-bold uppercase tracking-wider">{t('pages.hidden.costStructure.label')}</span>
+              <span className="text-muted">{t('pages.hidden.costStructure.hundred')}</span>
             </div>
             <div className="flex h-4 rounded-full overflow-hidden">
               <div style={{ width: `${seg(rent)}%`, background: '#D6492A' }} />
@@ -152,9 +166,9 @@ export default function Hidden() {
 
           {/* line items */}
           <div>
-            <Line c="#D6492A" t="Cold Rent" amount={rent} sub={`${sqm} €/m²`} />
-            <Line c="#D8D2CC" t="Utilities & Heating" amount={utilities} sub="2.5 €/m²" />
-            <Line c="#006080" t={`Transport (${modeLabel})`} amount={transport} sub={transportSub} />
+            <Line c="#D6492A" label={t('pages.hidden.lineItems.coldRent')} amount={rent} sub={`${sqm} €/m²`} />
+            <Line c="#D8D2CC" label={t('pages.hidden.lineItems.utilitiesHeating')} amount={utilities} sub="2.5 €/m²" />
+            <Line c="#006080" label={t('pages.hidden.lineItems.transport', { mode: modeLabel })} amount={transport} sub={transportSub} />
           </div>
         </div>
       </div>
@@ -166,37 +180,30 @@ export default function Hidden() {
         </span>
         <div className="flex items-center gap-2 mb-2 relative">
           <span className="material-symbols-outlined">lightbulb</span>
-          <h4 className="font-headline font-bold text-lg">Value Insight</h4>
+          <h4 className="font-headline font-bold text-lg">{t('pages.hidden.insight.title')}</h4>
         </div>
         <p className="text-sm text-white/90 leading-relaxed relative">
-          Although <b className="text-sun">€{Math.abs(diff)} {diff >= 0 ? 'above' : 'below'} average</b>, {a.area_name}{' '}
-          {diff >= 0
-            ? 'offsets the higher base rent with strong daily access — amenities and transit within a short walk, saving commute effort and time.'
-            : 'is an easy win: a low total cost without giving up everyday access.'}
+          {boldSplit(insightStr)}
         </p>
       </div>
 
-      <BehindCards label="behind the cost" icon="payments">
+      <BehindCards label={t('pages.hidden.behind.label')} icon="payments">
         <InfoCard
           watermark="dataset"
-          big="3"
-          bigUnit=" cost layers"
-          source="Mietspiegel 2024 · Deutschlandticket"
-          details="Transport: tram = €58 (Deutschlandticket), car = €300 placeholder, walk/bike = €0. Utilities use a 2.5 €/m² Nebenkosten assumption; rent is the qualified Mietspiegel net cold rent for the selected district (a district average, not a live listing)."
+          big={t('pages.hidden.behind.card1Big')}
+          bigUnit={t('pages.hidden.behind.card1BigUnit')}
+          source={t('pages.hidden.behind.card1Source')}
+          details={t('pages.hidden.behind.card1Details')}
         >
-          True cost stacks three layers: <b className="text-sun">rent</b> (Mietspiegel 2024 net cold rent × size),{' '}
-          <b className="text-sun">utilities</b> (a flat 2.5 €/m²), and <b className="text-sun">transport</b> for your
-          commute mode.
+          {boldSplit(t('pages.hidden.behind.card1Body'))}
         </InfoCard>
         <InfoCard
           watermark="calculate"
-          source="Own calculation, transparent assumptions"
-          details="Estimates are deliberately modest — a €30–40 difference is acceptable if access improves. Rent is a district average from the Mietspiegel, not an individual listing."
+          source={t('pages.hidden.behind.card2Source')}
+          details={t('pages.hidden.behind.card2Details')}
         >
-          <div className="text-4xl font-headline font-black text-sun mb-2">Total Cost of Life</div>
-          <b className="text-sun">Total = rent + utilities + transport</b>. We compare it to the{' '}
-          <b className="text-sun">city average</b> for the same flat size and commute, so the badge shows whether you're
-          above or below typical.
+          <div className="text-4xl font-headline font-black text-sun mb-2">{t('pages.hidden.behind.card2BigLabel')}</div>
+          {boldSplit(t('pages.hidden.behind.card2Body'))}
         </InfoCard>
       </BehindCards>
     </div>
@@ -204,26 +211,24 @@ export default function Hidden() {
 }
 
 function Header() {
+  const { t } = useTranslation()
   return (
     <div>
       <h1 className="text-4xl font-headline font-black text-ink leading-tight">
-        Rent isn't the{' '}
-        <span className="text-brick underline decoration-2 underline-offset-2">full cost.</span>
+        {t('pages.hidden.title1')}{' '}
+        <span className="text-brick underline decoration-2 underline-offset-2">{t('pages.hidden.title2')}</span>
       </h1>
-      <p className="text-muted mt-2 max-w-2xl">
-        Discover the true cost of living in different Magdeburg districts by factoring in utilities, mobility, and daily
-        necessities.
-      </p>
+      <p className="text-muted mt-2 max-w-2xl">{t('pages.hidden.subtitle')}</p>
     </div>
   )
 }
 
-function Line({ c, t, amount, sub }: { c: string; t: string; amount: number; sub: string }) {
+function Line({ c, label, amount, sub }: { c: string; label: string; amount: number; sub: string }) {
   return (
     <div className="flex items-center justify-between py-2.5 border-t border-line">
       <span className="flex items-center gap-2.5">
         <span className="w-3 h-3 rounded-full" style={{ background: c }} />
-        <span className="text-body">{t}</span>
+        <span className="text-body">{label}</span>
       </span>
       <div className="text-right">
         <div className="font-headline font-bold text-body">€{amount}</div>

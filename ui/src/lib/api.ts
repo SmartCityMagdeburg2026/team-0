@@ -63,4 +63,6 @@ export const api = {
     postJSON<{ parsed: { budget: number | null; profile: string }; reply: string; results: any[] }>('/api/chat', {
       message,
     }),
+  assistant: (message: string, history: { role: string; content: string }[] = []) =>
+    postJSON<{ reply: string; results: any[]; sources: string[] }>('/api/assistant', { message, history }),
 }

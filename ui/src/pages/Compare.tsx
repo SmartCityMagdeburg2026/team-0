@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import type { Area } from '../lib/api'
 import { useAreas, Loading } from '../lib/ui'
 
@@ -19,43 +20,44 @@ const TAGLINE: Record<string, string> = {
 const cold = (a: Area) => Math.round((a.rent_eur_sqm ?? 0) * 50)
 const total = (a: Area) => cold(a) + 125 + 58 // 50 m²: utilities 2.5 €/m² + Deutschlandticket
 
-function qual(s: number | null) {
-  if (s == null) return { w: '—', c: '#585858' }
-  if (s >= 85) return { w: 'Exceptional', c: '#006080' }
-  if (s >= 68) return { w: 'High', c: '#006080' }
-  if (s >= 50) return { w: 'Good', c: '#006080' }
-  if (s >= 35) return { w: 'Medium', c: '#E98300' }
-  return { w: 'Low', c: '#D6492A' }
+function qual(s: number | null): { key: string; c: string } {
+  if (s == null) return { key: '—', c: '#585858' }
+  if (s >= 85) return { key: 'exceptional', c: '#006080' }
+  if (s >= 68) return { key: 'high', c: '#006080' }
+  if (s >= 50) return { key: 'good', c: '#006080' }
+  if (s >= 35) return { key: 'medium', c: '#E98300' }
+  return { key: 'low', c: '#D6492A' }
 }
-function futureQual(s: number | null) {
-  if (s == null) return { w: '—', c: '#585858' }
-  if (s >= 78) return { w: 'Exceptional', c: '#006080' }
-  if (s >= 50) return { w: 'Strong', c: '#006080' }
-  if (s >= 30) return { w: 'Stable', c: '#383838' }
-  return { w: 'Watch', c: '#E98300' }
+function futureQual(s: number | null): { key: string; c: string } {
+  if (s == null) return { key: '—', c: '#585858' }
+  if (s >= 78) return { key: 'exceptional', c: '#006080' }
+  if (s >= 50) return { key: 'strong', c: '#006080' }
+  if (s >= 30) return { key: 'stable', c: '#383838' }
+  return { key: 'watch', c: '#E98300' }
 }
 
 type Metric = {
   key: string
-  label: string
+  labelKey: string
   icon: string
   num: (a: Area) => number | null
   lowerBetter?: boolean
   kind: 'money' | 'transit' | 'qual' | 'qual-nodot' | 'future'
 }
 const METRICS: Metric[] = [
-  { key: 'rent', label: 'Est. Rent', icon: 'home', num: cold, lowerBetter: true, kind: 'money' },
-  { key: 'total', label: 'Total Monthly', icon: 'receipt_long', num: total, lowerBetter: true, kind: 'money' },
-  { key: 'transit', label: 'Transit', icon: 'tram', num: (a) => a.transit_score, kind: 'transit' },
-  { key: 'fifteen', label: '15-Min City', icon: 'schedule', num: (a) => a.fifteen_min_score, kind: 'qual' },
-  { key: 'health', label: 'Healthcare', icon: 'health_and_safety', num: (a) => a.healthcare_score, kind: 'qual-nodot' },
-  { key: 'green', label: 'Green Space', icon: 'park', num: (a) => a.green_score, kind: 'qual' },
-  { key: 'future', label: 'Future Value', icon: 'trending_up', num: (a) => a.future_value_score, kind: 'future' },
+  { key: 'rent', labelKey: 'pages.compare.metric.rent', icon: 'home', num: cold, lowerBetter: true, kind: 'money' },
+  { key: 'total', labelKey: 'pages.compare.metric.total', icon: 'receipt_long', num: total, lowerBetter: true, kind: 'money' },
+  { key: 'transit', labelKey: 'pages.compare.metric.transit', icon: 'tram', num: (a) => a.transit_score, kind: 'transit' },
+  { key: 'fifteen', labelKey: 'pages.compare.metric.fifteen', icon: 'schedule', num: (a) => a.fifteen_min_score, kind: 'qual' },
+  { key: 'health', labelKey: 'pages.compare.metric.health', icon: 'health_and_safety', num: (a) => a.healthcare_score, kind: 'qual-nodot' },
+  { key: 'green', labelKey: 'pages.compare.metric.green', icon: 'park', num: (a) => a.green_score, kind: 'qual' },
+  { key: 'future', labelKey: 'pages.compare.metric.future', icon: 'trending_up', num: (a) => a.future_value_score, kind: 'future' },
 ]
 
 export default function Compare() {
   const nav = useNavigate()
   const [params] = useSearchParams()
+  const { t } = useTranslation()
   const { areas, loading, error } = useAreas()
   const first = params.get('a') || 'stadtfeld-ost'
   const second = first === 'buckau' ? 'stadtfeld-ost' : 'buckau'
@@ -122,7 +124,7 @@ export default function Compare() {
       'Magdeburg Area Comparison\n' +
       cols.map((a) => `• ${a.area_name}: Livability ${a.life_value_score}/100 · ~€${total(a)}/mo`).join('\n')
     navigator.clipboard?.writeText(txt).then(
-      () => alert('Comparison copied to clipboard.'),
+      () => alert(t('pages.compare.copiedToClipboard')),
       () => {},
     )
   }
@@ -138,7 +140,7 @@ export default function Compare() {
         {cols.map((a, i) => (
           <div key={i} className="min-w-[280px] flex-1 bg-white rounded-2xl border border-line shadow-sm flex flex-col overflow-hidden relative">
             {a.life_value_score === topScore && cols.length > 1 && (
-              <span className="absolute top-0 right-0 bg-petrol text-white text-[10px] font-bold px-2.5 py-1 rounded-bl-lg z-10">TOP PICK</span>
+              <span className="absolute top-0 right-0 bg-petrol text-white text-[10px] font-bold px-2.5 py-1 rounded-bl-lg z-10">{t('pages.compare.topPick')}</span>
             )}
             {/* header */}
             <div className="p-4">
@@ -165,7 +167,7 @@ export default function Compare() {
                   </div>
                   <div className="text-xs text-muted flex items-center gap-1">
                     <span className="material-symbols-outlined text-sm">place</span>
-                    {TAGLINE[a.area_name] || 'Magdeburg district'}
+                    {TAGLINE[a.area_name] || t('pages.compare.districtFallback')}
                   </div>
                 </div>
                 <Ring value={a.life_value_score ?? 0} />
@@ -180,7 +182,7 @@ export default function Compare() {
                   <div key={m.key} className={`flex items-center justify-between px-4 py-3 border-t border-line ${win ? 'bg-petrol/5' : ''}`}>
                     <span className="flex items-center gap-2 text-sm text-muted">
                       <span className="material-symbols-outlined text-base">{m.icon}</span>
-                      {m.label}
+                      {t(m.labelKey)}
                     </span>
                     <Cell m={m} a={a} win={win} />
                   </div>
@@ -190,7 +192,7 @@ export default function Compare() {
 
             {/* best for */}
             <div className="px-4 py-4 border-t border-line mt-auto">
-              <div className="text-[11px] font-bold text-muted uppercase tracking-wider mb-1">Best For</div>
+              <div className="text-[11px] font-bold text-muted uppercase tracking-wider mb-1">{t('pages.compare.bestFor')}</div>
               <div className="text-sm text-body capitalize">{(a.best_for || ['balanced']).join(', ')}</div>
             </div>
           </div>
@@ -203,8 +205,8 @@ export default function Compare() {
           >
             <div className="text-center">
               <span className="material-symbols-outlined" style={{ fontSize: 40 }}>add</span>
-              <div className="font-headline font-bold mt-2">Add Area</div>
-              <div className="text-xs mt-1 max-w-[180px]">Select another district to compare metrics side-by-side.</div>
+              <div className="font-headline font-bold mt-2">{t('pages.compare.addArea')}</div>
+              <div className="text-xs mt-1 max-w-[180px]">{t('pages.compare.addAreaHint')}</div>
             </div>
           </button>
         )}
@@ -212,12 +214,12 @@ export default function Compare() {
 
       {/* Verdict */}
       <div className="bg-white rounded-xl border border-line shadow-sm p-4 flex items-center gap-3 flex-wrap">
-        <span className="text-xs font-bold text-muted uppercase tracking-wider">Analysis Verdict:</span>
-        <Chip icon="paid" label="Best value" name={bestValue} />
-        <Chip icon="directions_transit" label="Best accessibility" name={bestAcc} />
-        <Chip icon="family_restroom" label="Best for families" name={bestFam} />
+        <span className="text-xs font-bold text-muted uppercase tracking-wider">{t('pages.compare.verdictLabel')}</span>
+        <Chip icon="paid" label={t('pages.compare.verdict.value')} name={bestValue} />
+        <Chip icon="directions_transit" label={t('pages.compare.verdict.accessibility')} name={bestAcc} />
+        <Chip icon="family_restroom" label={t('pages.compare.verdict.families')} name={bestFam} />
         <button onClick={() => nav('/matrix')} className="ml-auto text-sm text-petrol font-bold hover:underline">
-          View detailed breakdown →
+          {t('pages.compare.viewBreakdown')}
         </button>
       </div>
     </div>
@@ -225,18 +227,21 @@ export default function Compare() {
 }
 
 function Cell({ m, a, win }: { m: Metric; a: Area; win: boolean }) {
+  const { t } = useTranslation()
   let node
-  if (m.kind === 'money') node = <span className="font-headline font-bold text-body">€{m.num(a)}{m.key === 'rent' ? <span className="text-xs text-muted font-body">/mo</span> : ''}</span>
+  if (m.kind === 'money') node = <span className="font-headline font-bold text-body">€{m.num(a)}{m.key === 'rent' ? <span className="text-xs text-muted font-body">{t('pages.compare.perMonth')}</span> : ''}</span>
   else if (m.kind === 'transit') node = <span className="font-headline font-bold text-body">{m.num(a) ?? '—'}<span className="text-xs text-muted font-body">/100</span></span>
   else if (m.kind === 'future') {
     const q = futureQual(m.num(a))
-    node = <span className="font-bold" style={{ color: q.c }}>{q.w}</span>
+    const label = q.key === '—' ? '—' : t(`pages.compare.qual.${q.key}`)
+    node = <span className="font-bold" style={{ color: q.c }}>{label}</span>
   } else {
     const q = qual(m.num(a))
+    const label = q.key === '—' ? '—' : t(`pages.compare.qual.${q.key}`)
     node = (
       <span className="flex items-center gap-1.5 font-bold" style={{ color: q.c }}>
         {m.kind === 'qual' && <span className="w-2 h-2 rounded-full" style={{ background: q.c }} />}
-        {q.w}
+        {label}
       </span>
     )
   }
@@ -259,20 +264,21 @@ function Chip({ icon, label, name }: { icon: string; label: string; name?: strin
 }
 
 function Header({ onExport, onShare }: { onExport: () => void; onShare: () => void }) {
+  const { t } = useTranslation()
   return (
     <div className="flex items-start justify-between gap-4 flex-wrap">
       <div>
-        <h1 className="text-3xl font-headline font-bold text-ink">Area Comparison</h1>
-        <p className="text-muted mt-1">Evaluating quality-of-life metrics across districts.</p>
+        <h1 className="text-3xl font-headline font-bold text-ink">{t('pages.compare.title')}</h1>
+        <p className="text-muted mt-1">{t('pages.compare.subtitle')}</p>
       </div>
       <div className="flex gap-2">
         <button onClick={onExport} className="flex items-center gap-2 px-4 py-2 rounded-lg border border-line text-sm text-body hover:border-petrol">
           <span className="material-symbols-outlined text-base">download</span>
-          Export
+          {t('common.exportCsv')}
         </button>
         <button onClick={onShare} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-brick text-white text-sm font-bold hover:bg-terracotta">
           <span className="material-symbols-outlined text-base">share</span>
-          Share Report
+          {t('common.share')}
         </button>
       </div>
     </div>

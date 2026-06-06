@@ -1,19 +1,43 @@
 import type { ReactNode } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import logo from '../assets/logo.png'
 
 const NAV = [
-  { to: '/', icon: 'home', label: 'Home' },
-  { to: '/map', icon: 'map', label: 'Map' },
-  { to: '/matrix', icon: 'grid_view', label: 'Value Matrix' },
-  { to: '/fifteen', icon: 'timer_10_alt_1', label: '15-Min City' },
-  { to: '/hidden', icon: 'monetization_on', label: 'Hidden Cost' },
-  { to: '/future', icon: 'auto_awesome', label: 'Future' },
-  { to: '/compare', icon: 'compare_arrows', label: 'Compare' },
-  { to: '/ai', icon: 'psychology', label: 'AI Assistant' },
+  { to: '/', icon: 'home', key: 'home' },
+  { to: '/map', icon: 'map', key: 'map' },
+  { to: '/matrix', icon: 'grid_view', key: 'matrix' },
+  { to: '/fifteen', icon: 'timer_10_alt_1', key: 'fifteen' },
+  { to: '/hidden', icon: 'monetization_on', key: 'hidden' },
+  { to: '/future', icon: 'auto_awesome', key: 'future' },
+  { to: '/compare', icon: 'compare_arrows', key: 'compare' },
+  { to: '/ai', icon: 'psychology', key: 'ai' },
 ]
+
+function LanguageSwitcher() {
+  const { i18n } = useTranslation()
+  const lang = i18n.resolvedLanguage || i18n.language
+  return (
+    <div className="ml-auto flex items-center rounded-full border border-line overflow-hidden text-sm font-bold">
+      {(['en', 'de'] as const).map((lng) => (
+        <button
+          key={lng}
+          onClick={() => i18n.changeLanguage(lng)}
+          className={`px-3 py-1 transition-colors ${
+            lang === lng ? 'bg-petrol text-white' : 'text-muted hover:text-petrol'
+          }`}
+          aria-pressed={lang === lng}
+        >
+          {lng.toUpperCase()}
+        </button>
+      ))}
+    </div>
+  )
+}
 
 export default function Layout({ children }: { children: ReactNode }) {
   const { pathname } = useLocation()
+  const { t } = useTranslation()
   const map = pathname === '/map'
   const home = pathname === '/'
   const bleed = map || home
@@ -21,9 +45,9 @@ export default function Layout({ children }: { children: ReactNode }) {
     <div className="min-h-screen bg-page text-body font-body">
       {/* Top bar */}
       <header className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-line z-50 flex items-center px-6 gap-3">
-        <div className="w-9 h-9 rounded-full bg-brick text-white grid place-items-center font-headline font-bold">M</div>
-        <div className="font-headline font-bold text-ink text-lg hidden sm:block">Magdeburg Smart Living Navigator</div>
-        <div className="ml-auto text-sm text-muted">magdeburg.de</div>
+        <img src={logo} alt="KiezKompass MD" className="w-9 h-9 rounded-full object-cover" />
+        <div className="font-headline font-bold text-ink text-lg hidden sm:block">KiezKompass <span className="text-brick">MD</span></div>
+        <LanguageSwitcher />
       </header>
 
       {/* Side nav */}
@@ -43,15 +67,9 @@ export default function Layout({ children }: { children: ReactNode }) {
               }
             >
               <span className="material-symbols-outlined">{n.icon}</span>
-              <span className="hidden lg:block">{n.label}</span>
+              <span className="hidden lg:block">{t(`nav.${n.key}`)}</span>
             </NavLink>
           ))}
-        </div>
-        <div className="p-6 border-t border-line">
-          <button className="w-full bg-sun text-white py-2 rounded font-label font-bold hover:bg-opacity-90 transition mb-2">
-            <span className="hidden lg:inline">Expert View</span>
-            <span className="lg:hidden material-symbols-outlined">tune</span>
-          </button>
         </div>
       </nav>
 

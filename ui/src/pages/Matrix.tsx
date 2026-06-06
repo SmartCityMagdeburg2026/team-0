@@ -1,17 +1,28 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import type { Area } from '../lib/api'
 import { useAreas, Loading } from '../lib/ui'
+
+// Render a string with <sun>…</sun> segments styled in the brand accent color.
+function RichText({ text }: { text: string }) {
+  const parts = text.split(/<sun>|<\/sun>/)
+  return (
+    <>
+      {parts.map((p, i) => (i % 2 === 1 ? <b key={i} className="text-sun">{p}</b> : <span key={i}>{p}</span>))}
+    </>
+  )
+}
 
 const M = { l: 40, r: 22, t: 24, b: 40 }
 const H = 470
 
-const TIER = {
-  high: { c: '#006080', label: 'High Value' },
-  balanced: { c: '#E98300', label: 'Balanced' },
-  overpriced: { c: '#D6492A', label: 'Overpriced' },
+const TIER_COLORS = {
+  high: '#006080',
+  balanced: '#E98300',
+  overpriced: '#D6492A',
 }
-type Tier = keyof typeof TIER
+type Tier = keyof typeof TIER_COLORS
 
 function median(xs: number[]) {
   if (!xs.length) return 0
@@ -19,11 +30,11 @@ function median(xs: number[]) {
   const m = Math.floor(s.length / 2)
   return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2
 }
-function trend(a: Area) {
+function trendKey(a: Area): { key: 'positive' | 'emerging' | 'steady'; i: string } {
   const f = a.future_value_score ?? 0
-  if (f >= 60) return { t: 'Positive trend', i: 'trending_up' }
-  if (f >= 45) return { t: 'Emerging', i: 'trending_up' }
-  return { t: 'Steady', i: 'trending_flat' }
+  if (f >= 60) return { key: 'positive', i: 'trending_up' }
+  if (f >= 45) return { key: 'emerging', i: 'trending_up' }
+  return { key: 'steady', i: 'trending_flat' }
 }
 
 function useWidth() {
@@ -33,7 +44,7 @@ function useWidth() {
     const el = ref.current
     if (!el) return
     const measure = () => setW(el.clientWidth)
-    measure() // capture the real container width immediately
+    measure()
     const ro = new ResizeObserver(measure)
     ro.observe(el)
     window.addEventListener('resize', measure)
@@ -47,7 +58,6 @@ function useWidth() {
 
 type Pt = { a: Area; cost: number; life: number; value: number; vScore: number; tier: Tier; color: string; w: number }
 
-// bubble size metric: total local amenities (a proxy for demand / centrality)
 function weightOf(a: Area): number {
   const am = a.amenities
   if (am) {
@@ -59,6 +69,7 @@ function weightOf(a: Area): number {
 
 export default function Matrix() {
   const nav = useNavigate()
+  const { t } = useTranslation()
   const { areas, loading, error } = useAreas()
   const [ref, w] = useWidth()
   const [selId, setSelId] = useState<string | null>(null)
@@ -67,7 +78,6 @@ export default function Matrix() {
   const [filterOpen, setFilterOpen] = useState(false)
   const [showAll, setShowAll] = useState(false)
 
-  // points + scales (value = livability percentile minus cost percentile -> above/below fair line)
   const model = useMemo(() => {
     const scored = areas.filter((a) => a.est_rent_50sqm != null && a.life_value_score != null)
     if (!scored.length) return null
@@ -81,7 +91,7 @@ export default function Matrix() {
       const life = a.life_value_score as number
       const value = norm(life, lMin, lMax) - norm(cost, cMin, cMax)
       const tier: Tier = value > 0.1 ? 'high' : value < -0.1 ? 'overpriced' : 'balanced'
-      return { a, cost, life, value, vScore: Math.round(Math.max(0, Math.min(100, 50 + 62 * value))), tier, color: TIER[tier].c, w: weightOf(a) }
+      return { a, cost, life, value, vScore: Math.round(Math.max(0, Math.min(100, 50 + 62 * value))), tier, color: TIER_COLORS[tier], w: weightOf(a) }
     })
     const ws = pts.map((p) => p.w)
     const cPad = (cMax - cMin) * 0.14 || 40
@@ -131,12 +141,12 @@ export default function Matrix() {
         {/* Chart */}
         <div className="xl:col-span-3 bg-white rounded-xl border border-line shadow-sm p-6">
           <div className="flex items-center justify-between mb-2">
-            <h3 className="font-headline font-bold text-ink text-lg">Value Matrix</h3>
+            <h3 className="font-headline font-bold text-ink text-lg">{t('pages.matrix.chartTitle')}</h3>
             <div className="flex items-center gap-4 text-xs">
-              <Dot c="#006080" t="High Value" />
-              <Dot c="#E98300" t="Balanced" />
-              <Dot c="#D6492A" t="Overpriced" />
-              <span className="text-muted hidden sm:inline">· bubble = amenity density</span>
+              <Dot c="#006080" label={t('pages.matrix.tier.high')} />
+              <Dot c="#E98300" label={t('pages.matrix.tier.balanced')} />
+              <Dot c="#D6492A" label={t('pages.matrix.tier.overpriced')} />
+              <span className="text-muted hidden sm:inline">{t('pages.matrix.bubbleHint')}</span>
             </div>
           </div>
 
@@ -148,23 +158,23 @@ export default function Matrix() {
               <rect x={xS(model.xMin)} y={yS(model.yMed)} width={xS(model.xMed) - xS(model.xMin)} height={yS(model.yMin) - yS(model.yMed)} fill="#585858" fillOpacity={0.035} />
               <rect x={xS(model.xMed)} y={yS(model.yMed)} width={xS(model.xMax) - xS(model.xMed)} height={yS(model.yMin) - yS(model.yMed)} fill="#D6492A" fillOpacity={0.05} />
 
-              <text x={xS(model.xMin) + 8} y={yS(model.yMax) + 16} fontSize={11} fontWeight={700} fill="#9bb9c4">BEST VALUE</text>
-              <text x={xS(model.xMax) - 8} y={yS(model.yMax) + 16} fontSize={11} fontWeight={700} fill="#e3bd96" textAnchor="end">PREMIUM</text>
-              <text x={xS(model.xMin) + 8} y={yS(model.yMin) - 10} fontSize={11} fontWeight={700} fill="#bcbcbc">BUDGET COMPROMISE</text>
-              <text x={xS(model.xMax) - 8} y={yS(model.yMin) - 10} fontSize={11} fontWeight={700} fill="#e0a596" textAnchor="end">OVERPRICED</text>
+              <text x={xS(model.xMin) + 8} y={yS(model.yMax) + 16} fontSize={11} fontWeight={700} fill="#9bb9c4">{t('pages.matrix.quadrant.bestValue')}</text>
+              <text x={xS(model.xMax) - 8} y={yS(model.yMax) + 16} fontSize={11} fontWeight={700} fill="#e3bd96" textAnchor="end">{t('pages.matrix.quadrant.premium')}</text>
+              <text x={xS(model.xMin) + 8} y={yS(model.yMin) - 10} fontSize={11} fontWeight={700} fill="#bcbcbc">{t('pages.matrix.quadrant.budgetCompromise')}</text>
+              <text x={xS(model.xMax) - 8} y={yS(model.yMin) - 10} fontSize={11} fontWeight={700} fill="#e0a596" textAnchor="end">{t('pages.matrix.quadrant.overpriced')}</text>
 
               {/* fair value diagonal */}
               <line x1={xS(model.xMin)} y1={yS(model.yMin)} x2={xS(model.xMax)} y2={yS(model.yMax)} stroke="#DcDcDc" strokeDasharray="6 6" />
-              <text x={xS((model.xMin + model.xMax) / 2) + 6} y={yS((model.yMin + model.yMax) / 2) - 6} fontSize={10} fill="#b8b8b8">Fair Value Reference</text>
+              <text x={xS((model.xMin + model.xMax) / 2) + 6} y={yS((model.yMin + model.yMax) / 2) - 6} fontSize={10} fill="#b8b8b8">{t('pages.matrix.fairValueRef')}</text>
 
               {/* axes */}
-              {yTicks.map((t, i) => (
-                <text key={i} x={M.l - 10} y={yS(t) + 4} fontSize={11} fill="#585858" textAnchor="end">{Math.round(t)}</text>
+              {yTicks.map((tick, i) => (
+                <text key={i} x={M.l - 10} y={yS(tick) + 4} fontSize={11} fill="#585858" textAnchor="end">{Math.round(tick)}</text>
               ))}
-              {xTicks.map((t, i) => (
-                <text key={i} x={xS(t)} y={H - M.b + 18} fontSize={11} fill="#585858" textAnchor="middle">€{Math.round(t / 10) * 10}</text>
+              {xTicks.map((tick, i) => (
+                <text key={i} x={xS(tick)} y={H - M.b + 18} fontSize={11} fill="#585858" textAnchor="middle">€{Math.round(tick / 10) * 10}</text>
               ))}
-              <text transform={`translate(15, ${M.t + innerH / 2}) rotate(-90)`} fontSize={11} fill="#585858" textAnchor="middle">Life Value Score</text>
+              <text transform={`translate(15, ${M.t + innerH / 2}) rotate(-90)`} fontSize={11} fill="#585858" textAnchor="middle">{t('pages.matrix.axis.life')}</text>
 
               {/* bubbles */}
               {visible.map((p) => {
@@ -206,11 +216,11 @@ export default function Matrix() {
                 <div className="font-headline font-bold text-sm mb-1.5">{active.a.area_name}</div>
                 <div className="flex gap-5 text-xs">
                   <div>
-                    <div className="text-white/60">Livability:</div>
+                    <div className="text-white/60">{t('pages.matrix.tooltip.livability')}</div>
                     <div className="font-bold">{active.life}/100</div>
                   </div>
                   <div>
-                    <div className="text-white/60">Est. Rent:</div>
+                    <div className="text-white/60">{t('pages.matrix.tooltip.estRent')}</div>
                     <div className="font-bold">€{active.cost}/mo</div>
                   </div>
                 </div>
@@ -224,11 +234,11 @@ export default function Matrix() {
           <div className="bg-white rounded-xl border border-line shadow-sm p-5">
             <div className="flex items-center gap-2 mb-4">
               <span className="material-symbols-outlined text-sun">star</span>
-              <h3 className="font-headline font-bold text-ink leading-tight">Best value right now</h3>
+              <h3 className="font-headline font-bold text-ink leading-tight">{t('pages.matrix.ranking.title')}</h3>
             </div>
             <div className={`space-y-3 ${showAll ? 'max-h-80 overflow-y-auto pr-1' : ''}`}>
               {(showAll ? ranked : ranked.slice(0, 3)).map((p, i) => {
-                const tr = trend(p.a)
+                const tr = trendKey(p.a)
                 const on = p.a.area_id === selId
                 return (
                   <button
@@ -241,27 +251,29 @@ export default function Matrix() {
                       <div className="font-headline font-bold text-body truncate">{p.a.area_name}</div>
                       <div className="text-xs text-muted flex items-center gap-1">
                         <span className="material-symbols-outlined text-sm text-petrol">{tr.i}</span>
-                        {tr.t}
+                        {t(`pages.matrix.trend.${tr.key}`)}
                       </div>
                     </div>
                     <div className="text-right shrink-0">
                       <div className="font-headline font-bold text-petrol">{p.vScore}</div>
-                      <div className="text-[10px] text-muted uppercase tracking-wider">Value</div>
+                      <div className="text-[10px] text-muted uppercase tracking-wider">{t('pages.matrix.ranking.valueLabel')}</div>
                     </div>
                   </button>
                 )
               })}
             </div>
             <button onClick={() => setShowAll((s) => !s)} className="mt-4 text-sm text-petrol font-bold hover:underline">
-              {showAll ? 'Show less' : 'View full ranking'}
+              {showAll ? t('pages.matrix.ranking.showLess') : t('pages.matrix.ranking.viewFull')}
             </button>
           </div>
 
           <div className="bg-white rounded-xl border border-line shadow-sm p-5">
-            <div className="text-[11px] font-bold text-muted uppercase tracking-wider mb-2">Market Insight</div>
+            <div className="text-[11px] font-bold text-muted uppercase tracking-wider mb-2">{t('pages.matrix.insight.heading')}</div>
             <p className="text-sm text-muted leading-relaxed">
-              <b className="text-body">{best?.area_name}</b> offers the best livability for its price
-              {best?.est_rent_50sqm ? ` (≈ €${best.est_rent_50sqm}/mo)` : ''}, sitting furthest above the fair-value line.
+              <b className="text-body">{best?.area_name}</b>{' '}
+              {best?.est_rent_50sqm
+                ? t('pages.matrix.insight.body', { name: '', rent: best.est_rent_50sqm }).replace('{{name}} ', '').trimStart()
+                : t('pages.matrix.insight.bodyNoRent', { name: '', }).replace('{{name}} ', '').trimStart()}
             </p>
             <button
               onClick={() => {
@@ -270,33 +282,38 @@ export default function Matrix() {
               }}
               className="mt-3 text-sm text-petrol font-bold hover:underline"
             >
-              Read detailed analysis →
+              {t('pages.matrix.insight.cta')}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Behind the score — Münster-style explainer cards */}
+      {/* Behind the score — explainer cards */}
       <div>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-9 h-9 rounded-full border-2 border-sun/50 grid place-items-center text-sun">
             <span className="material-symbols-outlined text-base">insights</span>
           </span>
-          <span className="text-petrol font-medium">behind the score</span>
+          <span className="text-petrol font-medium">{t('pages.matrix.behindScore')}</span>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <InfoCard watermark="dataset" big="40" bigUnit=" districts" source="Mietspiegel 2024 · OpenStreetMap · KISS-MD"
-            details="Rent is the qualified Mietspiegel net cold rent per Stadtteil (2012–2026). Amenities, transit stops and green space are counted from OpenStreetMap within each district. District boundaries come from the city's open geodata.">
-            Every district is scored from <b className="text-sun">open data</b> — net cold rent from the{' '}
-            <b className="text-sun">Mietspiegel 2024</b>, ~2,000 <b className="text-sun">amenities &amp; transit stops</b> from
-            OpenStreetMap, and green space from the city tree cadastre.
+          <InfoCard
+            watermark="dataset"
+            big="40"
+            bigUnit={t('pages.matrix.card1.bigUnit')}
+            source={t('pages.matrix.card1.source')}
+            details={t('pages.matrix.card1.details')}
+          >
+            <RichText text={t('pages.matrix.card1.body')} />
           </InfoCard>
 
-          <InfoCard watermark="calculate" source="Transparent weighted index — no black-box ML"
-            details="Each district's six sub-scores are min-max normalized to 0–100 across all districts, then combined with the weights above into a Life Value Score. A district's color on the chart is its value: livability percentile minus cost percentile — above the fair-value line is good value (petrol), below is overpriced (red).">
-            <div className="text-4xl font-headline font-black text-sun mb-2">Life Value Score</div>
-            Six sub-scores are normalized <b className="text-sun">0–100</b> and combined by weight. On the chart, color is{' '}
-            <b className="text-sun">value</b> — how far a district sits above or below the <b className="text-sun">fair-value line</b>.
+          <InfoCard
+            watermark="calculate"
+            source={t('pages.matrix.card2.source')}
+            details={t('pages.matrix.card2.details')}
+          >
+            <div className="text-4xl font-headline font-black text-sun mb-2">{t('pages.matrix.card2.scoreTitle')}</div>
+            <RichText text={t('pages.matrix.card2.body')} />
             <WeightBar />
           </InfoCard>
         </div>
@@ -305,28 +322,29 @@ export default function Matrix() {
   )
 }
 
-const WEIGHTS = [
-  { k: 'Affordability', w: 25, c: '#006080' },
-  { k: 'Transit', w: 20, c: '#2D8BBF' },
-  { k: '15-Min City', w: 20, c: '#E98300' },
-  { k: 'Future', w: 15, c: '#C44D36' },
-  { k: 'Green', w: 10, c: '#7A9E3B' },
-  { k: 'Healthcare', w: 10, c: '#D6492A' },
+const WEIGHTS_DATA = [
+  { key: 'affordability' as const, w: 25, c: '#006080' },
+  { key: 'transit' as const, w: 20, c: '#2D8BBF' },
+  { key: 'fifteenMin' as const, w: 20, c: '#E98300' },
+  { key: 'future' as const, w: 15, c: '#C44D36' },
+  { key: 'green' as const, w: 10, c: '#7A9E3B' },
+  { key: 'healthcare' as const, w: 10, c: '#D6492A' },
 ]
 
 function WeightBar() {
+  const { t } = useTranslation()
   return (
     <div className="mt-4">
       <div className="flex h-3 rounded-full overflow-hidden">
-        {WEIGHTS.map((w) => (
-          <div key={w.k} style={{ width: `${w.w}%`, background: w.c }} title={`${w.k} ${w.w}%`} />
+        {WEIGHTS_DATA.map((w) => (
+          <div key={w.key} style={{ width: `${w.w}%`, background: w.c }} title={`${t(`pages.matrix.weights.${w.key}`)} ${w.w}%`} />
         ))}
       </div>
       <div className="flex flex-wrap gap-x-3 gap-y-1 mt-2">
-        {WEIGHTS.map((w) => (
-          <span key={w.k} className="flex items-center gap-1 text-[11px] text-muted">
+        {WEIGHTS_DATA.map((w) => (
+          <span key={w.key} className="flex items-center gap-1 text-[11px] text-muted">
             <span className="w-2 h-2 rounded-full" style={{ background: w.c }} />
-            {w.k} {w.w}%
+            {t(`pages.matrix.weights.${w.key}`)} {w.w}%
           </span>
         ))}
       </div>
@@ -349,6 +367,7 @@ function InfoCard({
   source: string
   details: string
 }) {
+  const { t } = useTranslation()
   const [open, setOpen] = useState(false)
   return (
     <div className="rounded-2xl p-6 relative overflow-hidden" style={{ background: '#FCEFE6' }}>
@@ -361,7 +380,7 @@ function InfoCard({
       )}
       <div className="text-body text-sm leading-relaxed">{children}</div>
       {open && <div className="text-sm text-muted leading-relaxed mt-3 pt-3 border-t border-sun/20">{details}</div>}
-      <div className="text-petrol text-xs mt-4">Source: {source}</div>
+      <div className="text-petrol text-xs mt-4">{t('pages.matrix.infoCard.sourceLabel')} {source}</div>
       <div className="flex items-center justify-between mt-4">
         <div className="flex gap-3 text-petrol/70">
           <span className="material-symbols-outlined text-lg">dataset</span>
@@ -370,18 +389,18 @@ function InfoCard({
         </div>
         <button onClick={() => setOpen((o) => !o)} className="flex items-center gap-1 text-petrol font-medium text-sm hover:underline">
           <span className="material-symbols-outlined text-base">info</span>
-          {open ? 'Less' : 'More details'}
+          {open ? t('pages.matrix.infoCard.less') : t('pages.matrix.infoCard.moreDetails')}
         </button>
       </div>
     </div>
   )
 }
 
-function Dot({ c, t }: { c: string; t: string }) {
+function Dot({ c, label }: { c: string; label: string }) {
   return (
     <span className="flex items-center gap-1.5 text-muted">
       <span className="w-2.5 h-2.5 rounded-full" style={{ background: c }} />
-      {t}
+      {label}
     </span>
   )
 }
@@ -410,33 +429,34 @@ function Header({
   open: boolean
   setOpen: (b: boolean) => void
 }) {
-  const ROWS: { k: keyof typeof cats; t: string; c: string }[] = [
-    { k: 'high', t: 'High Value', c: '#006080' },
-    { k: 'balanced', t: 'Balanced', c: '#E98300' },
-    { k: 'overpriced', t: 'Overpriced', c: '#D6492A' },
+  const ROWS: { k: keyof typeof cats; tKey: Tier; c: string }[] = [
+    { k: 'high', tKey: 'high', c: '#006080' },
+    { k: 'balanced', tKey: 'balanced', c: '#E98300' },
+    { k: 'overpriced', tKey: 'overpriced', c: '#D6492A' },
   ]
+  const { t } = useTranslation()
   return (
     <div className="flex items-start justify-between gap-4 flex-wrap">
       <div>
-        <h1 className="text-3xl font-headline font-bold text-ink">Affordability vs. Livability</h1>
+        <h1 className="text-3xl font-headline font-bold text-ink">{t('pages.matrix.title')}</h1>
         <p className="text-muted mt-1 max-w-2xl">
-          Analyze district value based on standardized life-quality scores against estimated median monthly costs.
+          {t('pages.matrix.subtitleParagraph')}
         </p>
       </div>
       <div className="flex gap-2">
         <div className="relative">
           <button onClick={() => setOpen(!open)} className="flex items-center gap-2 px-4 py-2 rounded-lg border border-line text-sm text-body hover:border-petrol">
             <span className="material-symbols-outlined text-base">filter_list</span>
-            Filter
+            {t('pages.matrix.filter.button')}
           </button>
           {open && (
             <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-line p-3 z-50">
-              <div className="text-[10px] font-bold text-muted uppercase tracking-wider mb-2">Show categories</div>
+              <div className="text-[10px] font-bold text-muted uppercase tracking-wider mb-2">{t('pages.matrix.filter.heading')}</div>
               {ROWS.map((r) => (
                 <label key={r.k} className="flex items-center gap-2 py-1.5 text-sm cursor-pointer">
                   <input type="checkbox" checked={cats[r.k]} onChange={(e) => setCats({ ...cats, [r.k]: e.target.checked })} className="accent-petrol" />
                   <span className="w-2.5 h-2.5 rounded-full" style={{ background: r.c }} />
-                  {r.t}
+                  {t(`pages.matrix.tier.${r.tKey}`)}
                 </label>
               ))}
             </div>
@@ -444,7 +464,7 @@ function Header({
         </div>
         <button onClick={() => exportCsv(areas)} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-petrol text-white text-sm font-bold hover:bg-petrol/90">
           <span className="material-symbols-outlined text-base">download</span>
-          Export Report
+          {t('pages.matrix.exportReport')}
         </button>
       </div>
     </div>

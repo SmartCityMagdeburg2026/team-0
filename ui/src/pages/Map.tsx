@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import 'leaflet/dist/leaflet.css'
 import { api, type Area } from '../lib/api'
 import scene1 from '../assets/scene1.jpg'
@@ -36,15 +37,6 @@ function colorFor(score: number | null) {
   if (score >= 45) return '#E98300'
   return '#D6492A'
 }
-function rating(score: number | null) {
-  if (score == null) return '—'
-  if (score >= 85) return 'Exceptional'
-  if (score >= 75) return 'Excellent'
-  if (score >= 62) return 'High'
-  if (score >= 48) return 'Good'
-  if (score >= 35) return 'Moderate'
-  return 'Low'
-}
 function ratingColor(score: number | null) {
   if (score == null) return '#585858'
   if (score >= 62) return '#383838'
@@ -52,13 +44,14 @@ function ratingColor(score: number | null) {
   return '#D6492A'
 }
 
-const PROFILES = [
-  { key: 'general', label: 'General', icon: 'group' },
-  { key: 'student', label: 'Student', icon: 'school' },
-  { key: 'professional', label: 'Professional', icon: 'work' },
-  { key: 'family', label: 'Family', icon: 'family_restroom' },
-  { key: 'senior', label: 'Senior', icon: 'elderly' },
-]
+const PROFILE_KEYS = ['general', 'student', 'professional', 'family', 'senior'] as const
+const PROFILE_ICONS: Record<string, string> = {
+  general: 'group',
+  student: 'school',
+  professional: 'work',
+  family: 'family_restroom',
+  senior: 'elderly',
+}
 
 const DESCRIPTIONS: Record<string, string> = {
   Buckau:
@@ -72,13 +65,18 @@ const DESCRIPTIONS: Record<string, string> = {
   'Neue Neustadt': 'A densely built, well-connected northern district with everyday amenities close by.',
 }
 
-const BREAKDOWN: { key: keyof Area; label: string; icon: string }[] = [
-  { key: 'affordability_score', label: 'Affordability', icon: 'savings' },
-  { key: 'transit_score', label: 'Transit', icon: 'tram' },
-  { key: 'fifteen_min_score', label: '15-Min City', icon: 'timer' },
-  { key: 'healthcare_score', label: 'Healthcare', icon: 'health_and_safety' },
-  { key: 'green_score', label: 'Green Space', icon: 'park' },
-  { key: 'future_value_score', label: 'Future Value', icon: 'trending_up' },
+type BreakdownKey = {
+  key: keyof Area
+  tKey: string
+  icon: string
+}
+const BREAKDOWN: BreakdownKey[] = [
+  { key: 'affordability_score', tKey: 'affordability', icon: 'savings' },
+  { key: 'transit_score', tKey: 'transit', icon: 'tram' },
+  { key: 'fifteen_min_score', tKey: 'fifteenMin', icon: 'timer' },
+  { key: 'healthcare_score', tKey: 'healthcare', icon: 'health_and_safety' },
+  { key: 'green_score', tKey: 'greenSpace', icon: 'park' },
+  { key: 'future_value_score', tKey: 'futureValue', icon: 'trending_up' },
 ]
 
 function FlyController({ target }: { target: [number, number] | null }) {
@@ -90,6 +88,7 @@ function FlyController({ target }: { target: [number, number] | null }) {
 }
 
 export default function MapPage() {
+  const { t } = useTranslation()
   const nav = useNavigate()
   const geoRef = useRef<any>(null)
   const [geo, setGeo] = useState<any>(null)
@@ -104,8 +103,8 @@ export default function MapPage() {
 
   // geojson once
   useEffect(() => {
-    api.geojson().then(setGeo).catch(() => setError('Could not reach the API — is the backend running on :8000?'))
-  }, [])
+    api.geojson().then(setGeo).catch(() => setError(t('pages.map.error.api')))
+  }, [t])
 
   // areas re-fetch when profile changes (personalized match_score)
   useEffect(() => {
@@ -116,8 +115,8 @@ export default function MapPage() {
         setById(map)
         setSelId((prev) => prev ?? (map['buckau'] ? 'buckau' : (areas[0]?.area_id ?? null)))
       })
-      .catch(() => setError('Could not reach the API — is the backend running on :8000?'))
-  }, [profile])
+      .catch(() => setError(t('pages.map.error.api')))
+  }, [profile, t])
 
   const sel = selId ? byId[selId] : null
 
@@ -157,7 +156,7 @@ export default function MapPage() {
     setSearch('')
   }
 
-  const activeProfile = PROFILES.find((p) => p.key === profile)!
+  const activeProfileIcon = PROFILE_ICONS[profile] ?? 'group'
 
   if (error)
     return (
@@ -195,7 +194,7 @@ export default function MapPage() {
         {/* Budget bar + profile */}
         <div className="absolute top-4 left-4 z-[1000] bg-white rounded-full shadow-md border border-line flex items-center gap-3 pl-4 pr-2 py-1.5">
           <span className="material-symbols-outlined text-petrol text-base">payments</span>
-          <span className="text-sm text-muted">Budget:</span>
+          <span className="text-sm text-muted">{t('pages.map.budgetBar.label')}</span>
           <input type="range" min={300} max={1500} step={10} value={budget} onChange={(e) => setBudget(+e.target.value)} className="w-28 accent-brick" />
           <span className="text-sm font-bold text-petrol w-12 text-right">€{budget}</span>
           <div className="relative">
@@ -204,26 +203,26 @@ export default function MapPage() {
               className="flex items-center gap-1 pl-1.5 pr-1 py-1 rounded-full hover:bg-page"
             >
               <span className="w-7 h-7 rounded-full bg-brick text-white grid place-items-center">
-                <span className="material-symbols-outlined text-base">{activeProfile.icon}</span>
+                <span className="material-symbols-outlined text-base">{activeProfileIcon}</span>
               </span>
               <span className="material-symbols-outlined text-muted text-base">expand_more</span>
             </button>
             {menuOpen && (
               <div className="absolute right-0 mt-2 w-44 bg-white rounded-xl shadow-lg border border-line py-1 z-[1100]">
-                <div className="px-3 py-1 text-[10px] font-bold text-muted uppercase tracking-wider">Value for…</div>
-                {PROFILES.map((p) => (
+                <div className="px-3 py-1 text-[10px] font-bold text-muted uppercase tracking-wider">{t('pages.map.budgetBar.valueFor')}</div>
+                {PROFILE_KEYS.map((key) => (
                   <button
-                    key={p.key}
+                    key={key}
                     onClick={() => {
-                      setProfile(p.key)
+                      setProfile(key)
                       setMenuOpen(false)
                     }}
                     className={`w-full flex items-center gap-2 px-3 py-2 text-sm text-left hover:bg-page ${
-                      profile === p.key ? 'text-petrol font-bold' : 'text-body'
+                      profile === key ? 'text-petrol font-bold' : 'text-body'
                     }`}
                   >
-                    <span className="material-symbols-outlined text-base">{p.icon}</span>
-                    {p.label}
+                    <span className="material-symbols-outlined text-base">{PROFILE_ICONS[key]}</span>
+                    {t(`pages.map.profiles.${key}`)}
                   </button>
                 ))}
               </div>
@@ -239,7 +238,7 @@ export default function MapPage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && suggestions[0] && selectAndFly(suggestions[0])}
-              placeholder="Search districts..."
+              placeholder={t('pages.map.search.placeholder')}
               className="flex-1 text-sm outline-none bg-transparent"
             />
           </div>
@@ -261,13 +260,13 @@ export default function MapPage() {
 
         {/* Legend */}
         <div className="absolute bottom-4 left-4 z-[1000] bg-white rounded-xl shadow-md border border-line p-4 text-xs w-56">
-          <div className="font-headline font-bold text-ink mb-2">Living Value Index</div>
-          <LegendRow c="#006080" t="High Value" r="80-100" />
-          <LegendRow c="#E98300" t="Balanced" r="50-79" />
-          <LegendRow c="#D6492A" t="Overpriced / Low" r="< 50" />
+          <div className="font-headline font-bold text-ink mb-2">{t('pages.map.legend.title')}</div>
+          <LegendRow c="#006080" t={t('pages.map.legend.high')} r="80-100" />
+          <LegendRow c="#E98300" t={t('pages.map.legend.balanced')} r="50-79" />
+          <LegendRow c="#D6492A" t={t('pages.map.legend.low')} r="< 50" />
           <div className="flex items-center gap-2 py-0.5 mt-1 pt-1 border-t border-line text-muted">
             <span className="w-2.5 h-2.5 rounded-full bg-[#c9c9c9]" />
-            <span className="flex-1">Dimmed = above €{budget}</span>
+            <span className="flex-1">{t('pages.map.legend.dimmed', { budget })}</span>
           </div>
         </div>
       </div>
@@ -275,7 +274,7 @@ export default function MapPage() {
       {/* RIGHT PANEL */}
       <aside className="w-[380px] shrink-0 bg-white border-l border-line h-full overflow-y-auto">
         {!sel ? (
-          <div className="p-8 text-muted text-sm">Select a district on the map.</div>
+          <div className="p-8 text-muted text-sm">{t('pages.map.panel.empty')}</div>
         ) : (
           <Detail
             sel={sel}
@@ -303,10 +302,22 @@ function Detail({
   onClose: () => void
   onCompare: () => void
 }) {
+  const { t } = useTranslation()
   const desc =
     DESCRIPTIONS[sel.area_name] ||
-    'An established Magdeburg district with its own everyday character and access across the city.'
+    t('pages.map.panel.fallbackDesc')
   const img = imgFor(sel.area_name)
+
+  function rating(score: number | null): string {
+    if (score == null) return '—'
+    if (score >= 85) return t('pages.map.rating.exceptional')
+    if (score >= 75) return t('pages.map.rating.excellent')
+    if (score >= 62) return t('pages.map.rating.high')
+    if (score >= 48) return t('pages.map.rating.good')
+    if (score >= 35) return t('pages.map.rating.moderate')
+    return t('pages.map.rating.low')
+  }
+
   return (
     <div className="flex flex-col min-h-full">
       <div
@@ -319,7 +330,7 @@ function Detail({
         </button>
         <div className="relative">
           <span className="inline-block mb-2 px-2 py-1 rounded bg-black/40 text-white text-[11px] font-label capitalize">
-            Best for: {(sel.best_for || ['balanced']).join(', ')}
+            {t('pages.map.panel.bestFor', { values: (sel.best_for || ['balanced']).join(', ') })}
           </span>
           <h2 className="text-3xl font-headline font-black text-white drop-shadow">{sel.area_name}</h2>
         </div>
@@ -329,38 +340,40 @@ function Detail({
         {over && (
           <div className="flex items-center gap-2 text-xs bg-sun/15 text-sun rounded-lg px-3 py-2">
             <span className="material-symbols-outlined text-sm">info</span>
-            Above your €{budget}/mo budget (≈ €{sel.est_rent_50sqm}/mo)
+            {t('pages.map.panel.overBudget', { budget, rent: sel.est_rent_50sqm })}
           </div>
         )}
         <p className="text-sm text-muted leading-relaxed">{desc}</p>
 
         <div className="bg-page rounded-xl p-4 flex items-center justify-between">
           <div>
-            <div className="font-headline font-bold text-ink">Livability Score</div>
-            <div className="text-xs text-muted">Based on 6 key civic metrics</div>
+            <div className="font-headline font-bold text-ink">{t('pages.map.panel.livabilityTitle')}</div>
+            <div className="text-xs text-muted">{t('pages.map.panel.livabilitySubtitle')}</div>
           </div>
           <Ring value={sel.life_value_score ?? 0} />
         </div>
 
         <div className="border-l-4 border-petrol pl-3">
-          <div className="text-[11px] font-bold text-muted uppercase tracking-wider">Market average</div>
+          <div className="text-[11px] font-bold text-muted uppercase tracking-wider">{t('pages.map.panel.marketAvg')}</div>
           <div className="text-lg font-headline font-bold text-ink">
-            Est. monthly rent €{sel.est_rent_50sqm ?? '—'}{' '}
-            <span className="text-sm text-muted font-body">{sel.rent_eur_sqm ? `(€${sel.rent_eur_sqm}/m²)` : ''}</span>
+            {t('pages.map.panel.estRent', { amount: sel.est_rent_50sqm ?? '—' })}{' '}
+            <span className="text-sm text-muted font-body">
+              {sel.rent_eur_sqm ? t('pages.map.panel.rentPerSqm', { value: sel.rent_eur_sqm }) : ''}
+            </span>
           </div>
         </div>
 
         <div>
-          <div className="font-headline font-bold text-ink mb-3">District Breakdown</div>
+          <div className="font-headline font-bold text-ink mb-3">{t('pages.map.panel.breakdown')}</div>
           <div className="space-y-3">
             {BREAKDOWN.map((b) => {
               const v = sel[b.key] as number | null
               return (
-                <div key={b.label}>
+                <div key={b.tKey}>
                   <div className="flex items-center justify-between text-sm mb-1">
                     <span className="flex items-center gap-2">
                       <span className="material-symbols-outlined text-base" style={{ color: colorFor(v) }}>{b.icon}</span>
-                      <span className="text-body">{b.label}</span>
+                      <span className="text-body">{t(`pages.map.breakdown.${b.tKey}`)}</span>
                     </span>
                     <span className="text-xs font-bold" style={{ color: ratingColor(v) }}>{rating(v)}</span>
                   </div>
@@ -377,7 +390,7 @@ function Detail({
       <div className="mt-auto p-5">
         <button onClick={onCompare} className="w-full bg-brick text-white py-3 rounded-lg font-headline font-bold hover:bg-terracotta transition-colors flex items-center justify-center gap-2">
           <span className="material-symbols-outlined text-base">compare_arrows</span>
-          Compare District
+          {t('pages.map.panel.compare')}
         </button>
       </div>
     </div>

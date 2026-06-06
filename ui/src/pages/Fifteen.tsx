@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { MapContainer, TileLayer, Circle, Marker, GeoJSON, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -44,41 +45,12 @@ function pinIcon(color: string, icon: string, label: string) {
   })
 }
 
-const CARDS = [
-  {
-    title: '5-Minute Walk', sub: 'Immediate Vicinity', color: '#D6492A', key: 'r5' as const,
-    items: [
-      { cat: 'grocery', icon: 'shopping_cart', label: 'Groceries' },
-      { cat: 'transit', icon: 'tram', label: 'Transit' },
-      { cat: 'healthcare', icon: 'local_hospital', label: 'Health' },
-      { cat: 'park', icon: 'park', label: 'Parks' },
-    ],
-  },
-  {
-    title: '10-Minute Walk', sub: 'Neighborhood Level', color: '#E98300', key: 'r10' as const,
-    items: [
-      { cat: 'school', icon: 'school', label: 'School' },
-      { cat: 'park', icon: 'park', label: 'Parks' },
-      { cat: 'cafe', icon: 'storefront', label: 'Retail' },
-      { cat: 'healthcare', icon: 'local_hospital', label: 'Health' },
-    ],
-  },
-  {
-    title: '15-Minute Walk', sub: 'District Bound', color: '#006080', key: 'r15' as const,
-    items: [
-      { cat: 'healthcare', icon: 'local_hospital', label: 'Clinic' },
-      { cat: 'university', icon: 'account_balance', label: 'Civic' },
-      { cat: 'transit', icon: 'directions_bus', label: 'Transit' },
-      { cat: 'gym', icon: 'fitness_center', label: 'Gyms' },
-    ],
-  },
-]
-function quality(total: number) {
-  if (total >= 12) return 'Optimal'
-  if (total >= 6) return 'Excellent'
-  if (total >= 3) return 'Good'
-  if (total >= 1) return 'Fair'
-  return 'Limited'
+function quality(total: number, t: (k: string) => string) {
+  if (total >= 12) return t('pages.fifteen.quality.optimal')
+  if (total >= 6) return t('pages.fifteen.quality.excellent')
+  if (total >= 3) return t('pages.fifteen.quality.good')
+  if (total >= 1) return t('pages.fifteen.quality.fair')
+  return t('pages.fifteen.quality.limited')
 }
 
 function Recenter({ lat, lon }: { lat: number; lon: number }) {
@@ -95,6 +67,7 @@ function Recenter({ lat, lon }: { lat: number; lon: number }) {
 type Pt = [string, number, number, number] // [cat, lon, lat, dist_m]
 
 export default function Fifteen() {
+  const { t } = useTranslation()
   const { areas, loading, error } = useAreas()
   const [id, setId] = useState('sudenburg')
   const [geo, setGeo] = useState<any>(null)
@@ -107,10 +80,49 @@ export default function Fifteen() {
     api.amenityPoints(id).then(setPoints).catch(() => setPoints([]))
   }, [id])
 
+  const CARDS = [
+    {
+      title: t('pages.fifteen.bands.r5'),
+      sub: t('pages.fifteen.bands.r5sub'),
+      color: '#D6492A',
+      key: 'r5' as const,
+      items: [
+        { cat: 'grocery', icon: 'shopping_cart', label: t('pages.fifteen.cat.grocery') },
+        { cat: 'transit', icon: 'tram', label: t('pages.fifteen.cat.transit') },
+        { cat: 'healthcare', icon: 'local_hospital', label: t('pages.fifteen.cat.healthcare') },
+        { cat: 'park', icon: 'park', label: t('pages.fifteen.cat.park') },
+      ],
+    },
+    {
+      title: t('pages.fifteen.bands.r10'),
+      sub: t('pages.fifteen.bands.r10sub'),
+      color: '#E98300',
+      key: 'r10' as const,
+      items: [
+        { cat: 'school', icon: 'school', label: t('pages.fifteen.cat.school') },
+        { cat: 'park', icon: 'park', label: t('pages.fifteen.cat.park') },
+        { cat: 'cafe', icon: 'storefront', label: t('pages.fifteen.cat.retail') },
+        { cat: 'healthcare', icon: 'local_hospital', label: t('pages.fifteen.cat.healthcare') },
+      ],
+    },
+    {
+      title: t('pages.fifteen.bands.r15'),
+      sub: t('pages.fifteen.bands.r15sub'),
+      color: '#006080',
+      key: 'r15' as const,
+      items: [
+        { cat: 'healthcare', icon: 'local_hospital', label: t('pages.fifteen.cat.clinic') },
+        { cat: 'university', icon: 'account_balance', label: t('pages.fifteen.cat.civic') },
+        { cat: 'transit', icon: 'directions_bus', label: t('pages.fifteen.cat.transit') },
+        { cat: 'gym', icon: 'fitness_center', label: t('pages.fifteen.cat.gyms') },
+      ],
+    },
+  ]
+
   if (loading || error)
     return (
       <div className="space-y-6">
-        <h1 className="text-3xl font-headline font-bold text-ink">15-Minute City Radius</h1>
+        <h1 className="text-3xl font-headline font-bold text-ink">{t('pages.fifteen.title')}</h1>
         <Loading error={error} />
       </div>
     )
@@ -129,15 +141,14 @@ export default function Fifteen() {
             <span className="material-symbols-outlined text-petrol text-base">location_on</span>
             <DistrictSelect areas={areas} value={a.area_id} onChange={setId} />
           </div>
-          <h1 className="text-3xl md:text-4xl font-headline font-bold text-ink">15-Minute City Radius</h1>
+          <h1 className="text-3xl md:text-4xl font-headline font-bold text-ink">{t('pages.fifteen.title')}</h1>
           <p className="text-muted mt-2 max-w-2xl">
-            Visualizing walking distances to essential amenities from the district center. A strong 15-minute score
-            indicates high walkability and local convenience.
+            {t('pages.fifteen.subtitle')}
           </p>
         </div>
         <div className="bg-white px-5 py-3 rounded-xl border border-line shadow-sm flex items-center gap-4">
           <div className="text-right">
-            <div className="text-xs text-muted uppercase tracking-wider font-semibold">Overall Walk Score</div>
+            <div className="text-xs text-muted uppercase tracking-wider font-semibold">{t('pages.fifteen.walkScore.label')}</div>
             <div className="text-2xl font-bold text-petrol">{score}<span className="text-sm text-muted font-normal">/100</span></div>
           </div>
           <div className="w-12 h-12 rounded-full border-4 border-petrol flex items-center justify-center">
@@ -151,11 +162,11 @@ export default function Fifteen() {
         {/* Map */}
         <div className="lg:col-span-2 bg-white rounded-2xl border border-line shadow-sm flex flex-col overflow-hidden lg:h-full">
           <div className="p-4 border-b border-line flex justify-between items-center">
-            <h3 className="font-headline font-bold text-ink">Accessibility Map <span className="text-muted font-normal text-sm">· {points.length} amenities</span></h3>
+            <h3 className="font-headline font-bold text-ink">{t('pages.fifteen.map.title')} <span className="text-muted font-normal text-sm">· {t('pages.fifteen.map.amenities', { count: points.length })}</span></h3>
             <div className="flex gap-4 text-xs font-medium text-muted">
-              <Legend c="#D6492A" t="5 Min" />
-              <Legend c="#E98300" t="10 Min" />
-              <Legend c="#006080" t="15 Min" />
+              <Legend c="#D6492A" label={t('pages.fifteen.legend.min5')} />
+              <Legend c="#E98300" label={t('pages.fifteen.legend.min10')} />
+              <Legend c="#006080" label={t('pages.fifteen.legend.min15')} />
             </div>
           </div>
           <div className="flex-1 relative min-h-[440px]">
@@ -194,7 +205,7 @@ export default function Fifteen() {
                     <p className="text-xs text-muted">{card.sub}</p>
                   </div>
                   <div className="px-2 py-1 rounded text-xs font-bold" style={{ background: card.color + '1a', color: card.color }}>
-                    {quality(total)}
+                    {quality(total, t)}
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
@@ -216,41 +227,45 @@ export default function Fifteen() {
 
       <p className="text-xs text-muted flex items-center gap-1.5">
         <span className="material-symbols-outlined text-sm">info</span>
-        Every amenity within the 15-min radius is plotted at its real OpenStreetMap location; pin color = walk band (5 / 10 / 15 min).
+        {t('pages.fifteen.footnote')}
       </p>
 
-      <BehindCards label="behind the walk score" icon="directions_walk">
+      <BehindCards label={t('pages.fifteen.behind.label')} icon="directions_walk">
         <InfoCard
           watermark="dataset"
-          big="2,059"
-          bigUnit=" amenities"
-          source="OpenStreetMap (Overpass) · district centroids"
-          details="Walking speed ≈ 5 km/h, so 5 min ≈ 400 m, 10 min ≈ 800 m, 15 min ≈ 1200 m. Each POI's straight-line distance from the district centre is binned into those rings; the pins on the map are the real OSM coordinates."
+          big={t('pages.fifteen.behind.card1.big')}
+          bigUnit={t('pages.fifteen.behind.card1.bigUnit')}
+          source={t('pages.fifteen.behind.card1.source')}
+          details={t('pages.fifteen.behind.card1.details')}
         >
-          Walkability comes from ~2,000 <b className="text-sun">amenities &amp; transit stops</b> mapped in{' '}
-          <b className="text-sun">OpenStreetMap</b>, counted inside 400 / 800 / 1200 m walk rings around each district
-          centre.
+          {t('pages.fifteen.behind.card1.bodyPrefix')}{' '}
+          <b className="text-sun">{t('pages.fifteen.behind.card1.bodyAmenities')}</b>{' '}
+          {t('pages.fifteen.behind.card1.bodyMid')}{' '}
+          <b className="text-sun">{t('pages.fifteen.behind.card1.bodyOsm')}</b>
+          {t('pages.fifteen.behind.card1.bodySuffix')}
         </InfoCard>
         <InfoCard
           watermark="calculate"
-          source="Min-max normalized access index"
-          details="A district scoring high has many amenities close to its centre relative to the other districts. The radar shows the seven dimensions; the band cards count amenities reachable within each walk ring."
+          source={t('pages.fifteen.behind.card2.source')}
+          details={t('pages.fifteen.behind.card2.details')}
         >
-          <div className="text-4xl font-headline font-black text-sun mb-2">Walk Score</div>
-          The <b className="text-sun">Overall Walk Score</b> averages seven access dimensions — grocery, pharmacy,
-          healthcare, parks, schools, transit and cafés — each <b className="text-sun">normalized 0–100</b> across all
-          districts.
+          <div className="text-4xl font-headline font-black text-sun mb-2">{t('pages.fifteen.behind.card2.scoreTitle')}</div>
+          {t('pages.fifteen.behind.card2.bodyPrefix')}{' '}
+          <b className="text-sun">{t('pages.fifteen.behind.card2.bodyOverall')}</b>{' '}
+          {t('pages.fifteen.behind.card2.bodyMid')}{' '}
+          <b className="text-sun">{t('pages.fifteen.behind.card2.bodyNorm')}</b>{' '}
+          {t('pages.fifteen.behind.card2.bodySuffix')}
         </InfoCard>
       </BehindCards>
     </div>
   )
 }
 
-function Legend({ c, t }: { c: string; t: string }) {
+function Legend({ c, label }: { c: string; label: string }) {
   return (
     <span className="flex items-center gap-1">
       <span className="w-3 h-3 rounded-full opacity-80" style={{ background: c }} />
-      {t}
+      {label}
     </span>
   )
 }
